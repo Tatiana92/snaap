@@ -58,6 +58,19 @@ var App = new (function App() {
 
         // Modules init here
         self.modules.SVGSprites.init();
+
+        $('.main-menu').on('click', function (event) {
+            event.stopPropagation();
+            $('.sidebar').addClass('show');
+            $(document).one('click', function closeMenu (e){
+                if(!$(e.target).closest('.sidebar').length && !$(e.target).is('.sidebar')) {
+                    $('.sidebar').removeClass('show');
+                } else {
+                    $(document).one('click', closeMenu);
+                }
+            });
+        });
+
     });
 })();
 

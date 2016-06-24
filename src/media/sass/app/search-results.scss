@@ -103,36 +103,3 @@
 .light-blue .searchresults-circle {
     border-color: #7B8A9F;
 }
-
-.crumbs {
-    border-top: 1px solid #E2E2E2;
-    margin: 10px 0;
-}
-.crumbs ul {
-    margin: 0;
-}
-.crumbs ul li a {
-    display: block;
-    float: left;
-    text-align: center;
-    position: relative;
-    margin: 10px 0;      
-    font-size: 20px;
-    text-decoration: none;
-    color: #7F8998;
-}
-.crumbs ul li{
-    list-style:none;
-}
-.crumbs ul li a:after {
-    content: ">";  
-    margin: 10px;   
-}
-.crumbs ul li a.active {
-    color: #282F39;
-    border-bottom: 3px solid #282F39;
-}
-
-.crumbs ul li:last-child a:after {
-    display: none; 
-}

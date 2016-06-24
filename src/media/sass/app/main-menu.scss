@@ -7,10 +7,10 @@
     top: 0;
     z-index: 9;
     display: none;
-    width: 150px;
     height: 100%;
-    transition: width 0.3s ease-in-out;
     overflow-x: hidden;
+    width: auto;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 .sidemenu li {
     margin-bottom: 30px;
@@ -40,39 +40,27 @@
     
 }
 
+.sidebar.show{
+    display: block !important;
+    width: auto;
+}
+
+.sidebar .sidemenu {
+    padding-right: 30px;
+}
 
 @media screen and (min-width: 768px) {
-    .sidebar {
-        display: block !important;
-    }
+
 }
 
 @media screen and (min-width: 767px) {
-    .sidebar {
-        display: block;
-        width: 64px;
-        height: 100%;
-        float: left;
-    }
-    .sidebar .sidemenu span {
-        opacity: 0;
-    }
 }
 
 .sidebar span {
     padding:0 20px;
     opacity: 1;
-    transition: all 0.3s ease-in-out;
-    transition-delay: 0.2s;
 }
 
-.sidebar:hover {
-    width: auto;
-}
-
-.sidebar:hover span {
-    opacity: 1;
-}
 
 @media screen and (min-width: 767px) {
     .sidebar .sidemenu {

@@ -48,8 +48,7 @@ a {
     text-decoration: none !important;
 }
 .page-content {
-    margin-left: 100px;
-    margin-right: 70px;
+    margin: 30px 70px;
 }
 
 .center {
@@ -65,4 +64,38 @@ a {
     justify-content: space-between;
     -webkit-align-items: center; 
     align-items: center;
+}
+
+.crumbs {
+    border-top: 1px solid #E2E2E2;
+    margin: 20px 0;
+    overflow: hidden
+}
+.crumbs ul {
+    margin: 0;
+}
+.crumbs ul li a {
+    display: block;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin: 5px 0;      
+    font-size: 20px;
+    text-decoration: none;
+    color: #7F8998;
+}
+.crumbs ul li{
+    list-style:none;
+}
+.crumbs ul li a:after {
+    content: ">";  
+    margin: 5px 10px;   
+}
+.crumbs ul li a.active {
+    color: #282F39;
+    border-bottom: 3px solid #282F39;
+}
+
+.crumbs ul li:last-child a:after {
+    display: none; 
 }
