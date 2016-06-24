@@ -20,18 +20,6 @@ function changeView(evt) {
     elem.className += ' selected';
 }
 
-function changeView(evt) {
-    var btns = document.getElementsByClassName('view-icon');
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].className = btns[i].className.replace(' selected', '');
-    }
-    var elem = evt.target;
-    while (elem.className.indexOf('view-icon') == -1) {
-        elem = elem.parentNode;
-    }
-    elem.className += ' selected';
-}
-
 // Note: Use 'search & replace' to rename 'App' to current project name an delete this note
 var App = new (function App() {
 
@@ -70,6 +58,27 @@ var App = new (function App() {
                 }
             });
         });
+        try {
+            document.getElementsByClassName('view-icon')[0].click();
+        } catch (e) {
+            console.log('error while click on view btn', e);
+        }
+        $('.repost-btn').on('click', function (event) {
+            //$(document).ready(function(){
+            event.stopPropagation();
+            $('.repost-popup').css('left',event.target.x-150);      // <<< use pageX and pageY
+            $('.repost-popup').css('top',event.target.y+30);
+            $('.repost-popup').css('display','inline');     
+            $(".repost-popup").css("position", "absolute");  // <<< also make it absolute!
+            $(document).one('click', function closeMenu (e){
+                $('.repost-popup').css('display','none');  
+            });
+            $(window).one('resize', function closeMenu (e){
+                $('.repost-popup').css('display','none'); 
+                $(document).off('click'); 
+            });
+        });
+        //});
 
     });
 })();
