@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    font-size: 15px;
+    font-family: "Open Sans";
+}
+
+.no-indent {
+	margin: 0;
+	padding: 0;
+}
+
+.radius_30{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+
+.radius_20{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+.radius_15{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+.radius_8{
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    -moz-appearance: none;
+}
+
+.btn {
+	padding: 5px 10px;
+	margin: 5px;
+    font-size: 17px;
+    text-align: center;
+}
+a { 
+    text-decoration: none !important;
+}
+.page-content {
+    margin-left: 70px;
+}

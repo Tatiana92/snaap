@@ -4,6 +4,22 @@
  * Sborka Project
  */
 
+
+
+
+
+function changeView(evt) {
+    var btns = document.getElementsByClassName('view-icon');
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].className = btns[i].className.replace(' selected', '');
+    }
+    var elem = evt.target;
+    while (elem.className.indexOf('view-icon') == -1) {
+        elem = elem.parentNode;
+    }
+    elem.className += ' selected';
+}
+
 // Note: Use 'search & replace' to rename 'App' to current project name an delete this note
 var App = new (function App() {
 
