@@ -13,7 +13,9 @@
 .view-icon:hover, .view-icon.selected {
     opacity: 0.7;
 }
-
+.searchresults-blocks-group {
+    width: 100%;
+}
 .searchresults-block {
     width: 100%;
     margin: 10px 0;
@@ -36,14 +38,13 @@
 
 .searchresults-block div{
     display: inline-block;
-    vertical-align: middle;
     float: none;
+    margin: 0 10px;
 }
 
 .searchresults-block-name {
     font-size: 17px;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    white-space: nowrap;
 }
 
 .searchresults-block-name:first-letter {
@@ -53,10 +54,17 @@
 
 .searchresults-block-text {
     border-left: 3px solid #3B5377;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 10px
+}
+
+.blue .searchresults-block-text {
+    border-color: #5C759D;
 }
 
 .light-blue .searchresults-block-text {
-    border-left: 3px solid #CED7E6;
+    border-color: #CED7E6;
 }
 
 .searchresults-block-image {
@@ -67,17 +75,64 @@
 }
 
 .searchresults-block-btns {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+    white-space: nowrap;
+
 }
-.circle { 
-    width:54px;
-    height:50px; 
-    border: solid 1px #555; 
+.searchresults-circle { 
+    width:60px;
+    height:57px; 
+    border: solid 1px #282F39; 
     background-color: white; 
     box-shadow: 3px -3px rgba(0,0,0,0.6); 
     -moz-box-shadow: 3px -3px rgba(0,0,0,0.6); 
     -webkit-box-shadow: 3px -3px rgba(0,0,0,0.6); 
     -o-box-shadow: 3px -3px rgba(0,0,0,0.6); 
-    border-radius:100px; 
+    border-radius: 50px;
+}
+
+.searchresults-circle  img {
+    margin: 23px 0;
+}
+.blue .searchresults-circle {
+    border-color: #587297;
+}
+
+
+.light-blue .searchresults-circle {
+    border-color: #7B8A9F;
+}
+
+.crumbs {
+    border-top: 1px solid #E2E2E2;
+    margin: 10px 0;
+}
+.crumbs ul {
+    margin: 0;
+}
+.crumbs ul li a {
+    display: block;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin: 10px 0;      
+    font-size: 20px;
+    text-decoration: none;
+    color: #7F8998;
+}
+.crumbs ul li{
+    list-style:none;
+}
+.crumbs ul li a:after {
+    content: ">";  
+    margin: 10px;   
+}
+.crumbs ul li a.active {
+    color: #282F39;
+    border-bottom: 3px solid #282F39;
+}
+
+.crumbs ul li:last-child a:after {
+    display: none; 
 }

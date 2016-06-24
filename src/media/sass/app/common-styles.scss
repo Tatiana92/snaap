@@ -48,5 +48,21 @@ a {
     text-decoration: none !important;
 }
 .page-content {
-    margin-left: 70px;
+    margin-left: 100px;
+    margin-right: 70px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.flex-block {
+    display: -webkit-flex; 
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center; 
+    align-items: center;
 }
