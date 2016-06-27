@@ -1,31 +1,15 @@
-.brands-section-main
-    margin-top: 10%
-    
-    @media (min-width: 768px)
-        margin-top: 100px
-
 .brands-col
     background: #E4EEFA
     border: 1px solid #E4EEFA
     margin-bottom: 50px
-    box-shadow: 0px 3px 5px #E4EEFA
-
-.brands-col__circle
-    margin: 0 auto
-    width: 80%
-    margin: 20px auto
-    overflow: hidden
-    width: 70%
-    height: 70%
-    border-radius: 50%
+    box-shadow: 0 3px 5px #E4EEFA
+    &.brands-col_radius-8
+        border-radius: 8px
 
 .brands-col__content
     background: #fff
     padding: 30px 20px 10px
-
-.brands-col__circle img
     margin: 0
-    width: 100%
 
 .brands-col__products
     border: 2px solid #A0A5A9
@@ -33,50 +17,25 @@
     padding: 8px
     border-radius: 12px
     display: inline-block
-    
+    background: transparent
+    box-shadow: 0 0 transparent
+
     img
         display: inline
         margin: auto 0
         padding-right: 4px
         margin-left: 4px
         height: 20px
-    
+
     span
         display: inline
         padding-right: 4px
-        
+
 .brands-col__label
     padding: 8px 0
     font-size: 14px
     font-weight: bold
-    
-.brands-col__circle 
-    border: solid 1px #282F39 
-    background-color: white 
-    box-shadow: 3px -3px rgba(0,0,0,0.6) 
-    -moz-box-shadow: 3px -3px rgba(0,0,0,0.6) 
-    -webkit-box-shadow: 3px -3px rgba(0,0,0,0.6) 
-    -o-box-shadow: 3px -3px rgba(0,0,0,0.6)
-
-.brands-col__name 
-    font-size: 17px
-    white-space: nowrap
-    margin-bottom: 20px
-
-.brands-col__name:first-letter
-    font-size: 20px
-    font-weight: 600
-    
-.col
-    @media (max-width: 768px)
-        width: 50%!important
-        
-    @media (max-width: 640px)
-        width: 100%!important
-
-.page-content
-    @media (max-width: 768px)
-        margin-left: 5%
-        margin-right: 1%
-
-
+    border: 0 solid transparent
+    background: transparent
+    box-shadow: 0 0 transparent
+    margin: 0
