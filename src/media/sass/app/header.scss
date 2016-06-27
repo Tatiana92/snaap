@@ -4,7 +4,12 @@
 	padding: 15px;
 	background-color: #282F39;
     padding-left: 30px;
+    position: fixed;
+    z-index: 1;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
+
 
 .header-btns {
     white-space: nowrap;
@@ -91,15 +96,20 @@
     -webkit-box-sizing: content-box;
 }
 
-.page-title {
-	display: inline-block;
-	text-align: left;
-    margin-top: 15px;
-}
 .page-title-text {
-	display: block;
-	font-size: 16px;
-	font-weight: 600;
+    padding:0px;
+    margin: 0px;
+
+    display: inline-block;
+    text-align: left;
+    margin-top: 5px;
+}
+.page-title-text:after {
+    content: '';
+    height: 3px;
+    width: 50px;
+    background-color: #F7395D;
+    display: block;
     padding:0px;
     margin: 0px;
     vertical-align: bottom;

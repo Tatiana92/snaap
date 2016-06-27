@@ -1,0 +1,112 @@
+.app-page-block {
+    overflow: hidden;
+    background-color: white;
+    display: block;
+    border: 1px solid #DCDADB;
+    margin-left: 100px;
+}
+.app-page-block-footer {
+    background-color: #7B8A9F;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.app-page-content {
+    margin: 20px;
+    overflow: hidden;
+}
+div.app-page-block-title {
+    font-size: 17px;
+    display: table;
+    white-space: nowrap;
+    &:after {
+      border-top: 1px solid #CBCBCB;
+      content: '';
+      display: table-cell;
+      position: relative;
+      z-index: 0;
+      top: 0.75em;
+      width: 90%;
+    }
+    
+    &:after { left: 1.75%; }
+}
+div.app-page-block-title:first-letter {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.paragraph {
+    margin: 20px 0;
+    margin-left: 50px;
+    font-size: 13px;
+}
+.red-markers-list {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.red-markers-list li {
+    list-style-type: disc;
+    color: #F7395D;
+    font-size: 17px;
+}
+
+.list-text {
+    color: #282F39;
+    font-size: 13px;
+}
+#tab-container
+{
+   float: left;
+   margin: 20px 0 0 0;
+   width: auto;
+}
+#tab-container ul
+{
+   list-style: none;
+   text-align: center;
+}
+#tab-container ul li
+{
+    border: 1px solid #282F39;
+    background-color: transparent;
+    margin: 8px 0;
+    border-right: none !important;
+    border-top-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+}
+#tab-container ul li a,
+#tab-container ul li a:visited
+{
+   text-decoration: none;
+   display: block;
+   padding: 5px;
+}
+#tab-container ul li a:hover
+{
+   color: #F8F8F8;
+   background-color: #282F39;
+    border-top-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+}
+#tab-container ul li.selected
+{
+   color: #F8F8F8;
+   background-color: #282F39;
+    border-top-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+}

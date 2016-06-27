@@ -47,6 +47,10 @@ var App = new (function App() {
         // Modules init here
         self.modules.SVGSprites.init();
 
+        $(window).on('resize', function closeMenu (e){
+            $('.title-pane').css('marginTop', $('.header-pane').outerHeight(true) );
+        });
+        $(window).resize();
         $('.main-menu').on('click', function (event) {
             event.stopPropagation();
             $('.sidebar').addClass('show');

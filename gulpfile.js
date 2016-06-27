@@ -196,7 +196,10 @@ gulp.task('watch', function(){
 		gulp.start('html:build');
 	});
 	watch([PATHS.watch.style], function(event, cb) {
-		gulp.start('style:build');
+		setTimeout(function () {
+			gulp.start('style:build');
+		}, 500);
+		//gulp.start('style:build');
 	});
 	watch([PATHS.watch.js], function(event, cb) {
 		gulp.start('js:build');
