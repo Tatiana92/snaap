@@ -1,0 +1,110 @@
+//= templates/head.html
+<body>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+//= templates/header.html
+//= templates/main-menu.html
+  <div class='page-content'>
+  	<div class=" app-page-bottom-block flex-block">
+	    <div class="view-icons">
+	      <div class='view-icon' onclick='changeView(event);'>
+	        <img src="/media/img/icons/tile-view.png" width="24" height="24" />
+	      </div>
+	      <div class='view-icon' onclick='changeView(event);'>
+	        <img src="/media/img/icons/list-view.png" width="24" height="24" />
+	      </div>
+	    </div>
+  		<div class='app-page-bottom-selectors'>
+	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Product</a>
+	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Preview</a>
+	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Reviews</a>
+	  		<a href='' class='selected app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Overview</a>
+  		</div>
+	  </div>
+    <div class="crumbs">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a class="active" href="#">Overview</a></li>
+      </ul>
+    </div>
+    <div class="tab-container">
+      <ul>
+        <li><a class='selected app-page-tablinks' onclick='onLinkClicked(event);' href="#screenshots">Screenshots</a></li>
+        <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#videos">Videos</a></li>
+        <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#alternatives">Alternatives</a></li>
+        <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#articles">Articles</a></li>
+      </ul>
+    </div>
+    <div class="app-page-block radius_8">
+      <div class='app-page-content'>
+        <div class='app-page-block-title' id='screenshots'>Screenshots
+        </div>
+
+
+          <div class='carousel-selected-image center'><img id='selected-image' src="media/img/images/finance-help.jpg" ></div>
+         
+          <div id="carousel" class="carousel">
+            <img class="arrow prev" src="media/img/icons/arrow-light.png" width='17'>
+            <div class="gallery">
+              <ul class="images">
+                <li><img src="media/img/images/finance-help.jpg"></li>
+                <li><img src="media/img/images/images-copy.jpg"></li>
+                <li><img src="media/img/images/finance.jpg"></li>
+                <li><img src="media/img/images/reconciliation.jpg"></li>
+                <li><img src="media/img/images/finance-help.jpg"></li>
+                <li><img src="media/img/images/images-copy.jpg"></li>
+                <li><img src="media/img/images/finance.jpg"></li>
+                <li><img src="media/img/images/reconciliation.jpg"></li>
+                <li><img src="media/img/images/finance-help.jpg"></li>
+                <li><img src="media/img/images/images-copy.jpg"></li>
+                <li><img src="media/img/images/finance.jpg"></li>
+                <li><img src="media/img/images/reconciliation.jpg"></li>
+                <li><img src="media/img/images/finance-help.jpg"></li>
+                <li><img src="media/img/images/images-copy.jpg"></li>
+                <li><img src="media/img/images/finance.jpg"></li>
+                <li><img src="media/img/images/reconciliation.jpg"></li>
+              </ul>
+            </div>
+            <img  class="arrow next" src="media/img/icons/arrow-light.png" width='17'>
+          </div>
+
+  
+        <div class='app-page-block-title' id='videos'>Videos
+        </div>
+
+        <div class='app-page-block-title' id='alternatives'> Alternatives
+        </div>
+
+        <div class='app-page-block-title' id='articles'> Articles
+        </div>
+        
+      </div>
+      <div class="app-page-block-footer flex-block">
+        <img src="/media/img/icons/red-dots.png" width="24" height="24" onclick='onRepostBtnClick(event);'/>
+        <img src="/media/img/icons/repost.png" width="24" height="24" class='repost-btn' />
+      </div>
+    </div>
+  </div>
+  <div class='repost-popup radius_15'>
+    <div class="repost-icons">
+      <div class='repost-icon'>
+        <img src="/media/img/icons/twitter.png" width="13" height="13" />
+      </div>
+      <div class='repost-icon'>
+        <img src="/media/img/icons/linkedin.png" width="13" height="13" />
+      </div>
+      <div class='repost-icon'>
+        <img src="/media/img/icons/google-s-network.png" width="13" height="13" />
+      </div>
+      <div class='repost-icon'>
+        <img src="/media/img/icons/network.png" width="13" height="13" />
+      </div>
+      <div class='repost-icon'>
+        <img src="/media/img/icons/facebook.png" width="7" height="13" />
+      </div>
+    </div>
+  </div>
+  <script src="media/js/main.js"></script>
+</body>
+
+</html>
