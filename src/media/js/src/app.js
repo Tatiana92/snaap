@@ -1,7 +1,6 @@
 /*!
  * App
  * [Date here]
- * Sborka Project
  */
 
 
@@ -68,14 +67,14 @@ var App = new (function App() {
             event.stopPropagation();
             $('.repost-popup').css('left',event.target.x-150);      // <<< use pageX and pageY
             $('.repost-popup').css('top',event.target.y+30);
-            $('.repost-popup').css('display','inline');     
+            $('.repost-popup').css('display','inline');
             $(".repost-popup").css("position", "absolute");  // <<< also make it absolute!
             $(document).one('click', function closeMenu (e){
-                $('.repost-popup').css('display','none');  
+                $('.repost-popup').css('display','none');
             });
             $(window).one('resize', function closeMenu (e){
-                $('.repost-popup').css('display','none'); 
-                $(document).off('click'); 
+                $('.repost-popup').css('display','none');
+                $(document).off('click');
             });
         });
         //});
@@ -98,3 +97,42 @@ App.modules.SVGSprites = {
         }
     }
 };
+
+jQuery(document).ready(function($) {
+
+  if($('.logo-slider').length) {
+
+    setInterval(function () {
+      moveRight();
+    }, 3000);
+
+    var slideCount = $('.logo-slider li').length;
+    var slideWidth = $('.logo-slider li').outerWidth();
+    var slideHeight = $('.logo-sliderl li').height();
+    var sliderUlWidth = slideCount * slideWidth;
+
+    // $('.logo-slider-').css({ width: slideWidth, height: slideHeight });
+    $('.logo-slider').css({ width: sliderUlWidth, marginLeft: '-136px' });
+    $('.logo-slider li:last-child').prependTo('.logo-slider');
+
+    function moveLeft() {
+      $('.logo-slider').animate({
+          left: + slideWidth
+      }, 200, function () {
+          $('.logo-slider li:last-child').prependTo('.logo-slider');
+          $('.logo-slider').css('left', '');
+      });
+    };
+
+    function moveRight() {
+        $('.logo-slider').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('.logo-slider li:first-child').appendTo('.logo-slider');
+            $('.logo-slider').css('left', '');
+        });
+    };
+
+  }
+
+});

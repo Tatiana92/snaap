@@ -45,8 +45,8 @@ input:focus, textarea:focus, select:focus {
     text-align: center;
     cursor: pointer;
 }
-a { 
-    text-decoration: none !important;
+a {
+    text-decoration: none;
 }
 .page-content {
     margin: 30px 70px;
@@ -59,11 +59,11 @@ a {
 }
 
 .flex-block {
-    display: -webkit-flex; 
+    display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-items: center; 
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -80,7 +80,7 @@ a {
     float: left;
     text-align: center;
     position: relative;
-    margin: 5px 0;      
+    margin: 5px 0;
     font-size: 20px;
     text-decoration: none;
     color: #7F8998;
@@ -89,8 +89,8 @@ a {
     list-style:none;
 }
 .crumbs ul li a:after {
-    content: ">";  
-    margin: 5px 10px;   
+    content: ">";
+    margin: 5px 10px;
 }
 .crumbs ul li a.active {
     color: #282F39;
@@ -98,5 +98,5 @@ a {
 }
 
 .crumbs ul li:last-child a:after {
-    display: none; 
+    display: none;
 }

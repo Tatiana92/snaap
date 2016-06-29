@@ -52,18 +52,24 @@
     width: 43px
     height: 4px
 
+    background-color: #f6395d
+
     @media screen and(min-width: 580px)
       width: 86px
       height: 8px
-
-    background-color: #f6395d
 
 
   span
     font-weight: bold
 
-.hero-subtitle
+.subtitle
   font-size: 16px
+
+  br
+    display: none
+
+    @media screen and(min-width: 630px)
+      display: block
 
   @media screen and(min-width: 580px)
     font-size: 32px
@@ -150,3 +156,246 @@
 .hero-img
   margin: 0 -20px
   margin-top: 1em
+
+.section-title
+  position: relative
+
+  display: inline-block
+  margin-bottom: 15px
+
+  font-size: 18px
+  font-weight: lighter
+  text-transform: uppercase
+
+  @media screen and(min-width: 580px)
+    font-size: 37px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+
+    width: 39px
+    height: 3px
+
+    background-color: #f6395d
+
+    @media screen and(min-width: 580px)
+      width: 78px
+      height: 5px
+
+
+  span
+    font-weight: bold
+
+.section
+  padding: 50px 0 19px
+
+  &--categories
+    background-color: #f8f8f8
+
+  &--categories-dark
+    background-color: #dcdcdc
+
+  @media screen and(min-width: 580px)
+    padding: 110px 0 38px
+
+.solutions-categories
+  margin-top: 45px
+
+  @media screen and(min-width: 580px)
+    margin-top: 90px
+
+  @media screen and(min-width: 1020px)
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    // justify-content: space-around
+
+.category-card
+  position: relative
+
+  box-sizing: border-box
+  width: 100%
+  max-width: 470px
+  height: 330px
+  overflow: hidden
+  margin: 0 auto
+
+  text-align: center
+
+  border-radius: 13px
+  border: 1px solid rgba(182, 178, 178, 0.54)
+  background-color: #e4edfa
+  box-shadow: 0px 4px 5px 0px rgba(82, 82, 82, 0.06);
+
+  @media screen and(min-width: 580px)
+    height: 429px
+
+  // @media screen and(min-width: 980px)
+  //   margin-left: 0
+  //   margin-right: 0
+
+  &:not(:last-child)
+    margin-bottom: 32px
+
+    @media screen and(min-width: 580px)
+      margin-bottom: 64px
+
+  img
+    max-width: 100%
+    height: auto
+
+  &__text
+    position: absolute
+    bottom: 0
+    left: 0
+
+    box-sizing: border-box
+    width: 100%
+    padding: 20px 14px 20px 19px
+
+    text-align: left
+
+    background-color: #ffffff
+    border-radius: 13px
+    border: 1px solid rgba(204, 204, 204, 0.54);
+
+    @media screen and(min-width: 580px)
+      padding: 20px 28px 20px 37px
+
+    span
+      display: inline-block
+      padding-right: 68px
+
+      font-size: 19px
+      color: #282f39
+
+      &:first-letter
+        font-weight: bold
+
+      @media screen and(min-width: 580px)
+        font-size: 38px
+
+  &__link
+    position: absolute
+
+    display: inline-block
+    width: 34px
+    height: 34px
+    right: 14px
+    top: 50%
+    margin-top: -17px
+
+    @media screen and(min-width: 580px)
+      right: 28px
+
+    background-color: #f6395d
+    background-image: url('../img/images/badge.png')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 20px
+    border-radius: 50%
+
+    @media screen and(min-width: 580px)
+      width: 68px
+      height: 68px
+      margin-top: -34px
+
+      background-size: auto
+
+a.categories-link
+  display: inline-block
+  margin-top: 35px
+
+  font-size: 16px
+
+  color: #4b86db
+  text-decoration: underline
+
+  @media screen and(min-width: 580px)
+    margin-top: 70px
+
+    font-size: 32px
+
+.category-card--inverse
+  background-color: #ffffff
+
+  .category-card__text
+    background-color: #e4edfa
+
+.section--brands
+  background-color: #efefef
+
+.logo-slider-wrapper
+  position: relative
+
+  width: 100%
+  height: 238px
+  overflow: hidden
+
+  &:before
+    position: absolute
+    left: 0
+    top: 0
+    width: 15px
+    height: 238px
+    z-index: 9
+
+    background-image: url('../img/images/logo-slider-left-shadow.png')
+    background-position center center
+    background-repeat no-repeat
+
+    content: ''
+
+  &:after
+    position: absolute
+    right: 0
+    top: 0
+    width: 15px
+    height: 238px
+    z-index: 9
+
+    background-image: url('../img/images/logo-slider-right-shadow.png')
+    background-position center center
+    background-repeat no-repeat
+
+    content: ''
+
+.logo-slider
+  position: relative
+  top: 50%
+  width: 1824px
+  margin-left: -136px
+
+  font-size: 0
+
+  transform: translateY(-50%)
+
+  li
+    position: relative
+    box-sizing: border-box
+    display: inline-block
+
+    width: 304px
+    padding: 0 34px
+
+    vertical-align: middle
+
+    &:not(:last-child):after
+      position: absolute
+      right: 0
+      top: 50%
+      margin-top: -18px
+
+      width: 3px
+      height: 36px
+      background-color: #575c63
+
+      content: ''
+
+  img
+    width: 236px
+
+
