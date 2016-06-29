@@ -81,7 +81,7 @@ var PATHS = {
 	watch: {
 		html:	 'src/**/*.html',
 		js:		 'src/media/js/**/*.js',
-		style:	 'src/media/sass/**/*.scss',
+		style:	 'src/media/sass/**/*.{scss,sass}',
 		img:	 'src/media/img/**/*.*',
 		fonts:	 'src/media/fonts/**/*.*',
 		sprites: 'src/media/img/sprites/*.png',
