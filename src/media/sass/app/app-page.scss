@@ -17,6 +17,9 @@
   @media (max-width: 600px) {
     padding: 5px;
   }
+  @media (max-width: 360px) {
+    font-size: 13px;
+  }
 }
 
 .app-page-bottom-selectors a:hover,
@@ -68,13 +71,9 @@
 }
 
 .app-page-block-title {
-  font-size: 17px;
   display: block;
   white-space: nowrap;
-  &:first-letter {
-    font-size: 20px;
-    font-weight: 600;
-  }
+  flex-grow: 1;
   &:after {
     content: '';
     display: inline-block;
@@ -88,7 +87,6 @@
 }
 
 .paragraph {
-  font-size: 15px;
   margin: 20px 0;
   margin-left: 50px;
   @media (max-width: 600px) {
@@ -98,24 +96,35 @@
 
 .red-markers-list {
   margin-top: 20px;
-  margin-left: 20px;
+  list-style-position: inside;
 }
 
 .red-markers-list li {
-  font-size: 20px;
   list-style-type: disc;
   color: #f7395d;
 }
 
 .list-text {
-  font-size: 15px;
   color: #282f39;
 }
 
 .app-page-blocks-group {
   padding-top: 10px;
 }
+.app-page-blocks-group .searchresults-block {
+  @media (max-width: 850px) {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
 
+.app-page-blocks-group .searchresults-block-text {
+  @media (max-width: 850px) {
+    border-left: none;
+    border-top-width: 3px;
+    border-top-style: solid;
+  }
+}
 .tab-container {
   width: auto;
   margin: 20px 0 0 0;
@@ -229,14 +238,9 @@
   padding: 0;
   list-style: none;
   transition: margin-left 250ms;
-  font-size: 0;
 }
 
 .gallery li {
   display: inline-block;
 }
 
-
-.popup-left-arrow:after {
-  left: 20%;
-}

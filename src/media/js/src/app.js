@@ -17,29 +17,55 @@ function onLinkClicked(evt) {
     }, 200);
 }
 
-function onRepostBtnClick(event) {
+function onPopupBtnClick(event) {
   event.stopPropagation();
-  var popupW = 150, popupH = 30;
-  var leftpos = event.target.x - popupW;
-  if (leftpos <= 0) {
-    leftpos = 0;
-    $('.repost-popup').addClass('popup-left-arrow');
-  } else {
-    $('.repost-popup').removeClass('popup-left-arrow');
+  $('.popup-panel').css('display', 'none');
+  var className = event.target.className.split('-')[0];
+  if ($('.' + className + '-popup').length == 0) {
+    console.log('No popup for button ',event.target.className);
+    return;
   }
-  $('.repost-popup').css('left', leftpos);
-  $('.repost-popup').css('top', event.target.y + popupH);
-  $('.repost-popup').css('display', 'inline');
-  $(".repost-popup").css("position", "absolute");
+  var elem = $('.' + className + '-popup');
+  var popupW, popupH;
+  elem.css("position", "absolute");
+  elem.css('display', 'inline');
+  popupW = elem[0].clientWidth;
+  popupH = elem[0].clientHeight - 20;
+  elem.css('top', event.target.y + popupH);
+  var leftpos = event.target.x - popupW/2;
+  var rightPos = event.target.x + popupW/2;
+  if (leftpos <= 0) {
+    leftpos =  event.target.x - 20;
+    elem.addClass('popup-left-arrow');
+  } else {
+    elem.removeClass('popup-left-arrow');
+    if ($(document).width() <= rightPos) {
+      leftpos = event.target.x - popupW + 40;
+      elem.addClass('popup-right-arrow');
+    } else {
+      elem.removeClass('popup-right-arrow');
+    }
+  }
+  elem.css('left', leftpos);
   $(document).one('click', function closeMenu(e) {
-    $('.repost-popup').css('display', 'none');
+    $('.popup-panel').css('display', 'none');
   });
   $(window).one('resize', function closeMenu(e) {
-    $('.repost-popup').css('display', 'none');
+    $('.popup-panel').css('display', 'none');
     $(document).off('click');
   });
 }
 
+function onTagBtnClick(event) {
+  var elem = event.target;
+  if ($(document).find('.product-tags').length == 0)
+    return;
+  while($(elem).find('.product-tags').length == 0) {
+    elem = elem.parentNode;
+  }
+
+  $(elem).find('.product-tags').slideToggle();
+}
 
 function changeView(evt) {
   var btns = document.getElementsByClassName('view-icon');
@@ -53,18 +79,8 @@ function changeView(evt) {
   elem.className += ' selected';
 }
 
-function initCarousel(carousel) {
-    /* этот код помечает картинки, для удобства разработки */
-    var lis = carousel.getElementsByTagName('li');
-    for (var i = 0; i < lis.length; i++) {
-      lis[i].style.position = 'relative';
-      var span = document.createElement('span');
-      // обычно лучше использовать CSS-классы,
-      // но этот код - для удобства разработки, так что не будем трогать стили
-      span.style.cssText = 'position:absolute;left:0;top:0';
-      span.innerHTML = i + 1;
-      lis[i].appendChild(span);
-    }
+
+function initCarousel(carousel) { 
     $('.carousel li img').click(function(evt) {
       if (evt.target.tagName != 'IMG')
         return;
@@ -169,7 +185,9 @@ var App = new(function App() {
     if (carousel != undefined)
       initCarousel(carousel);
 
-    $('.repost-btn').on('click', onRepostBtnClick);
+    $('.repost-btn').on('click', onPopupBtnClick);
+    $('.actions-btn').on('click', onPopupBtnClick);
+    $('.tag-btn').on('click', onTagBtnClick);
 
   });
 })();
