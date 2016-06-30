@@ -14,15 +14,15 @@
   }
 }
 
-.searchresults-block.dark-blue {
+.dark-blue-block {
   background: #4F70A3;
 }
 
-.searchresults-block.blue {
+.blue-block {
   background: #8AA2C6;
 }
 
-.searchresults-block.light-blue {
+.light-blue-block {
   background: #E5EDFA;
   color: #282F39;
 }
@@ -33,14 +33,24 @@
   margin: 0 10px;
 }
 
-.searchresults-block-name {
-  font-size: 17px;
+.searchresults-block-name,
+.column-block-name,
+.app-page-block-title {
+  font-size: 30px;
   white-space: nowrap;
+  @media (max-width: 1260px) {
+    font-size: 20px;
+  }
 }
 
-.searchresults-block-name:first-letter {
-  font-size: 20px;
+.searchresults-block-name:first-letter,
+.column-block-name:first-letter,
+.app-page-block-title:first-letter {
+  font-size: 36px;
   font-weight: 600;
+  @media (max-width: 1260px) {
+    font-size: 22px;
+  }
 }
 
 .searchresults-block-text {
@@ -55,11 +65,11 @@
   }
 }
 
-.blue .searchresults-block-text {
+.blue-block div{
   border-color: #5C759D;
 }
 
-.light-blue .searchresults-block-text {
+.light-blue-block div{
   border-color: #CED7E6;
 }
 
@@ -77,25 +87,39 @@
 }
 
 .searchresults-circle {
-  width: 60px;
-  height: 57px;
-  border: solid 1px #282F39;
+  width: 120px;
+  height: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
   background-color: white;
   box-shadow: 3px -3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 3px -3px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 3px -3px rgba(0, 0, 0, 0.6);
   -o-box-shadow: 3px -3px rgba(0, 0, 0, 0.6);
-  border-radius: 50px;
+  border-radius: 100px;
+  @media (max-width: 1280px) {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+  }
 }
 
 .searchresults-circle img {
-  margin: 23px 0;
+  margin: 50px 0;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1280px) {
+    margin: 25px 0;
+    width: 30px;
+  }
 }
 
-.blue .searchresults-circle {
+.blue-block .searchresults-circle {
   border-color: #587297;
 }
 
-.light-blue .searchresults-circle {
+.light-blue-block .searchresults-circle {
   border-color: #7B8A9F;
 }

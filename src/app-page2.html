@@ -6,14 +6,7 @@
 //= templates/main-menu.html
   <div class='page-content'>
   	<div class=" app-page-bottom-block flex-block">
-	    <div class="view-icons">
-	      <div class='view-icon' onclick='changeView(event);'>
-	        <img src="/media/img/icons/tile-view.png" width="24" height="24" />
-	      </div>
-	      <div class='view-icon' onclick='changeView(event);'>
-	        <img src="/media/img/icons/list-view.png" width="24" height="24" />
-	      </div>
-	    </div>
+      //= common-parts.html
   		<div class='app-page-bottom-selectors'>
 	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Product</a>
 	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Preview</a>
@@ -80,30 +73,12 @@
         
       </div>
       <div class="app-page-block-footer flex-block">
-        <img src="/media/img/icons/red-dots.png" width="24" height="24" onclick='onRepostBtnClick(event);'/>
-        <img src="/media/img/icons/repost.png" width="24" height="24" class='repost-btn' />
+        <img src="/media/img/icons/red-dots.png" class='actions-btn'/>
+        <img src="/media/img/icons/repost.png" class='repost-btn' />
       </div>
     </div>
   </div>
-  <div class='repost-popup radius_15'>
-    <div class="repost-icons">
-      <div class='repost-icon'>
-        <img src="/media/img/icons/twitter.png" width="13" height="13" />
-      </div>
-      <div class='repost-icon'>
-        <img src="/media/img/icons/linkedin.png" width="13" height="13" />
-      </div>
-      <div class='repost-icon'>
-        <img src="/media/img/icons/google-s-network.png" width="13" height="13" />
-      </div>
-      <div class='repost-icon'>
-        <img src="/media/img/icons/network.png" width="13" height="13" />
-      </div>
-      <div class='repost-icon'>
-        <img src="/media/img/icons/facebook.png" width="7" height="13" />
-      </div>
-    </div>
-  </div>
+  
   <script src="media/js/main.js"></script>
 </body>
 
