@@ -5,7 +5,7 @@
   background-color: white;
 }
 
-.user-img.searchresults-circle img {
+.user-img.circle-image img {
   margin: 0;
   width: 100%;
   height: 100%;
@@ -68,8 +68,8 @@
 
 
 .big-circle-image {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border: solid 1px #EEEFF1;
   background-color: #EEEFF1;
   box-shadow: 3px -3px #EEEFF1;
@@ -83,8 +83,15 @@
     -webkit-border-radius: 50%;
     border-radius: 50%;
     z-index: 3;
-    width: 150px;
+    width: 200px;
     height: 100%;
+  }
+  @media (max-width: 1260px) {
+    width: 150px;
+    height: 150px;
+    img {
+      width: 150px;
+    }
   }
 }
 
@@ -161,7 +168,7 @@ p.person-position {
 .column-block {
   margin: 10px 0;
   width: 49%;
-  @media (max-width: 700px) {
+  @media (max-width: 740px) {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
@@ -170,13 +177,15 @@ p.person-position {
 .column-block div {
   display: inline-block;
   float: none;
+  @media (max-width: 740px) {
+     display: block;
+  }
 }
 
 
 .product-block {
   margin: 10px 0;
   padding: 10px 0;
-  width: 49%;
   overflow: hidden;
   position: relative;
   border: 1px solid #E4E4E4;
@@ -191,21 +200,35 @@ p.person-position {
 a.product-view-reviews {
   color: #4C84DA;
   cursor: pointer;
+  white-space: nowrap;
+
 }
 
-.product-view-reviews img {
+a.product-view-reviews.white {
+  color: white;
+}
+
+.light-blue-block a.product-view-reviews.white {
+  color: #4C84DA;
+}
+
+.product-view-reviews img{
   margin-right: 10px;
-  @media (max-width: 1260px) {
-    height: 25px;
+  @media (max-width: 770px) {
+    margin-right: 0px;
+  }
+  @media (max-width: 700px) {
+    margin-right: 10px;
   }
 }
 
 
 .product-info {
   justify-content: flex-start;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
+  padding: 0 10px;
   @media (max-width: 1260px) {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
   }
   @media (max-width: 980px) {
     -webkit-flex-direction: column;
@@ -221,6 +244,9 @@ a.product-view-reviews {
 }
 
 
+.column-block-text {
+  flex-basis: 50%;
+}
 .product-tags {
   background-color: white;
   padding: 10px 0px;
@@ -231,12 +257,14 @@ a.product-view-reviews {
   left: 0;
   bottom: 0;
   display: none;
+  overflow: auto;
 }
 .product-tags span {
   display: inline-block;
   padding: 5px 30px;
-  border: 1px solid black;
   margin: 5px;
+  border: 1px solid black;
+  color: black;
   @media (max-width: 1260px) {
     padding: 5px 10px;
   }
@@ -248,10 +276,27 @@ a.product-view-reviews {
   z-index: 1;
 }
 
+
 .blue-logo-flag {
   background: url(/media/img/icons/flag-blue.png) no-repeat right transparent;
 }
 
+.red-logo-flag {
+  background: url(/media/img/icons/flag-red.png) no-repeat right transparent;
+}
+
+.violet-logo-flag {
+  background: url(/media/img/icons/flag-violet.png) no-repeat right transparent;
+}
+
+.two-logo-flag {
+  background: url(/media/img/icons/flag-2-logo.png) no-repeat right transparent;
+}
+
+.four-logo-flag {
+background: url(/media/img/icons/flag-4-logo.png) no-repeat right transparent;
+  
+}
 .flag {
   float: right;
   position: relative;
@@ -263,13 +308,12 @@ a.product-view-reviews {
   -ms-flex-item-align: start;
   align-self: flex-start;
   @media (max-width: 980px) {
-    background-size: 100%;
+    background-size: 80px 40px;
     width: 80px;
     height: 40px;
   }
   @media (max-width: 700px) {
     float: none;
-    background-size: 80px 40px;
     width: 100%;
   }
 }
@@ -282,7 +326,7 @@ a.product-view-reviews {
 }
 
 
-.column-block .searchresults-circle,
+.column-block .circle-image,
 .column-block .searchresults-block-btns,
 .column-block .column-block-text {
   margin: 10px 10px;
@@ -290,16 +334,17 @@ a.product-view-reviews {
 
 .column-block .searchresults-block-btns {
   align-self: flex-end;
-  @media (max-width: 720px) {
+  @media (max-width: 740px) {
     align-self: center;
   }
 }
 
 .column-block .column-block-text {
-  @media (max-width: 720px) {
+  @media (max-width: 740px) {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
   }
 }
 
@@ -324,5 +369,8 @@ a.product-view-reviews {
   @media (max-width: 1260px) {
     top: 60px;
   }
+}
 
+#following-brands-title {
+  cursor: pointer;
 }
