@@ -217,3 +217,23 @@ a {
 .popup-right-arrow:after {
   left: 80%;
 }
+
+.searchresults-block-name,
+.column-block-name,
+.app-page-block-title {
+  font-size: 30px;
+  white-space: nowrap;
+  @media (max-width: 1260px) {
+    font-size: 20px;
+  }
+}
+
+.searchresults-block-name:first-letter,
+.column-block-name:first-letter,
+.app-page-block-title:first-letter {
+  font-size: 36px;
+  font-weight: 600;
+  @media (max-width: 1260px) {
+    font-size: 22px;
+  }
+}
