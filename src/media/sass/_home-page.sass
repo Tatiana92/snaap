@@ -267,6 +267,22 @@
     @media screen and(min-width: 580px)
       padding: 20px 28px 20px 37px
 
+  &__tags
+    display: none
+    margin-bottom: 20px
+
+    span
+      display: inline-block
+      padding: 5px 30px
+      margin: 5px
+
+      border: 1px solid black
+      color: black
+      border-radius: 20px
+
+  .card-text__main
+    position: relative
+
     span
       display: inline-block
       padding-right: 68px
@@ -286,12 +302,9 @@
     display: inline-block
     width: 34px
     height: 34px
-    right: 14px
+    right: 0
     top: 50%
     margin-top: -17px
-
-    @media screen and(min-width: 580px)
-      right: 28px
 
     background-color: #f6395d
     background-image: url('../img/images/badge.png')
