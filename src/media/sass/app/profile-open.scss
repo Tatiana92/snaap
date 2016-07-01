@@ -11,6 +11,7 @@
   height: 100%;
 }
 
+/*arrows in title*/
 .title-with-arrow .app-page-block-title {
   padding-bottom: 10px;
 }
@@ -66,7 +67,7 @@
   }
 }
 
-
+/*big portrain at the page top*/
 .big-circle-image {
   width: 200px;
   height: 200px;
@@ -94,6 +95,27 @@
     }
   }
 }
+/*person name at the top*/
+.person-info-title {
+  display: block;
+  white-space: nowrap;
+  &:after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -0.25em;
+    left: 1.75%;
+    z-index: 0;
+    width: 100%;
+    border-top: 1px solid #cbcbcb;
+  }
+}
+
+/*person info near the photo*/
+.person-buttons,
+.person-info-text {
+  margin: 20px 0;
+}
 
 .person-links li {
   list-style-position: inside;
@@ -118,24 +140,21 @@ p.person-position {
   font-weight: 600;
 }
 
-.person-buttons,
-.person-info-text {
-  margin: 20px 0;
+.blue-btn {
+  color: #4C84DA;
+  border: 1px solid #4C84DA;
+  background-color: transparent;
+  padding: 5px 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
 }
+/*end person info block styles*/
 
-.person-info-title {
-  display: block;
-  white-space: nowrap;
-  &:after {
-    content: '';
-    display: inline-block;
-    position: relative;
-    top: -0.25em;
-    left: 1.75%;
-    z-index: 0;
-    width: 100%;
-    border-top: 1px solid #cbcbcb;
-  }
+/*styles for blocks under personal block(brands, products, etc)*/
+
+#following-brands-title {
+  cursor: pointer;
 }
 
 .tile-blocks {
@@ -145,16 +164,6 @@ p.person-position {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-}
-
-.blue-btn {
-  color: #4C84DA;
-  border: 1px solid #4C84DA;
-  background-color: transparent;
-  padding: 5px 25px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
 }
 
 .not-light-blue-block {
@@ -201,6 +210,7 @@ a.product-view-reviews {
   color: #4C84DA;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
 
 }
 
@@ -247,6 +257,7 @@ a.product-view-reviews.white {
 .column-block-text {
   flex-basis: 50%;
 }
+
 .product-tags {
   background-color: white;
   padding: 10px 0px;
@@ -268,8 +279,8 @@ a.product-view-reviews.white {
   @media (max-width: 1260px) {
     padding: 5px 10px;
   }
-
 }
+
 .product-block-btns-pane {
   position: relative;
   padding: 0px 20px;
@@ -277,6 +288,7 @@ a.product-view-reviews.white {
 }
 
 
+/*flag with logo in blocks*/
 .blue-logo-flag {
   background: url(/media/img/icons/flag-blue.png) no-repeat right transparent;
 }
@@ -294,9 +306,9 @@ a.product-view-reviews.white {
 }
 
 .four-logo-flag {
-background: url(/media/img/icons/flag-4-logo.png) no-repeat right transparent;
-  
+  background: url(/media/img/icons/flag-4-logo.png) no-repeat right transparent;
 }
+
 .flag {
   float: right;
   position: relative;
@@ -315,6 +327,16 @@ background: url(/media/img/icons/flag-4-logo.png) no-repeat right transparent;
   @media (max-width: 700px) {
     float: none;
     width: 100%;
+  }
+}
+
+/*flag behavior in big block is differ from usual behavior*/
+.big-block .flag{
+  background-size: 120px 60px;
+  float: none;
+  width: 100%;
+  @media (max-width: 980px) {
+    background-size: 80px 40px;
   }
 }
 
@@ -348,6 +370,7 @@ background: url(/media/img/icons/flag-4-logo.png) no-repeat right transparent;
   }
 }
 
+/*review blocks with arrow*/
 .person-review {
   margin-bottom: 50px;
 }
@@ -369,8 +392,4 @@ background: url(/media/img/icons/flag-4-logo.png) no-repeat right transparent;
   @media (max-width: 1260px) {
     top: 60px;
   }
-}
-
-#following-brands-title {
-  cursor: pointer;
 }
