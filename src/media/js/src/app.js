@@ -1,10 +1,3 @@
-/*!
- * App
- * [Date here]
- * Sborka Project
- */
-
-
 function onLinkClicked(evt) {
   evt.preventDefault();
   evt.stopPropagation();
@@ -163,7 +156,7 @@ function initCarousel(carousel) {
       } catch (e) {
         console.log('error while selecting image in carousel:', e);
       }
-      
+
     })
     $('.carousel .arrow').on('mouseover', function(evt) {
       this.src = "media/img/icons/arrow-bright.png";
@@ -289,3 +282,42 @@ App.modules.SVGSprites = {
     }
   }
 };
+
+jQuery(document).ready(function($) {
+
+  if($('.logo-slider').length) {
+
+    setInterval(function () {
+      moveRight();
+    }, 3000);
+
+    var slideCount = $('.logo-slider li').length;
+    var slideWidth = $('.logo-slider li').outerWidth();
+    var slideHeight = $('.logo-sliderl li').height();
+    var sliderUlWidth = slideCount * slideWidth;
+
+    // $('.logo-slider-').css({ width: slideWidth, height: slideHeight });
+    $('.logo-slider').css({ width: sliderUlWidth, marginLeft: '-136px' });
+    $('.logo-slider li:last-child').prependTo('.logo-slider');
+
+    function moveLeft() {
+      $('.logo-slider').animate({
+          left: + slideWidth
+      }, 200, function () {
+          $('.logo-slider li:last-child').prependTo('.logo-slider');
+          $('.logo-slider').css('left', '');
+      });
+    };
+
+    function moveRight() {
+        $('.logo-slider').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('.logo-slider li:first-child').appendTo('.logo-slider');
+            $('.logo-slider').css('left', '');
+        });
+    };
+
+  }
+
+});
