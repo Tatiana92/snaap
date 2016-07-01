@@ -17,6 +17,44 @@ function onLinkClicked(evt) {
     }, 200);
 }
 
+function isScrolledTo(elem) {
+  var docViewTop = $(window).scrollTop(); //num of pixels hidden above current screen
+  var docViewBottom = docViewTop + $(window).height();
+
+  var elemTop = $(elem).offset().top; //num of pixels above the elem
+  var elemBottom = elemTop + $(elem).height();
+
+  return ((elemTop <= docViewTop));
+}
+function scrollfunc() {
+  var catcher = $('.crumbs');
+  var sticky = $('.tab-container');
+
+  if (isScrolledTo(sticky)) {
+      sticky.css('position','fixed');
+      sticky.css('top',$('.header-pane').outerHeight(true));
+  } 
+  var stopHeight = catcher.offset().top + catcher.height();
+  if ( stopHeight > sticky.offset().top) {
+      sticky.css('position','absolute');
+      sticky.css('top',stopHeight);
+  }
+}
+
+function setScrollForLinks() {
+  var sticky = $('.tab-container');
+  $(window).on('resize', function(e) {
+    $(window).off('scroll');
+    if ($(window).width() < 600) {
+      sticky.css('position', 'static');
+    } else {
+      $(window).scroll(scrollfunc);
+      $(window).scroll();
+    }
+  });
+  $(window).resize();
+}
+
 function onPopupBtnClick(event) {
   event.stopPropagation();
   $('.popup-panel').css('display', 'none');
@@ -63,10 +101,19 @@ function onTagBtnClick(event) {
   while ($(elem).find('.product-tags').length == 0) {
     elem = elem.parentNode;
   }
-  var tagPaneHeight = elem.clientHeight - $(elem).find('.product-tags').prevAll().height() - 50;
+  var tagpane = $(elem).find('.product-tags');
 
-  $(elem).find('.product-tags').height(tagPaneHeight);
-  $(elem).find('.product-tags').slideToggle();
+  var tagPaneHeight = elem.clientHeight - tagpane.prevAll().height() - 50;
+  if (tagpane.parents().find('.little-block'))
+    tagPaneHeight += 20;
+  tagpane.height(tagPaneHeight);
+  tagpane.slideToggle(function() {
+    if (tagpane.is(':visible')) {
+      $(elem).find('.product-view-reviews').removeClass('white');
+    } else {
+      $(elem).find('.product-view-reviews').addClass('white');
+    }
+  });
 }
 
 function onFollowingBrandsClick(event) {
@@ -93,13 +140,26 @@ function changeView(evt) {
   elem.className += ' selected';
 }
 
+function centerLogoInCircles() {
+  $('.logo-in-circle').each(function() {
+    var pheight = this.parentNode.clientHeight;
+    var pwidth = this.parentNode.clientWidth;
+    var margin = pheight - $(this).height();
+    $(this).css('marginTop', margin/2);
+    $(this).css('marginleft', (pwidth - $(this).width())/2);
+
+  })
+}
 
 function initCarousel(carousel) { 
     $('.carousel li img').click(function(evt) {
       if (evt.target.tagName != 'IMG')
         return;
       try {
+        evt.preventDefault();
+        $('.carousel li img').removeClass('selected');
         document.getElementById('selected-image').src = evt.target.src;
+        $(evt.target).addClass('selected');
       } catch (e) {
         console.log('error while selecting image in carousel:', e);
       }
@@ -111,7 +171,6 @@ function initCarousel(carousel) {
     $('.carousel .arrow').on('mouseout', function(evt) {
       this.src = "media/img/icons/arrow-light.png";
     });
-
     var count = 2;
     var gallery = document.getElementsByClassName('gallery')[0];
     var list = carousel.querySelector('ul');
@@ -170,8 +229,11 @@ var App = new(function App() {
     // Modules init here
     self.modules.SVGSprites.init();
 
-    $(window).on('resize', function closeMenu(e) {
+    $(window).on('resize', function(e) {
       $('.title-pane').css('marginTop', $('.header-pane').outerHeight(true));
+      $('.app-page-block-footer').width($('.app-page-block-footer').parent().width());
+      $('.app-page-block-footer').parent().css('paddingBottom', $('.app-page-block-footer').height());
+      centerLogoInCircles();
     });
 
     $(window).resize();
@@ -194,10 +256,15 @@ var App = new(function App() {
     }
 
 
+    if  ($('.tab-container').length > 0) {
+      setScrollForLinks();
+    }
+
 
     var carousel = document.getElementById('carousel');
     if (carousel != undefined)
       initCarousel(carousel);
+
 
     $('.repost-btn').on('click', onPopupBtnClick);
     $('.actions-btn').on('click', onPopupBtnClick);

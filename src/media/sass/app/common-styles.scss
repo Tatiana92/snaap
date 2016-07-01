@@ -6,6 +6,9 @@ body {
   @media (max-width: 1260px) {
     font-size: 17px;
   }
+  @media (max-width: 350px) {
+    font-size: 15px;
+  }
 }
 
 .no-indent {
@@ -144,11 +147,10 @@ a {
   padding: 0 5px;
 }
 .view-icon img,
-.repost-btn,
-.actions-btn,
-.tag-btn {
+.round-btn {
+  cursor: pointer;
   @media (max-width: 1260px) {
-    height: 25px;
+    height: 30px;
   }
 }
 
