@@ -330,3 +330,14 @@ jQuery(document).ready(function($) {
   });
 
 });
+$('.tagslider').bxSlider({
+  pager: false
+});
+
+
+$('#option1,#option2,#option3,#option4,#option5').slider({
+      orientation: "horizontal",
+          range: "min",
+          max: 255,
+          value: 127
+    });
