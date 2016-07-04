@@ -105,7 +105,10 @@
 
 .app-page-block-text {
   margin: 20px 0;
-  margin-left: 50px;
+  margin-left: 100px;
+  @media (max-width: 1260px) {
+    margin-left: 70px;
+  }
   @media (max-width: 600px) {
     margin-left: 20px;
   }

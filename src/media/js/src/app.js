@@ -192,8 +192,58 @@ function initCarousel(carousel) {
       }
       $('.carousel .prev').css('opacity', '1');
     };
-
 }
+
+function onSearchKeyup(value) {
+  var resultPane = document.getElementsByClassName('searchresult-pane')[0];
+  $('.result-item').remove();
+  if (value.length == 0) {
+    resultPane.style.display = 'none';
+    return;
+  }
+
+  var appList = [
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description.App Name 1 short description.App Name 1 short description.App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+    {'name': 'App Name1', 'description': 'App Name 1 short description'},
+  ];
+  value = value.toLowerCase();
+  var counter = 0;
+  for (var i = 0; i < appList.length; i++) {
+    if (appList[i]['name'].toLowerCase().indexOf(value) != -1 || 
+      appList[i]['description'].toLowerCase().indexOf(value) != -1) {
+      counter++;
+      var childElem = document.createElement('div');
+      childElem.className = 'result-item';
+      resultPane.appendChild(childElem);
+      var nameElem = document.createElement('span');
+      nameElem.className = 'result-item-name';
+      nameElem.innerText = appList[i]['name'];
+      childElem.appendChild(nameElem);
+      var desc = document.createElement('p');
+      desc.className = 'result-item-decription';
+      desc.innerText = appList[i]['description'];
+      childElem.appendChild(desc);
+    }
+  }
+  if (counter > 0){
+    resultPane.style.display = 'block';
+    $('.searchresult-pane').width($('.hero-search').width());
+    $('.searchresult-pane').css('paddingTop', $('.hero-search').height());
+  } else {
+    resultPane.style.display = 'none';
+  }
+}
+
 
 // Note: Use 'search & replace' to rename 'App' to current project name an delete this note
 var App = new(function App() {

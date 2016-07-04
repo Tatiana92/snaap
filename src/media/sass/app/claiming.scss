@@ -1,0 +1,38 @@
+.bold-indented-title {
+  font-weight: 600;
+  margin-top: 40px;
+  font-size: 1.25em;
+  @media (max-width: 800px) {
+    margin-top: 20px;
+  }
+}
+.app-page-block-footer .red-btn-container {
+  padding: 20px;
+}
+
+.red-btn,.red-btn:link ,.red-btn:hover ,.red-btn:active ,.red-btn:visited {
+  text-decoration: none;
+  color: white;
+  background-color: #F7395D;
+  padding: 5px 20px;
+  box-shadow: #596575 2px 2px 1px 2px;
+  @media (max-width: 350px) {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+}
+.red-btn:hover {
+  color: white;
+}
+.homelink {
+  display: inline-block;
+  float: none;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.homelink img{
+  width: 250px;
+  @media (max-width: 800px) {
+    width: 150px;
+  }
+}

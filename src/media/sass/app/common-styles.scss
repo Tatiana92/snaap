@@ -11,6 +11,9 @@ body {
   }
 }
 
+.usual-text {
+  line-height: 2;
+}
 .no-indent {
   margin: 0;
   padding: 0;
@@ -32,6 +35,12 @@ body {
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
+}
+
+.radius_10 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
 }
 
 .radius_8 {

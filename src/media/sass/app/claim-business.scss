@@ -1,0 +1,63 @@
+.claim-business-content {
+  padding-top: 134px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background-color: white;
+}
+
+.link-in-picture {
+  position: absolute;
+  left: -30px;
+}
+
+.searchresult-pane {
+  text-align: left;
+  border: 1px solid #E4E4E4;
+  border-top: none;
+  background-color: white;
+  color: #679EEB;
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  padding-top: 50px;
+}
+
+.result-item {
+  padding: 20px;
+  border-bottom: 1px solid #E4E4E4;
+  cursor: pointer;
+  @media (max-width: 850px) {
+    padding: 10px;
+  }
+}
+
+.result-item-name {
+  border: 1px solid #E4E4E4;
+  background-color: #E7EFFA;
+  font-size: 1.5em;
+  padding: 5px 10px;
+  color: #3D4550;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
+  @media (max-width: 850px) {
+    font-size: 1em;
+  }
+}
+
+.result-item-decription {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 10px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
+  @media (max-width: 850px) {
+    font-size: 20px;
+  }
+}
