@@ -42,3 +42,56 @@
         font-size: 43px
         font-weight: bold
 
+  &__features
+    margin-top: 38px
+
+    h4
+      font-size: 35px
+
+      padding-bottom: 16px
+      margin-bottom: 39px
+      border-bottom: 1px solid #b9b9b9
+
+  &__feature
+    display: flex
+
+  .feature-scale
+    flex: 1
+
+    padding: 0 22px
+
+    .feature-meter
+      border-radius: 10px
+      height: 45px
+
+      overflow: hidden
+
+      background-color: #dedede
+
+    .feature-bar
+      height: 45px
+
+      &--yellow
+        background-color: #ffd966
+        width: 77%
+
+  .feature-up,
+  .feature-down
+    display: inline-block
+
+    width: 45px
+    height: 45px
+    border-radius: 50%
+
+    background-color: #282f39
+    background-position: center center
+    background-repeat: no-repeat
+
+    cursor: pointer
+
+  .feature-up
+    background-image: url('../img/icons/feature-arrow-top.png')
+
+  .feature-down
+    background-image: url('../img/icons/feature-arrow-bottom.png')
+
