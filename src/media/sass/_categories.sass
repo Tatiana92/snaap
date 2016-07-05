@@ -6,13 +6,20 @@
     &.category__name
         display: block
         position: relative
-        overflow: hidden
-        margin-right: 104px
+        word-wrap: break-word
+        white-space: normal
+        margin-right: 84px
+        @media (min-width: 1260px)
+            margin-right: 136px
 
     &.category__icon
         position: absolute
-        top: -4px
-        right: 58px
+        top: 0
+        right: 60px
+        padding: 12px
+        @media (min-width: 1260px)
+            padding: 18px
+            right: 100px
 
     &.category__link
         position: absolute
@@ -27,6 +34,6 @@
         &:after
             content: ''
             border-bottom: 1px #ccc solid
-            padding: 50%
+            padding: 0 50%
             position: absolute
             bottom: -40px
