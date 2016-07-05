@@ -1,5 +1,4 @@
 .category
-
     &.category__header
         position: relative
 
@@ -8,7 +7,7 @@
         position: relative
         word-wrap: break-word
         white-space: normal
-        margin-right: 84px
+        margin-right: 96px
         @media (min-width: 1260px)
             margin-right: 136px
 
@@ -29,13 +28,21 @@
 
     &.category__list
         margin-bottom: 80px
-        margin-left: 20px
+        margin-left: 6%
         position: relative
+
+    &.category_categories
+        margin-bottom: 80px
+        position: relative
+        
+        &:last-child:after
+            content: ''
+            border-bottom: 0 transparent none
 
         &:after
             content: ''
             border-bottom: 1px #ccc solid
-            padding: 0 53%
+            padding: 0 50%
             position: absolute
             bottom: -40px
-            margin-left: -6%
+            margin-left: 0%
