@@ -6,16 +6,23 @@
   bottom: 0
   z-index: 9
 
+  display: none
+
   background-color: rgba(40, 47, 57, 0.8)
 
 .compare-popup
   position: fixed
   top: 50%
   left: 50%
+
+  display: none
   width: 95%
   max-width: 1139px
+  max-height: 100vh
   padding: 50px 90px 70px 80px
   z-index: 10
+  overflow-y: auto
+  box-sizing: border-box
 
   border: 1px solid rgb(88, 88, 88)
   border-radius: 50px
@@ -54,6 +61,14 @@
 
   &__feature
     display: flex
+    flex-direction: row
+    align-items: center
+
+    &:not(:last-child)
+      margin-bottom: 34px
+
+    .feature-label
+      flex-basis: 110px
 
   .feature-scale
     flex: 1
@@ -71,9 +86,25 @@
     .feature-bar
       height: 45px
 
-      &--yellow
+      &--features
         background-color: #ffd966
         width: 77%
+
+      &--friendly
+        background-color: #ffd966
+        width: 60%
+
+      &--price
+        background-color: #f6395d
+        width: 42%
+
+      &--support
+        background-color: #f6395d
+        width: 32%
+
+      &--overall
+        background-color: #f6395d
+        width: 32%
 
   .feature-up,
   .feature-down
@@ -94,4 +125,28 @@
 
   .feature-down
     background-image: url('../img/icons/feature-arrow-bottom.png')
+
+.popup-close
+  position: absolute
+  top: 43px
+  right: 44px
+
+  width: 63px
+  height: 63px
+
+  background-image: url('../img/icons/close-popup-icon.png')
+  background-position: center center
+  background-repeat: no-repeat
+  border: 1px solid rgb(162, 162, 162);
+  background-color: rgb(246, 57, 93);
+  border-radius: 50%
+
+  cursor: pointer
+
+
+
+.popup-shown
+  .cover,
+  .compare-popup
+    display: block
 

@@ -379,6 +379,18 @@ jQuery(document).ready(function($) {
     $(this).parent().parent('tr').remove();
   });
 
+  $('.js-show-popup').on('click', function() {
+    $('body').addClass('popup-shown');
+  });
+
+  $('.cover').on('click', function() {
+    $('body').removeClass('popup-shown');
+  });
+
+  $('.js-popup-close').on('click', function() {
+    $('body').removeClass('popup-shown');
+  });
+
 });
 
 $('.tagslider').bxSlider({
