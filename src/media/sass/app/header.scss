@@ -117,7 +117,6 @@ header {
 /*blue titlepane styles*/
 
 .title-pane {
-  overflow: hidden;
   margin: 0;
   padding-left: 70px;
   background-color: #E5EDFA;
@@ -137,6 +136,7 @@ header {
   text-align: left;
   margin-top: 5px;
   text-transform: uppercase;
+  position: absolute;
 }
 
 .page-title-text:after {
