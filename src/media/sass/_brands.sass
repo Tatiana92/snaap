@@ -1,8 +1,8 @@
 .brands-col
     background: #E4EEFA
-    border: 1px solid #E4EEFA
+    border: 1px solid #DFDDDD
     margin-bottom: 50px
-    box-shadow: 0 3px 5px #E4EEFA
+    box-shadow: 0 1px 1px #E4EEFA
     &.brands-col_radius-8
         border-radius: 8px
 
@@ -13,9 +13,9 @@
 
 .brands-col__products
     border: 2px solid #A0A5A9
-    margin: 8px 0
+    margin: 5px 0
     padding: 8px
-    border-radius: 12px
+    border-radius: 18px
     display: inline-block
     background: transparent
     box-shadow: 0 0 transparent
@@ -24,18 +24,24 @@
         display: inline
         margin: auto 0
         padding-right: 4px
-        margin-left: 4px
-        height: 20px
+        @media (min-width: 1260px)
+            margin-top: 4px
 
     span
         display: inline
-        padding-right: 4px
+        padding-right: 32px
+        font-size: 18px
+        line-height: 32px
+        @media (min-width: 1260px)
+            font-size: 24px
 
 .brands-col__label
     padding: 8px 0
-    font-size: 14px
+    font-size: 16px
     font-weight: bold
     border: 0 solid transparent
     background: transparent
     box-shadow: 0 0 transparent
     margin: 0
+    @media (min-width: 1260px)
+        font-size: 24px
