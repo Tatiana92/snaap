@@ -219,7 +219,7 @@ function onSearchKeyup(value) {
   value = value.toLowerCase();
   var counter = 0;
   for (var i = 0; i < appList.length; i++) {
-    if (appList[i]['name'].toLowerCase().indexOf(value) != -1 || 
+    if (appList[i]['name'].toLowerCase().indexOf(value) != -1 ||
       appList[i]['description'].toLowerCase().indexOf(value) != -1) {
       counter++;
       var childElem = document.createElement('div');
@@ -379,4 +379,16 @@ jQuery(document).ready(function($) {
     $(this).parent().parent('tr').remove();
   });
 
+});
+
+$('.tagslider').bxSlider({
+  pager: false
+});
+
+
+$('#option1,#option2,#option3,#option4,#option5').slider({
+  orientation: "horizontal",
+      range: "min",
+      max: 255,
+      value: 127
 });
