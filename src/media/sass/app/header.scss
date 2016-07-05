@@ -117,6 +117,7 @@ header {
 /*blue titlepane styles*/
 
 .title-pane {
+  position: relative;
   margin: 0;
   padding-left: 70px;
   background-color: #E5EDFA;
@@ -150,8 +151,8 @@ header {
 }
 
 .title-image {
-  margin: 0;
   vertical-align: top;
+  // float: right;
   @media (max-width: 1260px) {
     height: 50px;
   }
@@ -171,11 +172,19 @@ header {
 }
 
 .title-left-block {
-  margin-top: 20px;
-  text-align: left;
-  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  // margin-top: 20px;
+  // text-align: left;
+  // white-space: nowrap;
+  & + img {
+    float: right;
+  }
   @media (max-width: 760px) {
+    position: relative;
     margin-bottom: 10px;
+    padding-top: 80px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;

@@ -1,32 +1,48 @@
 .category
-
     &.category__header
         position: relative
 
     &.category__name
         display: block
         position: relative
-        overflow: hidden
-        margin-right: 104px
+        word-wrap: break-word
+        white-space: normal
+        margin-right: 96px
+        @media (min-width: 1260px)
+            margin-right: 136px
 
     &.category__icon
         position: absolute
-        top: -4px
-        right: 58px
+        top: 0
+        right: 64px
+        padding: 12px
+        @media (min-width: 1260px)
+            padding: 18px
+            right: 112px
 
     &.category__link
         position: absolute
         top: 0
         right: 0
+        color: #4B86DB;
 
     &.category__list
         margin-bottom: 80px
-        margin-left: 20px
+        margin-left: 6%
         position: relative
+
+    &.category_categories
+        margin-bottom: 80px
+        position: relative
+        
+        &:last-child:after
+            content: ''
+            border-bottom: 0 transparent none
 
         &:after
             content: ''
             border-bottom: 1px #ccc solid
-            padding: 50%
+            padding: 0 50%
             position: absolute
             bottom: -40px
+            margin-left: 0%

@@ -2,6 +2,8 @@
 //= src/vendor/tweenmax.min.js
 //= src/vendor/jquery.gsap.min.js
 //= src/vendor/slick.min.js
+//= src/vendor/jquery.bxslider.min.js
+//= src/vendor/jquery-ui.min.js
 
 // src/vendor/jquery.validate.min.js
 // src/vendor/scrolltoplugin.min.js
