@@ -31,6 +31,9 @@
 
   transform: translate(-50%, -50%)
 
+  @media (max-width: 650px) 
+    padding: 20px
+
   &__header
     display: flex
     flex-direction: row
@@ -39,15 +42,32 @@
 
     font-size: 35px
 
+    @media (max-width: 570px)
+      flex-direction: column
+
+    img 
+      @media (max-width: 850px)
+        width: 150px
+      @media (max-width: 400px)
+        width: 100px
     p
       flex: 1
       padding-left: 55px
 
+      @media (max-width: 1260px)
+        font-size: 33px
+
+      @media (max-width: 850px)
+        font-size: 20px
+      @media (max-width: 570px)
+        padding-left: 0px
+
       span
         display: block
 
-        font-size: 43px
+        font-size: 1.5em;
         font-weight: bold
+
 
   &__features
     margin-top: 38px
@@ -58,6 +78,8 @@
       padding-bottom: 16px
       margin-bottom: 39px
       border-bottom: 1px solid #b9b9b9
+      @media (max-width: 570px) 
+        font-size: 25px
 
   &__feature
     display: flex
@@ -69,11 +91,15 @@
 
     .feature-label
       flex-basis: 110px
+      @media (max-width: 570px)
+        flex-basis: 90px
 
   .feature-scale
     flex: 1
 
     padding: 0 22px
+    @media (max-width: 570px)
+      padding: 0 5px
 
     .feature-meter
       border-radius: 10px
@@ -119,6 +145,10 @@
     background-repeat: no-repeat
 
     cursor: pointer
+    @media (max-width: 570px)
+      width: 25px
+      height: 25px
+      background-size: 60%
 
   .feature-up
     background-image: url('../img/icons/feature-arrow-top.png')
@@ -142,6 +172,12 @@
   border-radius: 50%
 
   cursor: pointer
+  @media (max-width: 650px) 
+    top: 21px
+    right: 22px
+    background-size: 50%
+    width: 31px
+    height: 31px
 
 
 
