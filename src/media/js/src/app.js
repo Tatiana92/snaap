@@ -53,31 +53,50 @@ function onPopupBtnClick(event) {
   $('.popup-panel').css('display', 'none');
   var className = event.target.className.split('-')[0];
   if ($('.' + className + '-popup').length == 0) {
-    //console.log('No popup for button ',event.target.className);
+    console.log('No popup for button ',event.target.className);
     return;
   }
   var elem = $('.' + className + '-popup');
   var popupW, popupH;
-  elem.css("position", "absolute");
-  elem.css('display', 'inline');
-  popupW = elem[0].clientWidth;
-  //popupH = elem[0].clientHeight - 30;
-  elem.css('top', event.pageY + 20);//arrow(after element) width
-  var leftpos = event.pageX - popupW/2 - 20;
-  var rightPos = event.pageX + popupW/2;
-  if (leftpos <= 0) {
-    leftpos =  event.pageX - 20;
-    elem.addClass('popup-left-arrow');
+  elem.css({'position': 'absolute', 'display': 'inline'});
+  w = $(window);
+  clientWidth = w.width()+w.scrollLeft();
+  clientHeight = w.height()+w.scrollTop();
+  button = $(this);
+  buttonTop = button.offset().top;
+  buttonLeft = button.offset().left;
+  buttonWidth = button.width();
+  buttonHeight = button.height();
+  popupWidth = elem.innerWidth();
+  popupHeight = elem.innerHeight();
+  popupLeft = buttonLeft + (buttonWidth/2) - (popupWidth / 2) ;
+  popupTop = buttonTop + buttonHeight + 10;
+  elem.removeClass('popup-right-arrow');
+  elem.removeClass('popup-left-arrow');
+  elem.removeClass('popup-bottom-arrow');
+    console.log(buttonLeft +'+'+ (buttonWidth/2) +'+'+ (popupWidth / 2));
+  if( clientHeight > popupTop + popupHeight ) {
+    elem.css('top', popupTop + 'px');
   } else {
-    elem.removeClass('popup-left-arrow');
-    if ($(document).width() <= rightPos) {
-      leftpos = event.pageX - popupW + 40;
-      elem.addClass('popup-right-arrow');
-    } else {
-      elem.removeClass('popup-right-arrow');
-    }
+    popupTop = buttonTop - popupHeight - 10;
+    elem.css('top', popupTop + 'px');
+    elem.addClass('popup-bottom-arrow');
   }
-  elem.css('left', leftpos);
+  if( popupLeft < 0 ){
+    console.log('left');
+    popupLeft = buttonLeft - buttonWidth / 2;
+    elem.css('left', popupLeft);
+    elem.addClass('popup-left-arrow');
+  } else if( popupLeft + popupWidth > clientWidth ){
+    console.log('right');
+    popupLeft = buttonLeft - popupWidth + buttonWidth;
+    elem.css('left', popupLeft);
+    elem.addClass('popup-right-arrow');
+  } else {
+    elem.css('left', popupLeft);
+  }
+  
+  
   $(document).one('click', function closeMenu(e) {
     $('.popup-panel').css('display', 'none');
   });
