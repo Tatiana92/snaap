@@ -29,7 +29,6 @@
 .result-item {
   padding: 20px;
   border-bottom: 1px solid #E4E4E4;
-  cursor: pointer;
   @media (max-width: 850px) {
     padding: 10px;
   }
@@ -45,7 +44,7 @@
   color: #3D4550;
   display: inline-block;
   text-overflow: ellipsis;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
   @media (max-width: 850px) {
     font-size: 1em;
@@ -57,7 +56,7 @@
   line-height: 1.5;
   margin: 10px 0;
   text-overflow: ellipsis;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
   @media (max-width: 850px) {
     font-size: 20px;
@@ -76,7 +75,7 @@
   font-size: 20px;
   line-height: 2;
   text-align: left;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
 
   border: 1px solid #9f9f9f;
@@ -107,6 +106,7 @@
   color: #3D4550;
   width: 300px;
   text-align:center;
+  cursor: pointer;
   @media (max-width: 700px) {
     font-size: 1em;
     width: 200px;
