@@ -112,7 +112,7 @@
 
       background-size: auto
 
-  .search-button 
+  .search-button
     position: absolute
     top: 15px
     right: 15px
@@ -123,10 +123,12 @@
     padding-right: 5px
 
     font-size: 18px
+    line-height: 0
     text-align: center
-    line-height: 40px
     color: #feccd6
     border: none
+    outline: none
+    appearance: none
 
     background-color: #f6395d
     cursor: pointer
@@ -135,16 +137,18 @@
     border-bottom-right-radius: 20px
 
     z-index: 3
-    display: inline-block
-    @media screen and(min-width: 580px) 
+    cursor: pointer
+
+    @media screen and(min-width: 580px)
       width: 224px
 
       height: 80px
 
       font-size: 37px
+
+    &:before
       line-height: 80px
-    
-    &:before 
+
       content: ""
       position: absolute
       left: -18px
@@ -157,12 +161,12 @@
         left: -36px
         border-bottom: 80px solid #f6395d
         border-left: 37px solid transparent
-      
-      &__text 
+
+      &__text
         position: absolute
         left: 50%
         transform: translateX(calc(-50% - 5px))
-        @media screen and(min-width: 580px) 
+        @media screen and(min-width: 580px)
           transform: translateX(calc(-50% - 10px))
 
 
@@ -244,6 +248,8 @@
   box-shadow: 0px 4px 5px 0px rgba(82, 82, 82, 0.06);
 
   @media screen and(min-width: 580px)
+    max-width: none
+    width: 470px
     height: 429px
 
   // @media screen and(min-width: 980px)
