@@ -66,8 +66,17 @@
     height: 35px;
   }
 }
+.profile-about-person {
+  width: calc(100% - 250px);
+  @media (max-width: 1260px) {
+    width: calc(100% - 200px);
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
 
-/*big portrain at the page top*/
+/*big portrait at the page top*/
 .big-circle-image {
   width: 200px;
   height: 200px;
@@ -78,8 +87,6 @@
   -webkit-box-shadow: 3px -3px #EEEFF1;
   -o-box-shadow: 3px -3px #EEEFF1;
   border-radius: 100px;
-  -webkit-flex-basis: 150px;
-  flex-basis: 150px;
   img {
     -webkit-border-radius: 50%;
     border-radius: 50%;

@@ -112,7 +112,7 @@
 
       background-size: auto
 
-  .search-button
+  .search-button 
     position: absolute
     top: 15px
     right: 15px
@@ -120,6 +120,7 @@
     width: 70px
     height: 40px
     padding: 0
+    padding-right: 5px
 
     font-size: 18px
     text-align: center
@@ -128,22 +129,22 @@
     border: none
 
     background-color: #f6395d
+    cursor: pointer
     color: #ffffff
     border-top-right-radius: 20px
     border-bottom-right-radius: 20px
 
     z-index: 3
     display: inline-block
-
-    @media screen and (min-width: 580px)
+    @media screen and(min-width: 580px) 
       width: 224px
 
       height: 80px
 
       font-size: 37px
       line-height: 80px
-
-    &:before
+    
+    &:before 
       content: ""
       position: absolute
       left: -18px
@@ -156,14 +157,14 @@
         left: -36px
         border-bottom: 80px solid #f6395d
         border-left: 37px solid transparent
+      
+      &__text 
+        position: absolute
+        left: 50%
+        transform: translateX(calc(-50% - 5px))
+        @media screen and(min-width: 580px) 
+          transform: translateX(calc(-50% - 10px))
 
-    &__text
-      position: absolute
-      left: 50%
-      transform: translateX(calc(-50% - 5px))
-
-      @media screen and(min-width: 580px)
-        transform: translateX(calc(-50% - 10px))
 
 .hero-img
   margin: 0 -20px
