@@ -273,7 +273,6 @@ var App = new(function App() {
     self.modules.SVGSprites.init();
 
     $(window).on('resize', function(e) {
-      $('.title-pane').css('marginTop', $('.header-pane').outerHeight(true));
       $('.app-page-block-footer').width($('.app-page-block-footer').parent().width());
       // $('.app-page-block-footer').parent().css('paddingBottom', $('.app-page-block-footer').height());
       centerLogoInCircles();
