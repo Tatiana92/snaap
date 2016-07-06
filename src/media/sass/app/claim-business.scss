@@ -34,7 +34,9 @@
     padding: 10px;
   }
 }
-
+.result-item-info-block {
+  overflow: hidden;
+}
 .result-item-name {
   border: 1px solid #E4E4E4;
   background-color: #E7EFFA;
@@ -59,5 +61,57 @@
   overflow: hidden;
   @media (max-width: 850px) {
     font-size: 20px;
+  }
+}
+.bold-text-in-input {
+  font-weight: 600;
+}
+
+.contenteditable-search-input{
+
+  height: 40px;
+  margin: 0;
+  padding-left: 50px;
+
+  font-size: 20px;
+  line-height: 2;
+  text-align: left;
+  white-space: nowrap; 
+  overflow: hidden;
+
+  border: 1px solid #9f9f9f;
+  background: url(../img/icons/search-icon.png) no-repeat left white;
+  background-size: 20px auto;
+  background-position: 20px center;
+  outline: none;
+
+  position: relative;
+  z-index: 3;
+
+  @media screen and(min-width: 580px){
+    height: 79px;
+    padding-left: 74px;
+    font-size: 40px;
+    line-height: 2;
+
+    background-size: auto;
+  }
+}
+
+.claim-business-btn {
+  display: inline-block;
+  border: 1px solid #E4E4E4;
+  background-color: #E7EFFA;
+  font-size: 1.5em;
+  padding: 10px;
+  color: #3D4550;
+  width: 300px;
+  text-align:center;
+  @media (max-width: 700px) {
+    font-size: 1em;
+    width: 200px;
+  }
+  @media (max-width: 500px) {
+    width: 100px;
   }
 }

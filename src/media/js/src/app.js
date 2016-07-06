@@ -53,7 +53,7 @@ function onPopupBtnClick(event) {
   $('.popup-panel').css('display', 'none');
   var className = event.target.className.split('-')[0];
   if ($('.' + className + '-popup').length == 0) {
-    console.log('No popup for button ',event.target.className);
+    //console.log('No popup for button ',event.target.className);
     return;
   }
   var elem = $('.' + className + '-popup');
@@ -61,17 +61,17 @@ function onPopupBtnClick(event) {
   elem.css("position", "absolute");
   elem.css('display', 'inline');
   popupW = elem[0].clientWidth;
-  popupH = elem[0].clientHeight - 20;
-  elem.css('top', event.target.y + popupH);
-  var leftpos = event.target.x - popupW/2;
-  var rightPos = event.target.x + popupW/2;
+  //popupH = elem[0].clientHeight - 30;
+  elem.css('top', event.pageY + 20);//arrow(after element) width
+  var leftpos = event.pageX - popupW/2 - 20;
+  var rightPos = event.pageX + popupW/2;
   if (leftpos <= 0) {
-    leftpos =  event.target.x - 20;
+    leftpos =  event.pageX - 20;
     elem.addClass('popup-left-arrow');
   } else {
     elem.removeClass('popup-left-arrow');
     if ($(document).width() <= rightPos) {
-      leftpos = event.target.x - popupW + 40;
+      leftpos = event.pageX - popupW + 40;
       elem.addClass('popup-right-arrow');
     } else {
       elem.removeClass('popup-right-arrow');
@@ -109,15 +109,17 @@ function onTagBtnClick(event) {
   });
 }
 
-function onFollowingBrandsClick(event) {
-  $('#following-brands-block').slideToggle();
-  var arrowClass = $('#following-brands-title .title-arrow')[0].className;
-  if (arrowClass.indexOf('left') != -1) {
-    $('#following-brands-title .title-arrow').removeClass('arrow-left');
-    $('#following-brands-title .title-arrow').addClass('arrow-down');
+function onTitleClick(event) {
+  var el = event.target;
+  var parent = $(el).parents('.title-with-arrow')[0];
+  $(parent.nextElementSibling).slideToggle();
+  var arrow = $(parent).find('.title-arrow')[0];
+  if (arrow.className.indexOf('left') != -1) {
+    $(arrow).removeClass('arrow-left');
+    $(arrow).addClass('arrow-down');
   } else {
-    $('#following-brands-title .title-arrow').addClass('arrow-left');
-    $('#following-brands-title .title-arrow').removeClass('arrow-down');
+    $(arrow).addClass('arrow-left');
+    $(arrow).removeClass('arrow-down');
   }
 }
 
@@ -154,7 +156,7 @@ function initCarousel(carousel) {
         document.getElementById('selected-image').src = evt.target.src;
         $(evt.target).addClass('selected');
       } catch (e) {
-        console.log('error while selecting image in carousel:', e);
+        //console.log('error while selecting image in carousel:', e);
       }
 
     })
@@ -223,22 +225,33 @@ function onSearchKeyup(value) {
       appList[i]['description'].toLowerCase().indexOf(value) != -1) {
       counter++;
       var childElem = document.createElement('div');
-      childElem.className = 'result-item';
+      childElem.className = 'result-item flex-block';
       resultPane.appendChild(childElem);
+      var infoElem = document.createElement('div');
+      infoElem.className = 'result-item-info-block';
+      childElem.appendChild(infoElem);
       var nameElem = document.createElement('span');
       nameElem.className = 'result-item-name';
       nameElem.innerText = appList[i]['name'];
-      childElem.appendChild(nameElem);
+      infoElem.appendChild(nameElem);
       var desc = document.createElement('p');
       desc.className = 'result-item-decription';
       desc.innerText = appList[i]['description'];
-      childElem.appendChild(desc);
+      infoElem.appendChild(desc);
+      var btn = document.createElement('div');
+      btn.className = 'claim-business-btn';
+      btn.innerText = 'Claim Your Business';
+      childElem.appendChild(btn);
     }
   }
   if (counter > 0){
     resultPane.style.display = 'block';
-    $('.searchresult-pane').width($('.hero-search').width());
-    $('.searchresult-pane').css('paddingTop', $('.hero-search').height());
+    $(window).on('resize', function(e) {
+      $('.searchresult-pane').width($('.hero-search').width());
+      $('.searchresult-pane').css('paddingTop', $('.hero-search').height());
+      $('.result-item-info-block').width($('.searchresult-pane').width() - $('.claim-business-btn').width() - 20);
+    });
+    $(window).resize();
   } else {
     resultPane.style.display = 'none';
   }
@@ -294,7 +307,7 @@ var App = new(function App() {
     try {
       document.getElementsByClassName('view-icon')[0].click();
     } catch (e) {
-      console.log('error while click on view btn', e);
+      //console.log('error while click on view btn', e);
     }
 
 
@@ -311,7 +324,7 @@ var App = new(function App() {
     $('.repost-btn').on('click', onPopupBtnClick);
     $('.actions-btn').on('click', onPopupBtnClick);
     $('.tag-btn').on('click', onTagBtnClick);
-    $('#following-brands-title').on('click', onFollowingBrandsClick);
+    $('.title-with-arrow').on('click', onTitleClick);
 
   });
 })();

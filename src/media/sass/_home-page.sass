@@ -96,7 +96,7 @@
     padding-left: 60px
 
     text-align: left
-    font-size: 1.5em;
+    font-size: 1em;
 
     border: 1px solid #9f9f9f
     background: url(../img/icons/search-icon.png) no-repeat left white;
@@ -120,6 +120,7 @@
     width: 70px
     height: 40px
     padding: 0
+    padding-right: 5px
 
     font-size: 18px
     line-height: 0
@@ -130,6 +131,7 @@
     appearance: none
 
     background-color: #f6395d
+    cursor: pointer
     color: #ffffff
     border-top-right-radius: 20px
     border-bottom-right-radius: 20px
@@ -145,6 +147,8 @@
       font-size: 37px
 
     &:before
+      line-height: 80px
+
       content: ""
       position: absolute
       left: -18px
@@ -158,13 +162,13 @@
         border-bottom: 80px solid #f6395d
         border-left: 37px solid transparent
 
-    &__text
-      position: absolute
-      left: 50%
-      transform: translateX(calc(-50% - 5px))
+      &__text
+        position: absolute
+        left: 50%
+        transform: translateX(calc(-50% - 5px))
+        @media screen and(min-width: 580px)
+          transform: translateX(calc(-50% - 10px))
 
-      @media screen and(min-width: 580px)
-        transform: translateX(calc(-50% - 10px))
 
 .hero-img
   margin: 0 -20px
