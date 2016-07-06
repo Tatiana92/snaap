@@ -194,7 +194,9 @@ a {
   border-style: solid;
   border-color: transparent transparent #FFFFFF transparent;
   top: -28px;
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .popup-panel i,
@@ -227,6 +229,11 @@ a {
 .popup-right-arrow:after {
   left: 80%;
 }
+.popup-bottom-arrow:after {
+  border-color: #fff transparent transparent transparent!important;
+  top: 100%;
+}
+
 
 .searchresults-block-name,
 .column-block-name,
