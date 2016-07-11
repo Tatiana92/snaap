@@ -1,19 +1,38 @@
+.container
+  box-sizing: border-box
+  width: 100%
+  max-width: 1552px
+  margin: 0 auto
+  padding: 0 20px
+
+  @media screen and(min-width: 1592px)
+    padding: 0
+
+.u-pt
+  padding-top: 20px
+
+.u-center
+  text-align: center
+
+.u-rel
+  position: relative
+
 .wrapper
-	position: relative
-	min-height: 100%
-	height: auto !important
-	height: 100%
-	margin-bottom: -110px
-	.wrapper__push
-		height: 110px
+  position: relative
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin-bottom: -110px
+  .wrapper__push
+    height: 110px
 
 .skin
-	position: relative
-	width: 960px
-	margin: auto
+  position: relative
+  width: 960px
+  margin: auto
 
 .row
-	@extend .clearfix
-	position: relative
-	margin-left: -20px
-	margin-right: -20px
+  @extend .clearfix
+  position: relative
+  margin-left: -20px
+  margin-right: -20px

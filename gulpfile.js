@@ -81,7 +81,7 @@ var PATHS = {
 	watch: {
 		html:	 'src/**/*.html',
 		js:		 'src/media/js/**/*.js',
-		style:	 'src/media/sass/**/*.scss',
+		style:	 'src/media/sass/**/*.{scss,sass}',
 		img:	 'src/media/img/**/*.*',
 		fonts:	 'src/media/fonts/**/*.*',
 		sprites: 'src/media/img/sprites/*.png',
@@ -193,10 +193,16 @@ gulp.task('build', [
 
 gulp.task('watch', function(){
 	watch([PATHS.watch.html], function(event, cb) {
-		gulp.start('html:build');
+		setTimeout(function () {
+			gulp.start('html:build');
+		}, 500);
+		//gulp.start('html:build');
 	});
 	watch([PATHS.watch.style], function(event, cb) {
-		gulp.start('style:build');
+		setTimeout(function () {
+			gulp.start('style:build');
+		}, 500);
+		//gulp.start('style:build');
 	});
 	watch([PATHS.watch.js], function(event, cb) {
 		gulp.start('js:build');
