@@ -185,8 +185,7 @@ p.person-position {
   margin: 10px 0;
   width: 49%;
   @media (max-width: 740px) {
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    display: block;
   }
 }
 
@@ -194,7 +193,9 @@ p.person-position {
   display: inline-block;
   float: none;
   @media (max-width: 740px) {
-     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
 
@@ -260,6 +261,10 @@ a.product-view-reviews.white {
   }
 }
 
+.column-block .circle-image {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .column-block-text {
   flex-basis: 50%;
@@ -355,7 +360,6 @@ a.product-view-reviews.white {
 }
 
 
-.column-block .circle-image,
 .column-block .searchresults-block-btns,
 .column-block .column-block-text {
   margin: 10px 10px;
@@ -380,23 +384,35 @@ a.product-view-reviews.white {
 /*review blocks with arrow*/
 .person-review {
   margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .person-review:after {
   content: '';
   position: relative;
-  border-bottom: 90px solid #E5EDFA;
+  z-index: 0;
+  border-top: 90px solid #E5EDFA;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   top: 80px;
-  left: -10px;
-  transform: rotate(140deg);
-  -webkit-transform: rotate(140deg);
-  -webkit-transform: rotate(140deg);
-  -moz-transform: rotate(140deg);
-  -ms-transform: rotate(140deg);
-  -o-transform: rotate(140deg);
+  left: 0;
+  transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+  -moz-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  -o-transform: rotate(-40deg);
   @media (max-width: 1260px) {
     top: 60px;
+  }
+  @media (max-width: 750px) {
+    top: 50px;
+    left: -20px;
+  }
+  @media (max-width: 600px) {
+    top: 80px;
+    left: 70%;
+    transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
   }
 }

@@ -9,15 +9,23 @@
   color: white;
   border: 1px solid #DCDADB;
   @media (max-width: 600px) {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
+    /*-webkit-flex-direction: column;
+    flex-direction: column;*/
 
-.searchresults-block div {
-  display: inline-block;
-  float: none;
-  margin: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  & div {
+    display: block;
+    float: none;
+    margin: 0 10px;
+    @media (max-width: 600px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 
