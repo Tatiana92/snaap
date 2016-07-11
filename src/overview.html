@@ -1,0 +1,170 @@
+//= templates/head.html
+<body>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+//= templates/header.html
+<div class='title-pane clearfix'>
+  <div class="title-left-block">
+    <img class='title-image' height='40' src='media/img/icons/header-glass.png'>
+    <H2 class='page-title-text'>OVERVIEW</H2>
+  </div>
+    <img class='title-image background-image' height='80' src='media/img/images/header.jpg'>
+</div>
+//= templates/main-menu.html
+
+<div class="container">
+
+  <div class="app-page-bottom-block flex-block">
+    <div class="view-icons">
+      <div class='view-icon' onclick='changeView(event);'>
+        <img src="media/img/icons/tile-view.png" width="24" height="24" />
+      </div>
+      <div class='view-icon' onclick='changeView(event);'>
+        <img src="media/img/icons/list-view.png" width="24" height="24" />
+      </div>
+    </div>
+    <div class='app-page-bottom-selectors'>
+      <a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Features</a>
+      <a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Example Section</a>
+      <a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Reviews</a>
+      <a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Reviews</a>
+      <a href='' class='selected app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>More</a>
+    </div>
+  </div>
+  <!-- app-page-bottom-block -->
+
+  <div class="overview-content">
+    <table class="table table--stripped table--overview">
+      <thead>
+        <tr>
+          <th><img src="media/img/icons/plus-icon.png" alt=""></th>
+          <th>Compare</th>
+          <th>Compare</th>
+          <th>Example Section</th>
+          <th>Compare</th>
+          <th>Compare</th>
+          <th>Pricing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-thead="+"><img src="media/img/images/logo-salesforce.png" alt=""></td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare1" id="compare1">
+            <label for="compare1"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare2" id="compare2">
+            <label for="compare2"></label>
+          </td>
+          <td data-thead="Example Section">
+            <input type="checkbox" name="compare3" id="compare3">
+            <label for="compare3"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare4" id="compare4">
+            <label for="compare4"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare5" id="compare5">
+            <label for="compare5"></label>
+          </td>
+          <td data-thead="Pricing" class="u-rel">
+            <div class="table-price">12345</div>
+            <div class="js-delete-row delete-row"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td data-thead="+"><img src="media/img/images/logo-eloqua.png" alt=""></td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare6" id="compare6">
+            <label for="compare6"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare7" id="compare7">
+            <label for="compare7"></label>
+          </td>
+          <td data-thead="Example Section">
+            <input type="checkbox" name="compare8" id="compare8">
+            <label for="compare8"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare9" id="compare9">
+            <label for="compare9"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare10" id="compare10">
+            <label for="compare10"></label>
+          </td>
+          <td data-thead="Pricing" class="u-rel">
+            <div class="table-price">12345</div>
+            <div class="js-delete-row delete-row"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td data-thead="+"><img src="media/img/images/logo-salesforce.png" alt=""></td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare11" id="compare11">
+            <label for="compare11"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare12" id="compare12">
+            <label for="compare12"></label>
+          </td>
+          <td data-thead="Example Section">
+            <input type="checkbox" name="compare13" id="compare13">
+            <label for="compare13"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare14" id="compare14">
+            <label for="compare14"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare15" id="compare15">
+            <label for="compare15"></label>
+          </td>
+          <td data-thead="Pricing" class="u-rel">
+            <div class="table-price">12345</div>
+            <div class="js-delete-row delete-row"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td data-thead="+"><img src="media/img/images/logo-eloqua.png" alt=""></td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare16" id="compare16">
+            <label for="compare16"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare17" id="compare17">
+            <label for="compare17"></label>
+          </td>
+          <td data-thead="Example Section">
+            <input type="checkbox" name="compare18" id="compare18">
+            <label for="compare18"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare19" id="compare19">
+            <label for="compare19"></label>
+          </td>
+          <td data-thead="Compare">
+            <input type="checkbox" name="compare20" id="compare20">
+            <label for="compare20"></label>
+          </td>
+          <td data-thead="Pricing" class="u-rel">
+            <div class="table-price">12345</div>
+            <div class="js-delete-row delete-row"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+  <script src="media/js/main.js"></script>
+</body>
+
+</html>
