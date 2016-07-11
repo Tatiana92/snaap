@@ -74,7 +74,6 @@ function onPopupBtnClick(event) {
   elem.removeClass('popup-right-arrow');
   elem.removeClass('popup-left-arrow');
   elem.removeClass('popup-bottom-arrow');
-    console.log(buttonLeft +'+'+ (buttonWidth/2) +'+'+ (popupWidth / 2));
   if( clientHeight > popupTop + popupHeight ) {
     elem.css('top', popupTop + 'px');
   } else {
@@ -83,12 +82,10 @@ function onPopupBtnClick(event) {
     elem.addClass('popup-bottom-arrow');
   }
   if( popupLeft < 0 ){
-    console.log('left');
     popupLeft = buttonLeft - buttonWidth / 2;
     elem.css('left', popupLeft);
     elem.addClass('popup-left-arrow');
   } else if( popupLeft + popupWidth > clientWidth ){
-    console.log('right');
     popupLeft = buttonLeft - popupWidth + buttonWidth;
     elem.css('left', popupLeft);
     elem.addClass('popup-right-arrow');
@@ -155,14 +152,14 @@ function changeView(evt) {
 }
 
 function centerLogoInCircles() {
-  $('.logo-in-circle').each(function() {
+ /* $('.logo-in-circle').each(function() {
     var pheight = this.parentNode.clientHeight;
     var pwidth = this.parentNode.clientWidth;
     var margin = pheight - $(this).height();
     $(this).css('marginTop', margin/2);
     $(this).css('marginleft', (pwidth - $(this).width())/2);
 
-  })
+  })*/
 }
 
 function initCarousel(carousel) {
