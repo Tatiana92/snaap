@@ -61,6 +61,7 @@
         font-size: 20px
       @media (max-width: 570px)
         padding-left: 0px
+        font-size: 17px
 
       span
         display: block
@@ -71,15 +72,18 @@
 
   &__features
     margin-top: 38px
+    @media (max-width: 570px) 
+      margin-top: 20px
 
     h4
-      font-size: 35px
+      font-size: 1.5em
 
       padding-bottom: 16px
       margin-bottom: 39px
       border-bottom: 1px solid #b9b9b9
       @media (max-width: 570px) 
-        font-size: 25px
+        margin-bottom: 20px
+        
 
   &__feature
     display: flex
@@ -88,6 +92,8 @@
 
     &:not(:last-child)
       margin-bottom: 34px
+      @media (max-width: 570px)
+        margin-bottom: 15px
 
     .feature-label
       flex-basis: 110px
@@ -108,6 +114,8 @@
       overflow: hidden
 
       background-color: #dedede
+      @media (max-width: 570px)
+        height: 25px
 
     .feature-bar
       height: 45px
@@ -131,6 +139,9 @@
       &--overall
         background-color: #f6395d
         width: 32%
+
+      @media (max-width: 570px)
+        height: 25px
 
   .feature-up,
   .feature-down
