@@ -2,6 +2,15 @@
   .app-page-bottom-block
     padding: 65px 0 39px
     border-bottom: 1px solid #cbcbcb
+    @media (max-width: 680px)
+      padding: 30px 0
+      -webkit-flex-direction: column
+      flex-direction: column
+    .app-page-bottom-selectors a
+      @media (max-width: 480px)
+        font-size: 11px
+        padding: 3px
+
 
 .overview-content
   padding: 112px 0
