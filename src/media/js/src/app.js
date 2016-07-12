@@ -216,6 +216,10 @@ function initCarousel(carousel) {
 }
 
 function onSearchKeyup(value) {
+  if (value.length == 0) {
+    $('.contenteditable-search-input span').remove();
+  }
+  $('.contenteditable-search-input span').css('fontWeight', '300');
   var resultPane = document.getElementsByClassName('searchresult-pane')[0];
   $('.result-item').remove();
   if (value.length == 0) {
@@ -306,6 +310,7 @@ var App = new(function App() {
 
     $(window).on('resize', function(e) {
       $('.app-page-block-footer').width($('.app-page-block-footer').parent().width());
+      //$('.title-pane').css('marginTop', $('.header-pane').height());
       // $('.app-page-block-footer').parent().css('paddingBottom', $('.app-page-block-footer').height());
       centerLogoInCircles();
     });
