@@ -73,10 +73,9 @@
 }
 
 .contenteditable-search-input{
-
   height: 40px;
   margin: 0;
-  padding-left: 50px;
+  padding-left: 5px;
 
   font-size: 20px;
   line-height: 2;
@@ -84,22 +83,41 @@
   white-space: nowrap;
   overflow: hidden;
 
+  background: white;
   border: 1px solid #9f9f9f;
-  background: url(../img/icons/search-icon.png) no-repeat left white;
-  background-size: 20px auto;
-  background-position: 20px center;
   outline: none;
 
   position: relative;
   z-index: 3;
 
-  @media screen and(min-width: 580px){
+  @media screen and(min-width: 600px){
+    height: 79px;
+    padding-left: 50px;
+    font-size: 25px;
+    line-height: 3;
+
+    background: url(../img/icons/search-icon.png) no-repeat left white;
+    background-size: 30px;
+    background-position: 10px center;
+  }
+
+  @media screen and(min-width: 850px){
     height: 79px;
     padding-left: 74px;
-    font-size: 40px;
-    line-height: 2;
+    font-size: 30px;
+    line-height: 2.5;
 
+    background: url(../img/icons/search-icon.png) no-repeat left white;
     background-size: auto;
+    background-position: 20px center;
+  }
+  @media screen and(max-width: 450px) {
+    line-height: 2.5;
+    font-size: 15px;
+  }
+  @media screen and(max-width: 350px){
+    line-height: 3;
+    font-size: 13px;
   }
 }
 
