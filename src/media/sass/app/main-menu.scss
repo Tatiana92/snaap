@@ -15,7 +15,7 @@
 }
 
 .sidemenu li {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .sidemenu a {
@@ -28,10 +28,6 @@
   outline: none;
 }
 
-// .sidemenu a:hover img {
-//   border: 1px solid white;
-// }
-
 .sidemenu a img {
   font-size: 22px;
   margin: 11px;
@@ -40,6 +36,26 @@
   left: 5px;
   top: -12px;
   display: inline-block;
+}
+
+.menu__sublist-title {
+  color: #FECD81;
+}
+.menu__sublist a {
+  position: relative;
+  
+  padding-left: 75px;
+  display: block;
+  min-height: 0;
+
+  text-decoration: none;
+  font-size: 0.75em;
+
+  color: white;
+  outline: none;
+}
+.menu__sublist li {
+  margin-bottom: 5px;
 }
 
 .sidebar.show {
