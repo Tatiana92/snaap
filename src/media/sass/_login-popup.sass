@@ -1,0 +1,147 @@
+.login-popup
+  position: fixed
+  top: 50%
+  left: 50%
+
+  display: block
+  width: 60%
+  max-width: 700px
+  max-height: 100vh
+  padding: 50px 30px 10px
+  z-index: 10
+  overflow-y: auto
+  box-sizing: border-box
+
+  font-size: 1.2em
+
+  border: 1px solid rgb(88, 88, 88)
+  border-radius: 50px
+  box-shadow: 0px 3px 16px 0px rgba(49, 56, 68, 0.29)
+  background-color: transparent
+
+  transform: translate(-50%, -50%)
+
+  @media (max-width: 650px) 
+    padding: 20px
+
+  a
+    text-decoration: underline
+    color: #3A7CF6
+
+.login-popup
+  position: relative
+  z-index: 10
+
+.login-popup.login
+  font-size: 1em
+
+.login-popup.login
+    background-image: url(../img/images/register-background-bottom.png)
+    background-position: bottom
+    background-repeat: no-repeat
+    background-size: contain
+    background-color: white
+
+    @media (max-width: 400px) 
+      background-size: contain
+
+.login-popup__content.login-content
+    background-image: url(../img/images/register-background-right.png)
+    background-position:  center right
+    background-repeat: no-repeat
+    background-size: auto 50px
+    background-color: transparent
+
+    @media (max-width: 600px) 
+      background-size: auto 40px
+    @media (max-width: 400px) 
+      background-size: auto 20px
+
+.additional-text
+    color: #818181;
+    margin: 30px 0;
+
+.login-popup__title-with-line
+    white-space: nowrap
+    display: table
+    font-weight: normal
+    &:after 
+      border-top: 1px solid #B9B9B9
+      content: ''
+      display: table-cell
+      position: relative
+      top: 0.75em
+      left: 1.5%
+      width: 90%
+
+.login-popup__title-with-line p:first-letter
+    font-size: 36px
+    font-weight: bold
+    
+    @media (max-width: 1260px)
+      font-size: 22px
+
+.login-popup__error-text
+    color: #EB2F30
+    width: 100%
+    margin-top: -1.5em
+    margin-left: 1em
+    text-align: left
+
+.login-popup__input
+    background: #fff
+    border-radius: .6em
+    color: #000
+    width: 100%
+    padding: .7em
+    font-size: 1.2em
+    margin: 1em 0 1.5em
+    border: 1px solid #dadada
+
+.login-popup__submit
+    background: #F7395D
+    border-radius: 1em
+    color: #E4ECF7
+    width: 100%
+    padding: 1em 0
+    font-size: 1.2em
+    margin: 1em 0 0
+    border: 0px solid transparent
+    cursor: pointer
+    &:hover
+        background: #F43A56
+
+.login-social
+    border-radius: 1em
+    padding: 1em 0
+    color: #e4ecf9
+    margin-top: .5em
+    text-align: left
+    overflow: hidden
+    min-width: 350px
+    
+    span
+        display: inline-block
+        margin-left: 10px
+        
+    &.login-social__icon
+        padding-left: 83px
+        border-radius: 0
+
+        
+        @media (min-width: 1260px)
+            padding-left: 125px
+            
+    &.login-social_in
+        background: #0177b5
+        
+        .login-social__icon
+            background: url('../img/icons/in.jpg') 0% 50% no-repeat
+            background-size: cover
+            
+    &.login-social_google
+        background: #ce3f2e
+        
+        .login-social__icon
+            background: url('../img/icons/g.jpg') 0% 50% no-repeat
+            background-size: cover
