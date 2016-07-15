@@ -277,6 +277,14 @@ function onSearchKeyup(value) {
   }
 }
 
+function onUserTypeChanged(evt) {
+  $('.registration-type').removeClass('grey-btn');
+  $(evt.target).addClass('grey-btn');
+  if (evt.target.id.indexOf('vendor') != -1)
+    $('#vendor-website-input').show();
+  else
+    $('#vendor-website-input').hide();
+}
 
 // Note: Use 'search & replace' to rename 'App' to current project name an delete this note
 var App = new(function App() {
@@ -346,6 +354,11 @@ var App = new(function App() {
     $('.actions-btn').on('click', onPopupBtnClick);
     $('.tag-btn').on('click', onTagBtnClick);
     $('.title-with-arrow').on('click', onTitleClick);
+    try {
+      $('.registration-type').on('click', onUserTypeChanged);
+    } catch(e) {
+      
+    }
 
   });
 })();
