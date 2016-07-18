@@ -278,12 +278,13 @@ function onSearchKeyup(value) {
 }
 
 function onUserTypeChanged(evt) {
+  $('.registration-form').hide();
   $('.registration-type').removeClass('grey-btn');
   $(evt.target).addClass('grey-btn');
   if (evt.target.id.indexOf('vendor') != -1)
-    $('#vendor-website-input').show();
+    $('.vendor-registration-form').show();
   else
-    $('#vendor-website-input').hide();
+    $('.user-registration-form').show();
 }
 
 // Note: Use 'search & replace' to rename 'App' to current project name an delete this note
@@ -354,8 +355,9 @@ var App = new(function App() {
     $('.actions-btn').on('click', onPopupBtnClick);
     $('.tag-btn').on('click', onTagBtnClick);
     $('.title-with-arrow').on('click', onTitleClick);
+    $('.registration-type').on('click', onUserTypeChanged);
     try {
-      $('.registration-type').on('click', onUserTypeChanged);
+      $('.registration-type')[0].click();
     } catch(e) {
       
     }
