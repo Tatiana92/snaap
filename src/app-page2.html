@@ -2,94 +2,96 @@
 <body>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-//= templates/header.html
-<div class='title-pane clearfix'>
-  <div class="title-left-block">
-    <img class='title-image' height='40' src='media/img/icons/header-glass.png'>
-    <H2 class='page-title-text'>OVERVIEW</H2>
-  </div>
-    <img class='title-image background-image' height='80' src='media/img/images/header.jpg'>
-</div>
 //= templates/main-menu.html
-  <div class='page-content'>
-  	<div class=" app-page-bottom-block flex-block">
-      //= common-parts.html
-  		<div class='app-page-bottom-selectors'>
-	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Product</a>
-	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Preview</a>
-	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Reviews</a>
-	  		<a href='' class='selected app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Overview</a>
-  		</div>
-	  </div>
-    <div class="crumbs">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a class="active" href="#">Overview</a></li>
-      </ul>
+
+<div class='all-page-content'>
+//= templates/header.html
+  <div class='title-pane clearfix'>
+    <div class="title-left-block">
+      <img class='title-image' height='40' src='media/img/icons/header-glass.png'>
+      <H2 class='page-title-text'>OVERVIEW</H2>
     </div>
-    <div class="tab-container">
-      <ul>
-        <li><a class='selected app-page-tablinks' onclick='onLinkClicked(event);' href="#screenshots">Screenshots</a></li>
-        <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#videos">Videos</a></li>
-        <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#alternatives">Alternatives</a></li>
-        <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#articles">Articles</a></li>
-      </ul>
-    </div>
-    <div class="app-page-block radius_8">
-      <div class='app-page-content'>
-        <div class='app-page-block-title' id='screenshots'>Screenshots
-        </div>
-
-
-          <div class='carousel-selected-image center'><img id='selected-image' src="media/img/images/finance-help.jpg" ></div>
-
-          <div id="carousel" class="carousel">
-            <img class="arrow prev" src="media/img/icons/arrow-light.png" width='17'>
-            <div class="gallery">
-              <ul class="images">
-                <li><img class='selected' src="media/img/images/finance-help.jpg"></li>
-                <li><img src="media/img/images/images-copy.jpg"></li>
-                <li><img src="media/img/images/finance.jpg"></li>
-                <li><img src="media/img/images/reconciliation.jpg"></li>
-                <li><img src="media/img/images/finance-help.jpg"></li>
-                <li><img src="media/img/images/images-copy.jpg"></li>
-                <li><img src="media/img/images/finance.jpg"></li>
-                <li><img src="media/img/images/reconciliation.jpg"></li>
-                <li><img src="media/img/images/finance-help.jpg"></li>
-                <li><img src="media/img/images/images-copy.jpg"></li>
-                <li><img src="media/img/images/finance.jpg"></li>
-                <li><img src="media/img/images/reconciliation.jpg"></li>
-                <li><img src="media/img/images/finance-help.jpg"></li>
-                <li><img src="media/img/images/images-copy.jpg"></li>
-                <li><img src="media/img/images/finance.jpg"></li>
-                <li><img src="media/img/images/reconciliation.jpg"></li>
-              </ul>
-            </div>
-            <img  class="arrow next" src="media/img/icons/arrow-light.png" width='17'>
+      <img class='title-image background-image' height='80' src='media/img/images/header.jpg'>
+  </div>
+    <div class='page-content'>
+    	<div class=" app-page-bottom-block flex-block">
+        //= common-parts.html
+    		<div class='app-page-bottom-selectors'>
+  	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Product</a>
+  	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Preview</a>
+  	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Reviews</a>
+  	  		<a href='' class='selected app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Overview</a>
+    		</div>
+  	  </div>
+      <div class="crumbs">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a class="active" href="#">Overview</a></li>
+        </ul>
+      </div>
+      <div class="tab-container">
+        <ul>
+          <li><a class='selected app-page-tablinks' onclick='onLinkClicked(event);' href="#screenshots">Screenshots</a></li>
+          <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#videos">Videos</a></li>
+          <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#alternatives">Alternatives</a></li>
+          <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#articles">Articles</a></li>
+        </ul>
+      </div>
+      <div class="app-page-block radius_8">
+        <div class='app-page-content'>
+          <div class='app-page-block-title' id='screenshots'>Screenshots
           </div>
 
 
-        <div class='app-page-block-title' id='videos'>Videos
-        </div>
+            <div class='carousel-selected-image center'><img id='selected-image' src="media/img/images/finance-help.jpg" ></div>
 
-        <div class='app-page-block-title' id='alternatives'> Alternatives
-        </div>
+            <div id="carousel" class="carousel">
+              <img class="arrow prev" src="media/img/icons/arrow-light.png" width='17'>
+              <div class="gallery">
+                <ul class="images">
+                  <li><img class='selected' src="media/img/images/finance-help.jpg"></li>
+                  <li><img src="media/img/images/images-copy.jpg"></li>
+                  <li><img src="media/img/images/finance.jpg"></li>
+                  <li><img src="media/img/images/reconciliation.jpg"></li>
+                  <li><img src="media/img/images/finance-help.jpg"></li>
+                  <li><img src="media/img/images/images-copy.jpg"></li>
+                  <li><img src="media/img/images/finance.jpg"></li>
+                  <li><img src="media/img/images/reconciliation.jpg"></li>
+                  <li><img src="media/img/images/finance-help.jpg"></li>
+                  <li><img src="media/img/images/images-copy.jpg"></li>
+                  <li><img src="media/img/images/finance.jpg"></li>
+                  <li><img src="media/img/images/reconciliation.jpg"></li>
+                  <li><img src="media/img/images/finance-help.jpg"></li>
+                  <li><img src="media/img/images/images-copy.jpg"></li>
+                  <li><img src="media/img/images/finance.jpg"></li>
+                  <li><img src="media/img/images/reconciliation.jpg"></li>
+                </ul>
+              </div>
+              <img  class="arrow next" src="media/img/icons/arrow-light.png" width='17'>
+            </div>
 
-        <div class='app-page-block-title' id='articles'> Articles
-        </div>
 
-      </div>
-      <div class="app-page-block-footer">
-        <div class="flex-block">
-          <img src="media/img/icons/red-dots.png" class='actions-btn round-btn'/>
-          <img src="media/img/icons/repost.png" class='repost-btn round-btn' />
+          <div class='app-page-block-title' id='videos'>Videos
+          </div>
+
+          <div class='app-page-block-title' id='alternatives'> Alternatives
+          </div>
+
+          <div class='app-page-block-title' id='articles'> Articles
+          </div>
+
+        </div>
+        <div class="app-page-block-footer">
+          <div class="flex-block">
+            <img src="media/img/icons/red-dots.png" class='actions-btn round-btn'/>
+            <img src="media/img/icons/repost.png" class='repost-btn round-btn' />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  //= templates/compare-popup
-
+    //= templates/compare-popup
+</div>
   <script src="media/js/main.js"></script>
 </body>
 
