@@ -22,7 +22,7 @@
 
 .searchresult-pane {
   text-align: left;
-  border: calc(1px / 1.5) solid #E4E4E4;
+  border: 1px solid #E4E4E4;
   border-top: none;
   background-color: white;
   color: #679EEB;
@@ -34,7 +34,7 @@
 
 .result-item {
   padding: calc(20px / 1.5);
-  border-bottom: calc(1px / 1.5) solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
   @media (max-width: 850px) {
     padding: calc(10px / 1.5);
   }
@@ -43,7 +43,7 @@
   overflow: hidden;
 }
 .result-item-name {
-  border: calc(1px / 1.5) solid #E4E4E4;
+  border: 1px solid #E4E4E4;
   background-color: #E7EFFA;
   font-size: 1.5em;
   padding: calc(5px / 1.5) calc(10px / 1.5);
@@ -84,7 +84,7 @@
   overflow: hidden;
 
   background: white;
-  border: calc(1px / 1.5) solid #9f9f9f;
+  border: 1px solid #9f9f9f;
   outline: none;
 
   position: relative;
@@ -123,7 +123,7 @@
 
 .claim-business-btn {
   display: inline-block;
-  border: calc(1px / 1.5) solid #E4E4E4;
+  border: 1px solid #E4E4E4;
   background-color: #E7EFFA;
   font-size: 1.5em;
   padding: calc(10px / 1.5);

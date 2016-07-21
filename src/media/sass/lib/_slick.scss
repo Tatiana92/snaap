@@ -62,7 +62,7 @@
 .slick-slide {
     float: left;
     height: 100%;
-    min-height: calc(1px / 1.5);
+    min-height: 1px;
     [dir="rtl"] & {
         float: right;
     }
@@ -90,7 +90,7 @@
     .slick-vertical & {
         display: block;
         height: auto;
-        border: calc(1px / 1.5) solid transparent;
+        border: 1px solid transparent;
     }
 }
 .slick-arrow.slick-hidden {

@@ -12,7 +12,7 @@
   padding: calc(5px / 1.5) calc(15px / 1.5);
   text-decoration: none;
   color: #282f39;
-  border: calc(1px / 1.5) solid #282f39;
+  border: 1px solid #282f39;
   float: left;
   @media (max-width: 600px) {
     padding: calc(5px / 1.5);
@@ -50,7 +50,7 @@
   display: block;
   overflow: hidden;
   margin-left: calc(250px / 1.5);
-  border: calc(1px / 1.5) solid #dcdadb;
+  border: 1px solid #dcdadb;
   background-color: white;
   @media (max-width: 1260px) {
     margin-left: calc(150px / 1.5);
@@ -99,7 +99,7 @@
     left: 1.75%;
     z-index: 0;
     width: 100%;
-    border-top: calc(1px / 1.5) solid #cbcbcb;
+    border-top: 1px solid #cbcbcb;
   }
 }
 
@@ -176,7 +176,7 @@
   padding: calc(5px / 1.5) calc(15px / 1.5);
   text-decoration: none;
   color: inherit;
-  border: calc(1px / 1.5) solid #282f39;
+  border: 1px solid #282f39;
   border-right: none !important;
   -webkit-border-top-left-radius: calc(10px / 1.5);
   border-top-left-radius: calc(10px / 1.5);
@@ -188,7 +188,7 @@
     border-radius: calc(10px / 1.5);
     -webkit-border-radius: calc(10px / 1.5);
     -moz-border-radius: calc(10px / 1.5);
-    border-right: calc(1px / 1.5) solid #282f39 !important;
+    border-right: 1px solid #282f39 !important;
   }
 }
 

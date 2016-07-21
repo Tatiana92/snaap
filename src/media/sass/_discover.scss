@@ -63,7 +63,7 @@
 }
 .db-cont {
   ul {
-    border: calc(1px / 1.5) solid #D4D2D3;
+    border: 1px solid #D4D2D3;
     -webkit-border-radius: calc(10px / 1.5);
             border-radius: calc(10px / 1.5);
         overflow: hidden;
@@ -71,7 +71,7 @@
                 box-shadow: 0  calc(2px / 1.5) calc(3px / 1.5) rgba(0,0,0,.2);
   }
   li {
-    border-top: calc(1px / 1.5) solid #D4D2D3;
+    border-top: 1px solid #D4D2D3;
     &:first-child {
       border-top: none;
       a {
@@ -108,7 +108,7 @@
 }
 .tags-input {
   background: #FFF;
-  border: calc(1px / 1.5) solid #D4D2D3;
+  border: 1px solid #D4D2D3;
   -webkit-box-shadow: 0  calc(2px / 1.5) calc(3px / 1.5) rgba(0,0,0,.2);
   box-shadow: 0  calc(2px / 1.5) calc(3px / 1.5) rgba(0,0,0,.2);
   -webkit-border-radius: calc(10px / 1.5);
@@ -124,7 +124,7 @@
         -webkit-border-radius: calc(10px / 1.5);
                 border-radius: calc(10px / 1.5);
         padding: calc(10px / 1.5) calc(40px / 1.5);
-        border: calc(1px / 1.5) solid #D4D2D3;
+        border: 1px solid #D4D2D3;
         margin-left: calc(60px / 1.5);
         position: relative;
         &:before {
@@ -174,7 +174,7 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-  border: calc(1px / 1.5) solid #D4D2D3;
+  border: 1px solid #D4D2D3;
   -webkit-box-shadow: 0  calc(2px / 1.5) calc(3px / 1.5) rgba(0,0,0,.2);
   box-shadow: 0  calc(2px / 1.5) calc(3px / 1.5) rgba(0,0,0,.2);
   -webkit-border-radius: calc(10px / 1.5);
@@ -192,7 +192,7 @@
         -webkit-border-radius: calc(10px / 1.5);
                 border-radius: calc(10px / 1.5);
         padding: calc(10px / 1.5) calc(40px / 1.5);
-        border: calc(1px / 1.5) solid #D4D2D3;
+        border: 1px solid #D4D2D3;
         margin-left: calc(10px / 1.5);
         margin-bottom: calc(15px / 1.5);
         position: relative;

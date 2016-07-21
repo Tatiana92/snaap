@@ -65,7 +65,7 @@ select:focus,
 }
 
 .btn {
-  padding: calc(5px / 1.5) calc(10px / 1.5);
+  padding: calc(8px / 1.5) calc(20px / 1.5);
   margin: calc(5px / 1.5);
   font-size: calc(30px / 1.5);
   text-align: center;
@@ -108,7 +108,7 @@ a {
 }
 
 .crumbs {
-  border-top: calc(1px / 1.5) solid #E2E2E2;
+  border-top: 1px solid #E2E2E2;
   margin: calc(20px / 1.5) 0;
   overflow: hidden;
 }
@@ -159,11 +159,12 @@ a {
   display: inline-block;
   margin: calc(5px / 1.5) 0;
   cursor: pointer;
-  border-right: calc(1px / 1.5) solid #282F3A;
+  border-right: 1px solid #282F3A;
   padding: 0 calc(5px / 1.5);
 }
 .view-icon img,
 .round-btn {
+  height: calc(40px / 1.5);
   cursor: pointer;
   @media (max-width: 1260px) {
     height: calc(30px / 1.5);
@@ -185,8 +186,8 @@ a {
   text-align: center;
   color: #282F39;
   background: rgb(255, 255, 255);
-  border: calc(1px / 1.5) solid #878A8F;
-  box-shadow: #CBCCCE calc(1px / 1.5) calc(1px / 1.5) calc(3px / 1.5) calc(1px / 1.5);
+  border: 1px solid #878A8F;
+  box-shadow: #CBCCCE 1px 1px calc(3px / 1.5) 1px;
   white-space: nowrap;
   padding: calc(10px / 1.5);
 }
@@ -212,7 +213,7 @@ a {
   margin: calc(5px / 1.5) 0;
   cursor: pointer;
   padding: 0 calc(10px / 1.5) 0 calc(5px / 1.5);
-  border-right: calc(1px / 1.5) solid #282F3A;
+  border-right: 1px solid #282F3A;
 }
 
 .popup-panel i:hover,

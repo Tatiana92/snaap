@@ -26,6 +26,8 @@ header {
 
 .main-menu {
   cursor: pointer;
+  height: calc(30px / 1.5)!important;
+  margin-right: calc(30px / 1.5)!important;
 }
 
 .search-input-form {
@@ -33,19 +35,20 @@ header {
   box-sizing: border-box;
   display: inline-block;
   width: auto;
-  border: calc(8px / 1.5) solid #4C5059;
   overflow: hidden;
   .search-input {
-    width: calc(300px / 1.5);
-    height: calc(42px / 1.5);
+    width: calc(600px / 1.5);
+    height: calc(54px / 1.5);
     margin: 0;
     font-size: calc(18px / 1.5);
     padding-left: calc(60px / 1.5);
     text-align: left;
-    border: calc(1px / 1.5) solid #9f9f9f;
+    //border: 1px solid #9f9f9f;
     background: url(../img/icons/search-icon.png) no-repeat left white;
     background-size: calc(25px / 1.5) auto;
     background-position: calc(20px / 1.5) center;
+    border: calc(8px / 1.5) solid #4C5059;
+    border-radius: calc(15px / 1.5);
     @media screen and(min-width: calc(1260px / 1.5)) {
       height: calc(48px / 1.5);
       width: calc(500px / 1.5);
@@ -53,8 +56,8 @@ header {
   }
   .search-button {
     position: absolute;
-    top: calc(1px / 1.5);
-    right: 0;
+    top: calc(7px / 1.5);
+    right: calc(6px / 1.5);
     width: calc(70px / 1.5);
     height: calc(40px / 1.5);
     padding: 0 calc(10px / 1.5);
@@ -67,8 +70,9 @@ header {
     background-color: #f6395d;
     cursor: pointer;
     color: #FECCD6;
+    border-radius: 0 calc(8px / 1.5) calc(8px / 1.5) 0;
     @media screen and(min-width: calc(1260px / 1.5)) {
-      top: calc(1px / 1.5);
+      top: 1px;
       height: calc(50px / 1.5);
     }
     &:before {
@@ -95,17 +99,20 @@ header {
 }
 
 .login-btn {
+  padding-right: 8%;
   background-color: #282F39;
-  border: calc(1px / 1.5) solid #3D4550;
+  border: 1px solid #3D4550;
   color: white;
-  background: url('../img/icons/profile-icon.png') no-repeat 6% 50%;
-  background-size: 32%;
-  padding-left: 13%;
+  background: url('../img/icons/profile-icon.png') no-repeat 24% 50%;
+  background-size: 14%;
+  padding-left: 18%;
 }
 
 .white-btn {
   background-color: white;
   color: #282F39;
+  border: 0 solid transparent;
+  box-shadow: 0 calc(4px / 1.5) #000;
 }
 
 .header-image {
