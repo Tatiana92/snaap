@@ -1,10 +1,10 @@
 .brands-col
     background: #E4EEFA
-    border: 1px solid #DFDDDD
-    margin-bottom: 50px
-    box-shadow: 0 1px 1px #E4EEFA
+    border: calc(1px / 1.5) solid #DFDDDD
+    margin-bottom: calc(50px / 1.5)
+    box-shadow: 0 calc(1px / 1.5) calc(1px / 1.5) #E4EEFA
     &.brands-col_radius-8
-        border-radius: 8px
+        border-radius: calc(8px / 1.5)
     li
         display: none;
         &:nth-of-type(1),
@@ -17,14 +17,14 @@
         
 .brands-col__content
     background: #fff
-    padding: 30px 20px 10px
+    padding: calc(30px / 1.5) calc(20px / 1.5) calc(10px / 1.5)
     margin: 0
 
 .brands-col__products
-    border: 2px solid #A0A5A9
-    margin: 5px 0
-    padding: 8px
-    border-radius: 18px
+    border: calc(2px / 1.5) solid #A0A5A9
+    margin: calc(5px / 1.5) 0
+    padding: calc(8px / 1.5)
+    border-radius: calc(18px / 1.5)
     display: inline-block
     background: transparent
     box-shadow: 0 0 transparent
@@ -32,21 +32,21 @@
     img
         display: inline
         margin: auto 0
-        padding-right: 4px
+        padding-right: calc(4px / 1.5)
         @media (min-width: 1260px)
-            margin-top: 4px
+            margin-top: calc(4px / 1.5)
 
     span
         display: inline
-        padding-right: 32px
-        font-size: 18px
-        line-height: 32px
+        padding-right: calc(32px / 1.5)
+        font-size: calc(18px / 1.5)
+        line-height: calc(32px / 1.5)
         @media (min-width: 1260px)
-            font-size: 24px
+            font-size: calc(24px / 1.5)
 
 .brands-col__label
-    padding: 8px 0
-    font-size: 16px
+    padding: calc(8px / 1.5) 0
+    font-size: calc(16px / 1.5)
     font-weight: bold
     border: 0 solid transparent
     background: transparent
@@ -54,4 +54,4 @@
     margin: 0
     
     @media (min-width: 1260px)
-        font-size: 24px
+        font-size: calc(24px / 1.5)

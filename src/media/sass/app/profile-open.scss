@@ -1,7 +1,7 @@
 .page-info-block {
   display: block;
   overflow: hidden;
-  border: 1px solid #dcdadb;
+  border: calc(1px / 1.5) solid #dcdadb;
   background-color: white;
 }
 
@@ -13,7 +13,7 @@
 
 /*arrows in title*/
 .title-with-arrow .app-page-block-title {
-  padding-bottom: 10px;
+  padding-bottom: calc(10px / 1.5);
 }
 
 .title-arrow {
@@ -22,36 +22,36 @@
 }
 
 .arrow-down {
-  top: 10px;
+  top: calc(10px / 1.5);
   background: url(../img/icons/arrow-bottom.png) no-repeat right transparent;
-  height: 20px;
-  width: 30px;
+  height: calc(20px / 1.5);
+  width: calc(30px / 1.5);
   background-size: 100%;
   @media (max-width: 1260px) {
-    height: 13px;
-    width: 20px;
-    top: 5px;
+    height: calc(13px / 1.5);
+    width: calc(20px / 1.5);
+    top: calc(5px / 1.5);
   }
 }
 
 .arrow-left {
   background: url(../img/icons/arrow-left.png) no-repeat right transparent;
-  width: 20px;
-  height: 30px;
+  width: calc(20px / 1.5);
+  height: calc(30px / 1.5);
   background-size: 100%;
   @media (max-width: 1260px) {
-    height: 20px;
-    width: 13px;
-    bottom: 2px;
+    height: calc(20px / 1.5);
+    width: calc(13px / 1.5);
+    bottom: calc(2px / 1.5);
   }
 }
 
 .profile-main-info .profile-about-person {
-  margin-left: 20px;
+  margin-left: calc(20px / 1.5);
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   @media (max-width: 400px) {
-    margin: 0px;
+    margin: calc(0px / 1.5);
   }
 }
 .profile-main-info {
@@ -63,13 +63,13 @@
 
 .person-buttons img{
   @media (max-width: 1000px) {
-    height: 35px;
+    height: calc(35px / 1.5);
   }
 }
 .profile-about-person {
-  width: calc(100% - 250px);
+  width: calc(100% - calc(250px / 1.5));
   @media (max-width: 1260px) {
-    width: calc(100% - 200px);
+    width: calc(100% - calc(200px / 1.5));
   }
   @media (max-width: 600px) {
     width: 100%;
@@ -78,27 +78,27 @@
 
 /*big portrait at the page top*/
 .big-circle-image {
-  width: 200px;
-  height: 200px;
-  border: solid 1px #EEEFF1;
+  width: calc(200px / 1.5);
+  height: calc(200px / 1.5);
+  border: solid calc(1px / 1.5) #EEEFF1;
   background-color: #EEEFF1;
-  box-shadow: 3px -3px #EEEFF1;
-  -moz-box-shadow: 3px -3px #EEEFF1;
-  -webkit-box-shadow: 3px -3px #EEEFF1;
-  -o-box-shadow: 3px -3px #EEEFF1;
-  border-radius: 100px;
+  box-shadow: calc(3px / 1.5) calc(-3px / 2) #EEEFF1;
+  -moz-box-shadow: calc(3px / 1.5) calc(-3px / 2) #EEEFF1;
+  -webkit-box-shadow: calc(3px / 1.5) calc(-3px / 2) #EEEFF1;
+  -o-box-shadow: calc(3px / 1.5) calc(-3px / 2) #EEEFF1;
+  border-radius: calc(100px / 1.5);
   img {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     z-index: 3;
-    width: 200px;
+    width: calc(200px / 1.5);
     height: 100%;
   }
   @media (max-width: 1260px) {
-    width: 150px;
-    height: 150px;
+    width: calc(150px / 1.5);
+    height: calc(150px / 1.5);
     img {
-      width: 150px;
+      width: calc(150px / 1.5);
     }
   }
 }
@@ -114,14 +114,14 @@
     left: 1.75%;
     z-index: 0;
     width: 100%;
-    border-top: 1px solid #cbcbcb;
+    border-top: calc(1px / 1.5) solid #cbcbcb;
   }
 }
 
 /*person info near the photo*/
 .person-buttons,
 .person-info-text {
-  margin: 20px 0;
+  margin: calc(20px / 1.5) 0;
 }
 
 .person-links li {
@@ -149,12 +149,12 @@ p.person-position {
 
 .blue-btn {
   color: #4C84DA;
-  border: 1px solid #4C84DA;
+  border: calc(1px / 1.5) solid #4C84DA;
   background-color: transparent;
-  padding: 5px 25px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  padding: calc(5px / 1.5) calc(25px / 1.5);
+  border-radius: calc(10px / 1.5);
+  -webkit-border-radius: calc(10px / 1.5);
+  -moz-border-radius: calc(10px / 1.5);
 }
 /*end person info block styles*/
 
@@ -182,7 +182,7 @@ p.person-position {
   border-color: #99A9C1;
 }
 .column-block {
-  margin: 10px 0;
+  margin: calc(10px / 1.5) 0;
   width: 49%;
   @media (max-width: 740px) {
     display: block;
@@ -201,11 +201,11 @@ p.person-position {
 
 
 .product-block {
-  margin: 10px 0;
-  padding: 10px 0;
+  margin: calc(10px / 1.5) 0;
+  padding: calc(10px / 1.5) 0;
   overflow: hidden;
   position: relative;
-  border: 1px solid #E4E4E4;
+  border: calc(1px / 1.5) solid #E4E4E4;
 }
 .column-block,
 .product-block {
@@ -231,22 +231,22 @@ a.product-view-reviews.white {
 }
 
 .product-view-reviews img{
-  margin-right: 10px;
+  margin-right: calc(10px / 1.5);
   @media (max-width: 770px) {
-    margin-right: 0px;
+    margin-right: calc(0px / 1.5);
   }
   @media (max-width: 700px) {
-    margin-right: 10px;
+    margin-right: calc(10px / 1.5);
   }
 }
 
 
 .product-info {
   justify-content: flex-start;
-  margin-bottom: 120px;
-  padding: 0 10px;
+  margin-bottom: calc(120px / 1.5);
+  padding: 0 calc(10px / 1.5);
   @media (max-width: 1260px) {
-    margin-bottom: 80px;
+    margin-bottom: calc(80px / 1.5);
   }
   @media (max-width: 980px) {
     -webkit-flex-direction: column;
@@ -262,8 +262,8 @@ a.product-view-reviews.white {
 }
 
 .column-block .circle-image {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: calc(10px / 1.5);
+  margin-bottom: calc(10px / 1.5);
 }
 
 .column-block-text {
@@ -272,7 +272,7 @@ a.product-view-reviews.white {
 
 .product-tags {
   background-color: white;
-  padding: 10px 0px;
+  padding: calc(10px / 1.5) calc(0px / 1.5);
   width: 100%;
   height: auto;
   z-index: 0;
@@ -284,18 +284,18 @@ a.product-view-reviews.white {
 }
 .product-tags span {
   display: inline-block;
-  padding: 5px 30px;
-  margin: 5px;
-  border: 1px solid black;
+  padding: calc(5px / 1.5) calc(30px / 1.5);
+  margin: calc(5px / 1.5);
+  border: calc(1px / 1.5) solid black;
   color: black;
   @media (max-width: 1260px) {
-    padding: 5px 10px;
+    padding: calc(5px / 1.5) calc(10px / 1.5);
   }
 }
 
 .product-block-btns-pane {
   position: relative;
-  padding: 0px 20px;
+  padding: calc(0px / 1.5) calc(20px / 1.5);
   z-index: 1;
 }
 
@@ -324,17 +324,17 @@ a.product-view-reviews.white {
 .flag {
   float: right;
   position: relative;
-  right: 0px;
+  right: calc(0px / 1.5);
   background-size: 100%;
-  width: 120px;
-  height: 60px;
+  width: calc(120px / 1.5);
+  height: calc(60px / 1.5);
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
   @media (max-width: 980px) {
-    background-size: 80px 40px;
-    width: 80px;
-    height: 40px;
+    background-size: calc(80px / 1.5) calc(40px / 1.5);
+    width: calc(80px / 1.5);
+    height: calc(40px / 1.5);
   }
   @media (max-width: 700px) {
     float: none;
@@ -344,25 +344,25 @@ a.product-view-reviews.white {
 
 /*flag behavior in big block is differ from usual behavior*/
 .big-block .flag{
-  background-size: 120px 60px;
+  background-size: calc(120px / 1.5) calc(60px / 1.5);
   float: none;
   width: 100%;
   @media (max-width: 980px) {
-    background-size: 80px 40px;
+    background-size: calc(80px / 1.5) calc(40px / 1.5);
   }
 }
 
 
 .column-block-name {
   white-space: nowrap;
-  padding-right: 15px;
-  border-bottom: 3px solid #3B5377;
+  padding-right: calc(15px / 1.5);
+  border-bottom: calc(3px / 1.5) solid #3B5377;
 }
 
 
 .column-block .searchresults-block-btns,
 .column-block .column-block-text {
-  margin: 10px 10px;
+  margin: calc(10px / 1.5) calc(10px / 1.5);
 }
 
 .column-block .searchresults-block-btns {
@@ -377,13 +377,13 @@ a.product-view-reviews.white {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: calc(20px / 1.5);
   }
 }
 
 /*review blocks with arrow*/
 .person-review {
-  margin-bottom: 50px;
+  margin-bottom: calc(50px / 1.5);
   position: relative;
   z-index: 2;
 }
@@ -392,10 +392,10 @@ a.product-view-reviews.white {
   content: '';
   position: relative;
   z-index: 0;
-  border-top: 90px solid #E5EDFA;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  top: 80px;
+  border-top: calc(90px / 1.5) solid #E5EDFA;
+  border-left: calc(30px / 1.5) solid transparent;
+  border-right: calc(30px / 1.5) solid transparent;
+  top: calc(80px / 1.5);
   left: 0;
   transform: rotate(-40deg);
   -webkit-transform: rotate(-40deg);
@@ -403,14 +403,14 @@ a.product-view-reviews.white {
   -ms-transform: rotate(-40deg);
   -o-transform: rotate(-40deg);
   @media (max-width: 1260px) {
-    top: 60px;
+    top: calc(60px / 1.5);
   }
   @media (max-width: 750px) {
-    top: 50px;
-    left: -20px;
+    top: calc(50px / 1.5);
+    left: calc(-20px / 2);
   }
   @media (max-width: 600px) {
-    top: 80px;
+    top: calc(80px / 1.5);
     left: 70%;
     transform: rotate(-40deg);
     -webkit-transform: rotate(-40deg);

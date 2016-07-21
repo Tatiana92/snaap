@@ -1,5 +1,5 @@
 .sidebar {
-  padding-top: 20px;
+  padding-top: calc(20px / 1.5);
   background: rgba(43, 50, 58, 0.9);
   min-height: 100vh;
   position: fixed;
@@ -15,26 +15,26 @@
 }
 
 .sidemenu li {
-  margin-bottom: 50px;
+  margin-bottom: calc(50px / 1.5);
 }
 
 .sidemenu a {
   position: relative;
   text-decoration: none;
-  min-height: 40px;
-  padding-left: 55px;
+  min-height: calc(40px / 1.5);
+  padding-left: calc(55px / 1.5);
   display: block;
   color: white;
   outline: none;
 }
 
 .sidemenu a img {
-  font-size: 22px;
-  margin: 11px;
+  font-size: calc(22px / 1.5);
+  margin: calc(11px / 1.5);
   text-align: center;
   position: absolute;
-  left: 5px;
-  top: -12px;
+  left: calc(5px / 1.5);
+  top: calc(-12px / 2);
   display: inline-block;
 }
 
@@ -44,7 +44,7 @@
 .menu__sublist a {
   position: relative;
   
-  padding-left: 75px;
+  padding-left: calc(75px / 1.5);
   display: block;
   min-height: 0;
 
@@ -55,7 +55,7 @@
   outline: none;
 }
 .menu__sublist li {
-  margin-bottom: 5px;
+  margin-bottom: calc(5px / 1.5);
 }
 
 .sidebar.show {
@@ -64,11 +64,11 @@
 }
 
 .sidebar .sidemenu {
-  padding-right: 20px;
+  padding-right: calc(20px / 1.5);
 }
 
 .sidebar span {
-  padding: 0 20px;
+  padding: 0 calc(20px / 1.5);
   opacity: 1;
   white-space: nowrap;
 }
@@ -86,15 +86,15 @@
 }
 
 .user-name {
-  font-size: 20px;
+  font-size: calc(20px / 1.5);
   background-color: #F7395D;
-  margin-top: 20px;
+  margin-top: calc(20px / 1.5);
   position: absolute;
-  left: 37px;
-  padding-left: 40px !important;
-  padding-right: 10px !important;
+  left: calc(37px / 1.5);
+  padding-left: calc(40px / 1.5) !important;
+  padding-right: calc(10px / 1.5) !important;
   z-index: 2;
   @media (max-width: 1260px) {
-    font-size: 13px;
+    font-size: calc(13px / 1.5);
   }
 }

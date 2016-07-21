@@ -84,10 +84,10 @@
   $min-width: false;
   $min-height: false;
 
-  $standards: ('720p', 1280px, 720px)
-              ('1080', 1920px, 1080px)
-              ('2K', 2048px, 1080px)
-              ('4K', 4096px, 2160px);
+  $standards: ('720p', calc(1280px / 1.5), calc(720px / 1.5))
+              ('1080', calc(1920px / 1.5), calc(1080px / 1.5))
+              ('2K', calc(2048px / 1.5), calc(1080px / 1.5))
+              ('4K', calc(4096px / 1.5), calc(2160px / 1.5));
 
   @each $s in $standards {
     @if $standard == nth($s, 1) {
@@ -109,8 +109,8 @@
 // --- iphone4 -----------------------------------------------------------------
 
 @mixin iphone4($orientation: false) {
-  $min: 320px;
-  $max: 480px;
+  $min: calc(320px / 1.5);
+  $max: calc(480px / 1.5);
   $pixel-ratio: 2;
   $aspect-ratio: '2/3';
 
@@ -128,8 +128,8 @@
 // --- iphone5 -----------------------------------------------------------------
 
 @mixin iphone5($orientation: false) {
-  $min: 320px;
-  $max: 568px;
+  $min: calc(320px / 1.5);
+  $max: calc(568px / 1.5);
   $pixel-ratio: 2;
   $aspect-ratio: '40/71';
 
@@ -147,8 +147,8 @@
 // --- iphone6 -----------------------------------------------------------------
 
 @mixin iphone6($orientation: false) {
-  $min: 375px;
-  $max: 667px;
+  $min: calc(375px / 1.5);
+  $max: calc(667px / 1.5);
   $pixel-ratio: 2;
 
   @include mq(
@@ -164,8 +164,8 @@
 // --- iphone6 plus ------------------------------------------------------------
 
 @mixin iphone6-plus($orientation: false) {
-  $min: 414px;
-  $max: 736px;
+  $min: calc(414px / 1.5);
+  $max: calc(736px / 1.5);
   $pixel-ratio: 3;
 
   @include mq(
@@ -181,8 +181,8 @@
 // --- ipad (all) --------------------------------------------------------------
 
 @mixin ipad($orientation: false) {
-  $min: 768px;
-  $max: 1024px;
+  $min: calc(768px / 1.5);
+  $max: calc(1024px / 1.5);
 
   @include mq(
     $min-device-width: $min,
@@ -196,8 +196,8 @@
 // --- ipad-retina -------------------------------------------------------------
 
 @mixin ipad-retina($orientation: false) {
-  $min: 768px;
-  $max: 1024px;
+  $min: calc(768px / 1.5);
+  $max: calc(1024px / 1.5);
   $pixel-ratio: 2;
 
   @include mq(

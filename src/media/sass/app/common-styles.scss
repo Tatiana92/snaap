@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body {
-  font-size: 27px;
+  font-size: calc(27px / 1.5);
   font-family: "Open Sans";
   background-color: #F8F8F8;
   @media (max-width: 1260px) {
-    font-size: 17px;
+    font-size: calc(17px / 1.5);
   }
   @media (max-width: 350px) {
-    font-size: 15px;
+    font-size: calc(15px / 1.5);
   }
 }
 
@@ -27,33 +27,33 @@ body {
 }
 
 .radius_30 {
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
+  border-radius: calc(30px / 1.5);
+  -webkit-border-radius: calc(30px / 1.5);
+  -moz-border-radius: calc(30px / 1.5);
 }
 
 .radius_20 {
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
+  border-radius: calc(20px / 1.5);
+  -webkit-border-radius: calc(20px / 1.5);
+  -moz-border-radius: calc(20px / 1.5);
 }
 
 .radius_15 {
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
+  border-radius: calc(15px / 1.5);
+  -webkit-border-radius: calc(15px / 1.5);
+  -moz-border-radius: calc(15px / 1.5);
 }
 
 .radius_10 {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  border-radius: calc(10px / 1.5);
+  -webkit-border-radius: calc(10px / 1.5);
+  -moz-border-radius: calc(10px / 1.5);
 }
 
 .radius_8 {
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
+  border-radius: calc(8px / 1.5);
+  -webkit-border-radius: calc(8px / 1.5);
+  -moz-border-radius: calc(8px / 1.5);
 }
 
 input:focus,
@@ -65,18 +65,18 @@ select:focus,
 }
 
 .btn {
-  padding: 5px 10px;
-  margin: 5px;
-  font-size: 30px;
+  padding: calc(5px / 1.5) calc(10px / 1.5);
+  margin: calc(5px / 1.5);
+  font-size: calc(30px / 1.5);
   text-align: center;
   cursor: pointer;
   @media (max-width: 1260px) {
-      font-size: 17px;
+      font-size: calc(17px / 1.5);
   }
 }
 .button-image {
   @media (max-width: 1260px) {
-    height: 15px;
+    height: calc(15px / 1.5);
   }
   
 }
@@ -86,9 +86,9 @@ a {
 }
 
 .page-content {
-  margin: 30px 70px;
+  margin: calc(30px / 1.5) calc(70px / 1.5);
   @media (max-width: 700px) {
-    margin: 20px;
+    margin: calc(20px / 1.5);
   }
 }
 
@@ -108,8 +108,8 @@ a {
 }
 
 .crumbs {
-  border-top: 1px solid #E2E2E2;
-  margin: 20px 0;
+  border-top: calc(1px / 1.5) solid #E2E2E2;
+  margin: calc(20px / 1.5) 0;
   overflow: hidden;
 }
 
@@ -122,13 +122,13 @@ a {
   float: left;
   text-align: center;
   position: relative;
-  margin: 5px 0;
-  font-size: 31px;
+  margin: calc(5px / 1.5) 0;
+  font-size: calc(31px / 1.5);
   text-decoration: none;
   color: #7F8998;
 
   @media (max-width: 1260px) {
-    font-size: 20px;
+    font-size: calc(20px / 1.5);
   }
 }
 
@@ -138,12 +138,12 @@ a {
 
 .crumbs ul li a:after {
   content: ">";
-  margin: 5px 10px;
+  margin: calc(5px / 1.5) calc(10px / 1.5);
 }
 
 .crumbs ul li a.active {
   color: #282F39;
-  border-bottom: 3px solid #282F39;
+  border-bottom: calc(3px / 1.5) solid #282F39;
 }
 
 .crumbs ul li:last-child a:after {
@@ -157,16 +157,16 @@ a {
 
 .view-icon {
   display: inline-block;
-  margin: 5px 0;
+  margin: calc(5px / 1.5) 0;
   cursor: pointer;
-  border-right: 1px solid #282F3A;
-  padding: 0 5px;
+  border-right: calc(1px / 1.5) solid #282F3A;
+  padding: 0 calc(5px / 1.5);
 }
 .view-icon img,
 .round-btn {
   cursor: pointer;
   @media (max-width: 1260px) {
-    height: 30px;
+    height: calc(30px / 1.5);
   }
 }
 
@@ -185,10 +185,10 @@ a {
   text-align: center;
   color: #282F39;
   background: rgb(255, 255, 255);
-  border: 1px solid #878A8F;
-  box-shadow: #CBCCCE 1px 1px 3px 1px;
+  border: calc(1px / 1.5) solid #878A8F;
+  box-shadow: #CBCCCE calc(1px / 1.5) calc(1px / 1.5) calc(3px / 1.5) calc(1px / 1.5);
   white-space: nowrap;
-  padding: 10px;
+  padding: calc(10px / 1.5);
 }
 
 .popup-panel:after {
@@ -197,10 +197,10 @@ a {
   z-index: 3;
   width: 0;
   height: 0;
-  border-width: 15px;
+  border-width: calc(15px / 1.5);
   border-style: solid;
   border-color: transparent transparent #FFFFFF transparent;
-  top: -28px;
+  top: calc(-28px / 2);
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -209,10 +209,10 @@ a {
 .popup-panel i,
 .popup-panel img{
   display: inline-block;
-  margin: 5px 0;
+  margin: calc(5px / 1.5) 0;
   cursor: pointer;
-  padding: 0 10px 0 5px;
-  border-right: 1px solid #282F3A;
+  padding: 0 calc(10px / 1.5) 0 calc(5px / 1.5);
+  border-right: calc(1px / 1.5) solid #282F3A;
 }
 
 .popup-panel i:hover,
@@ -227,7 +227,7 @@ a {
 
 .popup-panel img {
   @media (max-width: 1260px) {
-    height: 20px;
+    height: calc(20px / 1.5);
   }
 }
 .popup-left-arrow:after {
@@ -245,19 +245,19 @@ a {
 .searchresults-block-name,
 .column-block-name,
 .app-page-block-title {
-  font-size: 30px;
+  font-size: calc(30px / 1.5);
   white-space: nowrap;
   @media (max-width: 1260px) {
-    font-size: 20px;
+    font-size: calc(20px / 1.5);
   }
 }
 
 .searchresults-block-name:first-letter,
 .column-block-name:first-letter,
 .app-page-block-title:first-letter {
-  font-size: 36px;
+  font-size: calc(36px / 1.5);
   font-weight: 600;
   @media (max-width: 1260px) {
-    font-size: 22px;
+    font-size: calc(22px / 1.5);
   }
 }
