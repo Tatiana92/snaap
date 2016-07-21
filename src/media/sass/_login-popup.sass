@@ -5,24 +5,24 @@
 
   display: block
   width: 60%
-  max-width: 700px
+  max-width: calc(700px / 1.5)
   max-height: 100vh
-  padding: 50px 30px 10px
+  padding: calc(50px / 1.5) calc(30px / 1.5) calc(10px / 1.5)
   z-index: 10
   overflow-y: auto
   box-sizing: border-box
 
   font-size: 1.2em
 
-  border: 1px solid rgb(88, 88, 88)
-  border-radius: 50px
-  box-shadow: 0px 3px 16px 0px rgba(49, 56, 68, 0.29)
+  border: calc(1px / 1.5) solid rgb(88, 88, 88)
+  border-radius: calc(50px / 1.5)
+  box-shadow: calc(0px / 1.5) calc(3px / 1.5) calc(16px / 1.5) calc(0px / 1.5) rgba(49, 56, 68, 0.29)
   background-color: transparent
 
   transform: translate(-50%, -50%)
 
   @media (max-width: 650px) 
-    padding: 20px
+    padding: calc(20px / 1.5)
 
   a
     text-decoration: underline
@@ -49,24 +49,24 @@
     background-image: url(../img/images/register-background-right.png)
     background-position:  center right
     background-repeat: no-repeat
-    background-size: auto 50px
+    background-size: auto calc(50px / 1.5)
     background-color: transparent
 
     @media (max-width: 600px) 
-      background-size: auto 40px
+      background-size: auto calc(40px / 1.5)
     @media (max-width: 400px) 
-      background-size: auto 20px
+      background-size: auto calc(20px / 1.5)
 
 .additional-text
     color: #818181;
-    margin: 30px 0;
+    margin: calc(30px / 1.5) 0;
 
 .login-popup__title-with-line
     white-space: nowrap
     display: table
     font-weight: normal
     &:after 
-      border-top: 1px solid #B9B9B9
+      border-top: calc(1px / 1.5) solid #B9B9B9
       content: ''
       display: table-cell
       position: relative
@@ -75,11 +75,11 @@
       width: 90%
 
 .login-popup__title-with-line p:first-letter
-    font-size: 36px
+    font-size: calc(36px / 1.5)
     font-weight: bold
     
     @media (max-width: 1260px)
-      font-size: 22px
+      font-size: calc(22px / 1.5)
 
 .login-popup__error-text
     color: #EB2F30
@@ -96,7 +96,7 @@
     padding: .7em
     font-size: 1.2em
     margin: 1em 0 1.5em
-    border: 1px solid #dadada
+    border: calc(1px / 1.5) solid #dadada
 
 .login-popup__submit
     background: #F7395D
@@ -106,7 +106,7 @@
     padding: 1em 0
     font-size: 1.2em
     margin: 1em 0 0
-    border: 0px solid transparent
+    border: calc(0px / 1.5) solid transparent
     cursor: pointer
     &:hover
         background: #F43A56
@@ -118,19 +118,19 @@
     margin-top: .5em
     text-align: left
     overflow: hidden
-    min-width: 350px
+    min-width: calc(350px / 1.5)
     
     span
         display: inline-block
-        margin-left: 10px
+        margin-left: calc(10px / 1.5)
         
     &.login-social__icon
-        padding-left: 83px
+        padding-left: calc(83px / 1.5)
         border-radius: 0
 
         
         @media (min-width: 1260px)
-            padding-left: 125px
+            padding-left: calc(125px / 1.5)
             
     &.login-social_in
         background: #0177b5

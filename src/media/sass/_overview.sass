@@ -1,41 +1,41 @@
 .container
   .app-page-bottom-block
-    padding: 65px 0 39px
-    border-bottom: 1px solid #cbcbcb
+    padding: calc(65px / 1.5) 0 calc(39px / 1.5)
+    border-bottom: calc(1px / 1.5) solid #cbcbcb
     @media (max-width: 680px)
-      padding: 30px 0
+      padding: calc(30px / 1.5) 0
       -webkit-flex-direction: column
       flex-direction: column
     .app-page-bottom-selectors a
       @media (max-width: 480px)
-        font-size: 11px
-        padding: 3px
+        font-size: calc(11px / 1.5)
+        padding: calc(3px / 1.5)
 
 
 .overview-content
-  padding: 112px 0
+  padding: calc(112px / 1.5) 0
 
 .table
   position: relative
 
-  width: calc(100% - 118px)
+  width: calc(100% - calc(118px / 1.5))
   max-width: 100%
 
   text-align: center
-  font-size: 20px
+  font-size: calc(20px / 1.5)
   font-weight: lighter
 
   border-collapse: separate
   border-spacing: 0
-  border: 1px solid rgba(79, 88, 101, 0.54)
-  border-top-right-radius: 30px
-  border-top-left-radius: 30px
+  border: calc(1px / 1.5) solid rgba(79, 88, 101, 0.54)
+  border-top-right-radius: calc(30px / 1.5)
+  border-top-left-radius: calc(30px / 1.5)
 
-  @media screen and(max-width: 900px)
+  @media screen and(max-width: calc(900px / 1.5))
     width: 100%
 
     border: none
-    font-size: 16px
+    font-size: calc(16px / 1.5)
 
   &:after
     position: absolute
@@ -47,75 +47,75 @@
     height: 100%
 
     background-color: #e4edfa
-    border-top-right-radius: 30px
-    border-top-left-radius: 30px
+    border-top-right-radius: calc(30px / 1.5)
+    border-top-left-radius: calc(30px / 1.5)
     content: ''
 
-    @media screen and(max-width: 900px)
+    @media screen and(max-width: calc(900px / 1.5))
       display: none
 
 
   thead
 
-    @media screen and(max-width: 900px)
+    @media screen and(max-width: calc(900px / 1.5))
       display: none
 
   th
-    padding: 14px 37px
+    padding: calc(14px / 1.5) calc(37px / 1.5)
 
-    font-size: 20px
+    font-size: calc(20px / 1.5)
     font-weight: lighter
 
-    border: 1px solid rgba(79, 88 , 101, 0.54)
+    border: calc(1px / 1.5) solid rgba(79, 88 , 101, 0.54)
     background-color: #e4edfa
 
     &:first-child
       color: #e4edfa
       font-weight: bolder
 
-      border-top-left-radius: 30px
-      border-bottom-left-radius: 30px
+      border-top-left-radius: calc(30px / 1.5)
+      border-bottom-left-radius: calc(30px / 1.5)
       background-color: #282f39
 
     &:last-child
-      border-top-right-radius: 30px
-      border-bottom-right-radius: 30px
+      border-top-right-radius: calc(30px / 1.5)
+      border-bottom-right-radius: calc(30px / 1.5)
       border-collapse: separate
 
   tr
-    @media screen and(max-width: 900px)
+    @media screen and(max-width: calc(900px / 1.5))
       display: block
       width: 100%
 
   tr + tr
-    @media screen and(max-width: 900px)
-      margin-top: 20px
+    @media screen and(max-width: calc(900px / 1.5))
+      margin-top: calc(20px / 1.5)
       white-space: nowrap
 
   td
     vertical-align: middle
-    padding: 30px 0
+    padding: calc(30px / 1.5) 0
 
     background-color: #ffffff
-    border-bottom: 1px solid rgba(79, 88, 101, 0.54)
-    border-right: 1px solid rgba(79, 88, 101, 0.54)
+    border-bottom: calc(1px / 1.5) solid rgba(79, 88, 101, 0.54)
+    border-right: calc(1px / 1.5) solid rgba(79, 88, 101, 0.54)
 
-    @media screen and(max-width: 900px)
+    @media screen and(max-width: calc(900px / 1.5))
       position: relative
 
       display: block
       width: 100% !important
       box-sizing: border-box
-      padding-left: calc(50% + 20px)
+      padding-left: calc(50% + calc(20px / 1.5))
 
-      border-left: 1px solid rgba(79, 88, 101, 0.54)
+      border-left: calc(1px / 1.5) solid rgba(79, 88, 101, 0.54)
 
       overflow: hidden
       white-space: nowrap
       text-overflow: ellipsis
 
     &:before
-      @media screen and(max-width: 900px)
+      @media screen and(max-width: calc(900px / 1.5))
         position: absolute
         left: 0
         top: 0
@@ -123,8 +123,8 @@
         display: table-cell
         width: 50%
         height: 100%
-        padding-left: 20px
-        padding-top: 30px
+        padding-left: calc(20px / 1.5)
+        padding-top: calc(30px / 1.5)
 
         text-align: left
         vertical-align: middle
@@ -135,19 +135,19 @@
     &:last-child
       border-right: none
 
-      @media screen and(max-width: 900px)
-        border-right: 1px solid rgba(79, 88, 101, 0.54)
+      @media screen and(max-width: calc(900px / 1.5))
+        border-right: calc(1px / 1.5) solid rgba(79, 88, 101, 0.54)
         padding-bottom: 0
 
     &:first-child
-      padding: 30px
+      padding: calc(30px / 1.5)
 
-      @media screen and(max-width: 900px)
-        border-top: 1px solid rgba(79, 88, 101, 0.54)
-        padding: 30px 10px 30px calc(50% + 30px)
+      @media screen and(max-width: calc(900px / 1.5))
+        border-top: calc(1px / 1.5) solid rgba(79, 88, 101, 0.54)
+        padding: calc(30px / 1.5) calc(10px / 1.5) calc(30px / 1.5) calc(50% + calc(30px / 1.5))
 
       &:before
-        @media screen and(max-width: 900px)
+        @media screen and(max-width: calc(900px / 1.5))
           padding-top: 0
 
           background-color: #282f39
@@ -158,7 +158,7 @@
 
     img
       width: 100%
-      max-width: 200px
+      max-width: calc(200px / 1.5)
 
   tr:last-child
     td
@@ -171,39 +171,39 @@
       position: relative
 
       display: inline-block
-      width: 51px
-      height: 51px
+      width: calc(51px / 1.5)
+      height: calc(51px / 1.5)
 
-      border-radius: 15px
+      border-radius: calc(15px / 1.5)
       background-color: #ffffff
       box-shadow: inset 1.805px -2.396px 4.14px 1.86px rgba(104, 102, 102, 0.32)
 
       cursor: pointer
 
-      @media screen and(max-width: 900px)
-        height: 25px
-        width: 25px
+      @media screen and(max-width: calc(900px / 1.5))
+        height: calc(25px / 1.5)
+        width: calc(25px / 1.5)
 
-        border-radius: 7px
+        border-radius: calc(7px / 1.5)
         box-shadow: inset 1.805px -2.396px 2.12px 1.86px rgba(104, 102, 102, 0.32)
 
     &:checked + label:before
       position: absolute
-      left: 10px
-      top: 3px
+      left: calc(10px / 1.5)
+      top: calc(3px / 1.5)
 
-      width: 49px
-      height: 36px
+      width: calc(49px / 1.5)
+      height: calc(36px / 1.5)
       background: url('../img/images/checkbox-mark.png')
       background-repeat: no-repeat
 
       content: ''
 
-      @media screen and(max-width: 900px)
-        left: 5px
+      @media screen and(max-width: calc(900px / 1.5))
+        left: calc(5px / 1.5)
 
-        width: 24px
-        height: 18px
+        width: calc(24px / 1.5)
+        height: calc(18px / 1.5)
 
         background-size: contain
 
@@ -214,14 +214,14 @@
     td
       background-color: #e4edfa
 
-      @media screen and(max-width: 900px)
+      @media screen and(max-width: calc(900px / 1.5))
         background-color: #ffffff
 
 .table--overview
   table-layout: fixed
 
   th
-    padding: 14px 10px
+    padding: calc(14px / 1.5) calc(10px / 1.5)
   td:first-child
     width: 22%
   td:nth-child(2),
@@ -236,28 +236,28 @@
 .delete-row
   position: absolute
   top: 50%
-  right: -117px
+  right: calc(-117px / 1.5)
 
-  width: 115px
-  height: 53px
-  margin-top: -26px
+  width: calc(115px / 1.5)
+  height: calc(53px / 1.5)
+  margin-top: calc(-26px / 1.5)
 
-  border: 1px solid rgba(124, 132, 144, 0.54)
+  border: calc(1px / 1.5) solid rgba(124, 132, 144, 0.54)
   border-left: none
-  border-top-right-radius: 15px
-  border-bottom-right-radius: 15px
+  border-top-right-radius: calc(15px / 1.5)
+  border-bottom-right-radius: calc(15px / 1.5)
   background: #ffffff url('../img/icons/delete-icon.png') center center no-repeat
 
   cursor: pointer
 
-  @media screen and(max-width: 900px)
+  @media screen and(max-width: calc(900px / 1.5))
     position: relative
     width: 211%
     right: auto
     left: -111%
     top: auto
     bottom: 0
-    margin-top: 30px
+    margin-top: calc(30px / 1.5)
 
 
     border-radius: 0

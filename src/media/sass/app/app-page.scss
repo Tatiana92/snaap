@@ -8,17 +8,17 @@
 .app-page-bottom-selectors a {
   display: inline-block;
   background-color: transparent;
-  margin: 8px 0 !important;
-  padding: 5px 15px;
+  margin: calc(8px / 1.5) 0 !important;
+  padding: calc(5px / 1.5) calc(15px / 1.5);
   text-decoration: none;
   color: #282f39;
-  border: 1px solid #282f39;
+  border: calc(1px / 1.5) solid #282f39;
   float: left;
   @media (max-width: 600px) {
-    padding: 5px;
+    padding: calc(5px / 1.5);
   }
   @media (max-width: 360px) {
-    font-size: 13px;
+    font-size: calc(13px / 1.5);
   }
 }
 
@@ -29,62 +29,62 @@
 }
 
 .app-page-bottom-selectors a:last-child {
-  -webkit-border-top-right-radius: 10px;
-  border-top-right-radius: 10px;
-  -moz-border-top-right-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  -moz-border-bottom-right-radius: 10px;
+  -webkit-border-top-right-radius: calc(10px / 1.5);
+  border-top-right-radius: calc(10px / 1.5);
+  -moz-border-top-right-radius: calc(10px / 1.5);
+  -webkit-border-bottom-right-radius: calc(10px / 1.5);
+  border-bottom-right-radius: calc(10px / 1.5);
+  -moz-border-bottom-right-radius: calc(10px / 1.5);
 }
 
 .app-page-bottom-selectors a:first-child {
-  -webkit-border-top-left-radius: 10px;
-  border-top-left-radius: 10px;
-  -moz-border-top-left-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  -moz-border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: calc(10px / 1.5);
+  border-top-left-radius: calc(10px / 1.5);
+  -moz-border-top-left-radius: calc(10px / 1.5);
+  -webkit-border-bottom-left-radius: calc(10px / 1.5);
+  border-bottom-left-radius: calc(10px / 1.5);
+  -moz-border-bottom-left-radius: calc(10px / 1.5);
 }
 
 .app-page-block {
   display: block;
   overflow: hidden;
-  margin-left: 250px;
-  border: 1px solid #dcdadb;
+  margin-left: calc(250px / 1.5);
+  border: calc(1px / 1.5) solid #dcdadb;
   background-color: white;
   @media (max-width: 1260px) {
-    margin-left: 150px;
+    margin-left: calc(150px / 1.5);
   }
   @media (max-width: 600px) {
-    margin: 0px;
+    margin: calc(0px / 1.5);
   }
 }
 
 .app-page-block-footer {
   // position: fixed;
-  // bottom: 0px;
+  // bottom: calc(0px / 1.5);
   background-color: #7b8a9f;
-  -webkit-border-bottom-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  -moz-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  -moz-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: calc(10px / 1.5);
+  border-bottom-right-radius: calc(10px / 1.5);
+  -moz-border-bottom-right-radius: calc(10px / 1.5);
+  -webkit-border-bottom-left-radius: calc(10px / 1.5);
+  border-bottom-left-radius: calc(10px / 1.5);
+  -moz-border-bottom-left-radius: calc(10px / 1.5);
 }
 
 .app-page-block-footer div {
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-top: calc(10px / 1.5);
+  padding-right: calc(20px / 1.5);
+  padding-bottom: calc(20px / 1.5);
+  padding-left: calc(20px / 1.5);
   @media (max-width: 850px) {
-    padding: 10px;
+    padding: calc(10px / 1.5);
   }
 }
 
 .app-page-content {
   overflow: hidden;
-  margin: 20px;
+  margin: calc(20px / 1.5);
 }
 
 .app-page-block-title {
@@ -99,23 +99,23 @@
     left: 1.75%;
     z-index: 0;
     width: 100%;
-    border-top: 1px solid #cbcbcb;
+    border-top: calc(1px / 1.5) solid #cbcbcb;
   }
 }
 
 .app-page-block-text {
-  margin: 20px 0;
-  margin-left: 100px;
+  margin: calc(20px / 1.5) 0;
+  margin-left: calc(100px / 1.5);
   @media (max-width: 1260px) {
-    margin-left: 70px;
+    margin-left: calc(70px / 1.5);
   }
   @media (max-width: 600px) {
-    margin-left: 20px;
+    margin-left: calc(20px / 1.5);
   }
 }
 
 .red-markers-list {
-  margin-top: 20px;
+  margin-top: calc(20px / 1.5);
   list-style-position: inside;
 }
 
@@ -129,7 +129,7 @@
 }
 
 .app-page-blocks-group {
-  padding-top: 10px;
+  padding-top: calc(10px / 1.5);
 }
 
 .app-page-blocks-group .searchresults-block {
@@ -142,7 +142,7 @@
 .app-page-blocks-group .searchresults-block-text {
   @media (max-width: 850px) {
     border-left: none;
-    border-top-width: 3px;
+    border-top-width: calc(3px / 1.5);
     border-top-style: solid;
   }
 }
@@ -150,14 +150,14 @@
 /*links in the left side of page*/
 .tab-container {
   width: auto;
-  margin: 20px 0 0 0;
+  margin: calc(20px / 1.5) 0 0 0;
   @media (min-width: 600px) {
     float: left;
-    width: 150px;
+    width: calc(150px / 1.5);
   }
   @media (min-width: 1260px) {
     float: left;
-    width: 250px;
+    width: calc(250px / 1.5);
   }
 }
 
@@ -172,23 +172,23 @@
 
 .tab-container ul li a {
   display: block;
-  margin: 8px 0;
-  padding: 5px 15px;
+  margin: calc(8px / 1.5) 0;
+  padding: calc(5px / 1.5) calc(15px / 1.5);
   text-decoration: none;
   color: inherit;
-  border: 1px solid #282f39;
+  border: calc(1px / 1.5) solid #282f39;
   border-right: none !important;
-  -webkit-border-top-left-radius: 10px;
-  border-top-left-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  -moz-border-top-left-radius: 10px;
-  -moz-border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: calc(10px / 1.5);
+  border-top-left-radius: calc(10px / 1.5);
+  -webkit-border-bottom-left-radius: calc(10px / 1.5);
+  border-bottom-left-radius: calc(10px / 1.5);
+  -moz-border-top-left-radius: calc(10px / 1.5);
+  -moz-border-bottom-left-radius: calc(10px / 1.5);
   @media (max-width: 600px) {
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-right: 1px solid #282f39 !important;
+    border-radius: calc(10px / 1.5);
+    -webkit-border-radius: calc(10px / 1.5);
+    -moz-border-radius: calc(10px / 1.5);
+    border-right: calc(1px / 1.5) solid #282f39 !important;
   }
 }
 
@@ -205,7 +205,7 @@
     height: auto;
   }
   @media (min-width: 1100px) {
-    height: 450px;
+    height: calc(450px / 1.5);
     width: auto;
   }
 }
@@ -213,17 +213,17 @@
 .carousel {
   position: relative;
   width: auto;
-  padding: 10px 40px;
-  margin: 10px 0;
+  padding: calc(10px / 1.5) calc(40px / 1.5);
+  margin: calc(10px / 1.5) 0;
 }
 
 .carousel li img {
-  width: 140px;
-  height: 100px;
+  width: calc(140px / 1.5);
+  height: calc(100px / 1.5);
   display: block;
-  margin: 0px 10px;
+  margin: calc(0px / 1.5) calc(10px / 1.5);
   cursor: pointer;
-  border: 2px solid transparent;
+  border: calc(2px / 1.5) solid transparent;
 }
 
 .carousel li img:hover,
@@ -237,7 +237,7 @@
 }
 
 .gallery ul {
-  width: 9999px;
+  width: calc(9999px / 1.5);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -251,7 +251,7 @@
 /*arrows for carousel*/
 .arrow {
   position: absolute;
-  top: 50px;
+  top: calc(50px / 1.5);
   padding: 0;
   display: block;
   cursor: pointer;
@@ -262,12 +262,12 @@
 }
 
 .prev {
-  left: 7px;
+  left: calc(7px / 1.5);
   opacity: 0.3;
 }
 
 .next {
-  right: 7px;
+  right: calc(7px / 1.5);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);

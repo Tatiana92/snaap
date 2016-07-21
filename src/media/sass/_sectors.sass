@@ -1,35 +1,35 @@
 .sector-block
-    border-bottom: 1px solid #cbcbcb
+    border-bottom: calc(1px / 1.5) solid #cbcbcb
     
     .sector
         white-space: nowrap
-        margin-bottom: 20px
-        font-size: 17px
+        margin-bottom: calc(20px / 1.5)
+        font-size: calc(17px / 1.5)
         text-align: center
 
         a
             display: inline-block;
             background-color: transparent
-            margin: 8px 0 !important
-            padding: 5px 15px
+            margin: calc(8px / 1.5) 0 !important
+            padding: calc(5px / 1.5) calc(15px / 1.5)
             text-decoration: none;
             color: #282f39
-            border: 1px solid #282f39;
+            border: calc(1px / 1.5) solid #282f39;
             float: left
-            width: 80px
+            width: calc(80px / 1.5)
             
             @media (max-width: 600px)
-                padding: 5px
+                padding: calc(5px / 1.5)
             @media (max-width: 360px)
-                font-size: 13px
+                font-size: calc(13px / 1.5)
                 
             &:hover, &.selected
                 background-color: #E4EDFA
 
             &:last-child
-                border-top-right-radius: 10px
-                border-bottom-right-radius: 10px
+                border-top-right-radius: calc(10px / 1.5)
+                border-bottom-right-radius: calc(10px / 1.5)
           
             &:first-child
-                border-top-left-radius: 10px
-                border-bottom-left-radius: 10px
+                border-top-left-radius: calc(10px / 1.5)
+                border-bottom-left-radius: calc(10px / 1.5)

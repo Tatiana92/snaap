@@ -17,22 +17,22 @@
 
   display: none
   width: 95%
-  max-width: 1139px
+  max-width: calc(1139px / 1.5)
   max-height: 100vh
-  padding: 50px 90px 70px 80px
+  padding: calc(50px / 1.5) calc(90px / 1.5) calc(70px / 1.5) calc(80px / 1.5)
   z-index: 10
   overflow-y: auto
   box-sizing: border-box
 
-  border: 1px solid rgb(88, 88, 88)
-  border-radius: 50px
+  border: calc(1px / 1.5) solid rgb(88, 88, 88)
+  border-radius: calc(50px / 1.5)
   background-color: rgba(255, 255, 255, 0.961)
-  box-shadow: 0px 3px 16px 0px rgba(49, 56, 68, 0.29)
+  box-shadow: calc(0px / 1.5) calc(3px / 1.5) calc(16px / 1.5) calc(0px / 1.5) rgba(49, 56, 68, 0.29)
 
   transform: translate(-50%, -50%)
 
   @media (max-width: 650px) 
-    padding: 20px
+    padding: calc(20px / 1.5)
 
   &__header
     display: flex
@@ -40,28 +40,28 @@
     flex-wrap: no-wrap
     align-items: center
 
-    font-size: 35px
+    font-size: calc(35px / 1.5)
 
     @media (max-width: 570px)
       flex-direction: column
 
     img 
       @media (max-width: 850px)
-        width: 150px
+        width: calc(150px / 1.5)
       @media (max-width: 400px)
-        width: 100px
+        width: calc(100px / 1.5)
     p
       flex: 1
-      padding-left: 55px
+      padding-left: calc(55px / 1.5)
 
       @media (max-width: 1260px)
-        font-size: 33px
+        font-size: calc(33px / 1.5)
 
       @media (max-width: 850px)
-        font-size: 20px
+        font-size: calc(20px / 1.5)
       @media (max-width: 570px)
-        padding-left: 0px
-        font-size: 17px
+        padding-left: calc(0px / 1.5)
+        font-size: calc(17px / 1.5)
 
       span
         display: block
@@ -71,18 +71,18 @@
 
 
   &__features
-    margin-top: 38px
+    margin-top: calc(38px / 1.5)
     @media (max-width: 570px) 
-      margin-top: 20px
+      margin-top: calc(20px / 1.5)
 
     h4
       font-size: 1.5em
 
-      padding-bottom: 16px
-      margin-bottom: 39px
-      border-bottom: 1px solid #b9b9b9
+      padding-bottom: calc(16px / 1.5)
+      margin-bottom: calc(39px / 1.5)
+      border-bottom: calc(1px / 1.5) solid #b9b9b9
       @media (max-width: 570px) 
-        margin-bottom: 20px
+        margin-bottom: calc(20px / 1.5)
         
 
   &__feature
@@ -91,34 +91,34 @@
     align-items: center
 
     &:not(:last-child)
-      margin-bottom: 34px
+      margin-bottom: calc(34px / 1.5)
       @media (max-width: 570px)
-        margin-bottom: 15px
+        margin-bottom: calc(15px / 1.5)
 
     .feature-label
-      flex-basis: 110px
+      flex-basis: calc(110px / 1.5)
       @media (max-width: 570px)
-        flex-basis: 90px
+        flex-basis: calc(90px / 1.5)
 
   .feature-scale
     flex: 1
 
-    padding: 0 22px
+    padding: 0 calc(22px / 1.5)
     @media (max-width: 570px)
-      padding: 0 5px
+      padding: 0 calc(5px / 1.5)
 
     .feature-meter
-      border-radius: 10px
-      height: 45px
+      border-radius: calc(10px / 1.5)
+      height: calc(45px / 1.5)
 
       overflow: hidden
 
       background-color: #dedede
       @media (max-width: 570px)
-        height: 25px
+        height: calc(25px / 1.5)
 
     .feature-bar
-      height: 45px
+      height: calc(45px / 1.5)
 
       &--features
         background-color: #ffd966
@@ -141,14 +141,14 @@
         width: 32%
 
       @media (max-width: 570px)
-        height: 25px
+        height: calc(25px / 1.5)
 
   .feature-up,
   .feature-down
     display: inline-block
 
-    width: 45px
-    height: 45px
+    width: calc(45px / 1.5)
+    height: calc(45px / 1.5)
     border-radius: 50%
 
     background-color: #282f39
@@ -157,8 +157,8 @@
 
     cursor: pointer
     @media (max-width: 570px)
-      width: 25px
-      height: 25px
+      width: calc(25px / 1.5)
+      height: calc(25px / 1.5)
       background-size: 60%
 
   .feature-up
@@ -169,26 +169,26 @@
 
 .popup-close
   position: absolute
-  top: 43px
-  right: 44px
+  top: calc(43px / 1.5)
+  right: calc(44px / 1.5)
 
-  width: 63px
-  height: 63px
+  width: calc(63px / 1.5)
+  height: calc(63px / 1.5)
 
   background-image: url('../img/icons/close-popup-icon.png')
   background-position: center center
   background-repeat: no-repeat
-  border: 1px solid rgb(162, 162, 162);
+  border: calc(1px / 1.5) solid rgb(162, 162, 162);
   background-color: rgb(246, 57, 93);
   border-radius: 50%
 
   cursor: pointer
   @media (max-width: 650px) 
-    top: 21px
-    right: 22px
+    top: calc(21px / 1.5)
+    right: calc(22px / 1.5)
     background-size: 50%
-    width: 31px
-    height: 31px
+    width: calc(31px / 1.5)
+    height: calc(31px / 1.5)
 
 
 

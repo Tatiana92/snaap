@@ -6,7 +6,7 @@ header {
 .header-pane {
   box-sizing: border-box;
   margin: 0;
-  padding: 15px 0;
+  padding: calc(15px / 1.5) 0;
   background-color: #282F39;
   position: relative;
   z-index: 4;
@@ -33,61 +33,61 @@ header {
   box-sizing: border-box;
   display: inline-block;
   width: auto;
-  border: 8px solid #4C5059;
+  border: calc(8px / 1.5) solid #4C5059;
   overflow: hidden;
   .search-input {
-    width: 300px;
-    height: 42px;
+    width: calc(300px / 1.5);
+    height: calc(42px / 1.5);
     margin: 0;
-    font-size: 18px;
-    padding-left: 60px;
+    font-size: calc(18px / 1.5);
+    padding-left: calc(60px / 1.5);
     text-align: left;
-    border: 1px solid #9f9f9f;
+    border: calc(1px / 1.5) solid #9f9f9f;
     background: url(../img/icons/search-icon.png) no-repeat left white;
-    background-size: 25px auto;
-    background-position: 20px center;
-    @media screen and(min-width: 1260px) {
-      height: 48px;
-      width: 500px;
+    background-size: calc(25px / 1.5) auto;
+    background-position: calc(20px / 1.5) center;
+    @media screen and(min-width: calc(1260px / 1.5)) {
+      height: calc(48px / 1.5);
+      width: calc(500px / 1.5);
     }
   }
   .search-button {
     position: absolute;
-    top: 1px;
+    top: calc(1px / 1.5);
     right: 0;
-    width: 70px;
-    height: 40px;
-    padding: 0 10px;
-    font-size: 18px;
+    width: calc(70px / 1.5);
+    height: calc(40px / 1.5);
+    padding: 0 calc(10px / 1.5);
+    font-size: calc(18px / 1.5);
     font-weight: 600;
     text-align: center;
-    line-height: 40px;
+    line-height: calc(40px / 1.5);
     color: #feccd6;
     border: none;
     background-color: #f6395d;
     cursor: pointer;
     color: #FECCD6;
-    @media screen and(min-width: 1260px) {
-      top: 1px;
-      height: 50px;
+    @media screen and(min-width: calc(1260px / 1.5)) {
+      top: calc(1px / 1.5);
+      height: calc(50px / 1.5);
     }
     &:before {
       content: "";
       position: absolute;
-      left: -18px;
+      left: calc(-18px / 1.5);
       top: 0;
-      border-left: 19px solid transparent;
-      border-bottom: 40px solid #f6395d;
-      height: 0px;
-      @media screen and(min-width: 1260px) {
-        border-bottom: 50px solid #f6395d;
+      border-left: calc(19px / 1.5) solid transparent;
+      border-bottom: calc(40px / 1.5) solid #f6395d;
+      height: calc(0px / 1.5);
+      @media screen and(min-width: calc(1260px / 1.5)) {
+        border-bottom: calc(50px / 1.5) solid #f6395d;
       }
       &__text {
         position: absolute;
         left: 50%;
-        transform: translateX(calc(-50% - 5px));
-        @media screen and(min-width: 580px) {
-          transform: translateX(calc(-50% - 10px));
+        transform: translateX(calc(-50% - calc(5px / 1.5)));
+        @media screen and(min-width: calc(580px / 1.5)) {
+          transform: translateX(calc(-50% - calc(10px / 1.5)));
         }
       }
     }
@@ -96,8 +96,11 @@ header {
 
 .login-btn {
   background-color: #282F39;
-  border: 1px solid #3D4550;
+  border: calc(1px / 1.5) solid #3D4550;
   color: white;
+  background: url('../img/icons/profile-icon.png') no-repeat 6% 50%;
+  background-size: 32%;
+  padding-left: 13%;
 }
 
 .white-btn {
@@ -107,9 +110,11 @@ header {
 
 .header-image {
   vertical-align: middle;
-  margin: 5px;
+  margin: calc(5px / 1.5);
+  height: calc(50px / 1.5);
+
   @media (max-width: 1260px) {
-    height: 30px;
+    height: calc(30px / 1.5);
   }
 }
 
@@ -119,55 +124,55 @@ header {
 .title-pane {
   position: relative;
   margin: 0;
-  padding-left: 30px;
+  padding-left: calc(30px / 1.5);
   background-color: #E5EDFA;
   vertical-align: bottom;
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   @media (max-width: 1260px) {
-    padding-left: 10px;
+    padding-left: calc(10px / 1.5);
   }
 }
 .page-title-text {
-  padding: 0px;
-  margin: 0px;
+  padding: calc(0px / 1.5);
+  margin: calc(0px / 1.5);
   display: inline-block;
   text-align: left;
-  margin-top: 5px;
+  margin-top: calc(5px / 1.5);
   text-transform: uppercase;
 }
 
 .page-title-text:after {
   content: '';
-  height: 3px;
-  width: 50px;
+  height: calc(3px / 1.5);
+  width: calc(50px / 1.5);
   background-color: #F7395D;
   display: block;
-  padding: 0px;
-  margin: 0px;
+  padding: calc(0px / 1.5);
+  margin: calc(0px / 1.5);
   vertical-align: bottom;
 }
 
 .title-image {
   vertical-align: top;
-  height: 60px;
+  height: calc(60px / 1.5);
   // float: right;
   @media (max-width: 1260px) {
-    height: 50px;
+    height: calc(50px / 1.5);
   }
   @media (max-width: 460px) {
-    height: 40px;
+    height: calc(40px / 1.5);
   }
 }
 
 .background-image {
-  height: 140px;
+  height: calc(140px / 1.5);
   @media (max-width: 1350px) {
-    height: 100px;
+    height: calc(100px / 1.5);
   }
   @media (max-width: 1000px) {
-    height: 80px;
+    height: calc(80px / 1.5);
   }
   @media (max-width: 860px) {
     display: none;
@@ -178,7 +183,7 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  // margin-top: 20px;
+  // margin-top: calc(20px / 1.5);
   // text-align: left;
   // white-space: nowrap;
   & + img {
@@ -186,8 +191,8 @@ header {
   }
   @media (max-width: 860px) {
     position: relative;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    padding-bottom: calc(10px / 1.5);
+    padding-top: calc(20px / 1.5);
     margin-left: auto;
     margin-right: auto;
     text-align: center;

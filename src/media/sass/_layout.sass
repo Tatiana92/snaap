@@ -1,15 +1,15 @@
 .container
   box-sizing: border-box
   width: 100%
-  max-width: 1552px
+  max-width: calc(1552px / 1.5)
   margin: 0 auto
-  padding: 0 20px
+  padding: 0 calc(20px / 1.5)
 
-  @media screen and(min-width: 1592px)
+  @media screen and(min-width: calc(1592px / 1.5))
     padding: 0
 
 .u-pt
-  padding-top: 20px
+  padding-top: calc(20px / 1.5)
 
 .u-center
   text-align: center
@@ -22,17 +22,17 @@
   min-height: 100%
   height: auto !important
   height: 100%
-  margin-bottom: -110px
+  margin-bottom: calc(-110px / 1.5)
   .wrapper__push
-    height: 110px
+    height: calc(110px / 1.5)
 
 .skin
   position: relative
-  width: 960px
+  width: calc(960px / 1.5)
   margin: auto
 
 .row
   @extend .clearfix
   position: relative
-  margin-left: -20px
-  margin-right: -20px
+  margin-left: calc(-20px / 1.5)
+  margin-right: calc(-20px / 1.5)

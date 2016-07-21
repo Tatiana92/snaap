@@ -7,18 +7,18 @@
         position: relative
         word-wrap: break-word
         white-space: normal
-        margin-right: 96px
+        margin-right: calc(96px / 1.5)
         @media (min-width: 1260px)
-            margin-right: 136px
+            margin-right: calc(136px / 1.5)
 
     &.category__icon
         position: absolute
         top: 0
-        right: 64px
-        padding: 12px
+        right: calc(64px / 1.5)
+        padding: calc(12px / 1.5)
         @media (min-width: 1260px)
-            padding: 18px
-            right: 112px
+            padding: calc(18px / 1.5)
+            right: calc(112px / 1.5)
 
     &.category__link
         position: absolute
@@ -27,12 +27,12 @@
         color: #4B86DB;
 
     &.category__list
-        margin-bottom: 80px
+        margin-bottom: calc(80px / 1.5)
         margin-left: 6%
         position: relative
 
     &.category_categories
-        margin-bottom: 80px
+        margin-bottom: calc(80px / 1.5)
         position: relative
         
         &:last-child:after
@@ -41,10 +41,10 @@
 
         &:after
             content: ''
-            border-bottom: 1px #ccc solid
+            border-bottom: calc(1px / 1.5) #ccc solid
             padding: 0 50%
             position: absolute
-            bottom: -40px
+            bottom: calc(-40px / 1.5)
             margin-left: 0%
 
 

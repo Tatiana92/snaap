@@ -18,27 +18,27 @@
 
   display: block
   width: 95%
-  max-width: 1100px
+  max-width: calc(1100px / 1.5)
   max-height: 100vh
-  padding: 50px 30px
+  padding: calc(50px / 1.5) calc(30px / 1.5)
   overflow-y: auto
   box-sizing: border-box
 
   font-size: 1
 
-  border: 1px solid rgb(88, 88, 88)
-  border-radius: 50px
-  box-shadow: 0px 3px 16px 0px rgba(49, 56, 68, 0.29)
+  border: calc(1px / 1.5) solid rgb(88, 88, 88)
+  border-radius: calc(50px / 1.5)
+  box-shadow: calc(0px / 1.5) calc(3px / 1.5) calc(16px / 1.5) calc(0px / 1.5) rgba(49, 56, 68, 0.29)
   background-color: transparent
 
   transform: translate(-50%, -50%)
 
   @media (max-width: 650px) 
-    padding: 20px
+    padding: calc(20px / 1.5)
 
   a
     text-decoration: none
-    border-bottom: 1px #3A7CF6 solid
+    border-bottom: calc(1px / 1.5) #3A7CF6 solid
     color: #3A7CF6
 
   .image-button a
@@ -49,7 +49,7 @@
   background-image: url(../img/images/papersheets.png)
   background-position: 30% 100%
   background-repeat: no-repeat
-  background-size: auto 70px
+  background-size: auto calc(70px / 1.5)
   background-color: white
 
   @media (max-width: 450px) 
@@ -67,81 +67,81 @@
   background-image: url(../img/images/background-congrats-left.png), url(../img/images/background-congrats-center.png), url(../img/images/background-congrats-right.png)
   background-position: left bottom, center bottom,  right bottom
   background-repeat: no-repeat
-  background-size: auto 400px,  auto 70px,  auto 280px
+  background-size: auto calc(400px / 1.5),  auto calc(70px / 1.5),  auto calc(280px / 1.5)
   background-color: white
   z-index: -1
 
   @media (max-width: 400px) 
     opacity: 0.5
-    background-size: auto 290px,  auto 50px,  auto 220px
+    background-size: auto calc(290px / 1.5),  auto calc(50px / 1.5),  auto calc(220px / 1.5)
 
 
 .confirmation-popup.confirmation
   background-image: url(../img/images/register-background-bottom.png), url(../img/images/register-background-right.png)
   background-position: bottom, 100% 60%
   background-repeat: no-repeat
-  background-size: contain, auto 70px
+  background-size: contain, auto calc(70px / 1.5)
   background-color: white
 
   @media (max-width: 700px) 
-    background-size: contain, auto 50px
+    background-size: contain, auto calc(50px / 1.5)
 
   @media (max-width: 600px) 
-    background-size: contain, auto 40px
+    background-size: contain, auto calc(40px / 1.5)
   @media (max-width: 450px) 
     background-position: bottom, 100% 70%
-    background-size: contain, auto 30px
+    background-size: contain, auto calc(30px / 1.5)
   @media (max-width: 400px) 
     background-position: bottom, 100% 65%
-    background-size: contain, auto 20px
+    background-size: contain, auto calc(20px / 1.5)
 
 .confirmation-popup.submit-email
   background-image: url(../img/images/register-background-bottom.png), url(../img/images/arrow-under-mail.png)
   background-position: bottom, 100% 50%
   background-repeat: no-repeat
-  background-size: contain, auto 200px
+  background-size: contain, auto calc(200px / 1.5)
   background-color: white
 
   @media (max-width: 450px) 
     background-position: bottom, 100% 70%
-    background-size: contain, auto 180px
+    background-size: contain, auto calc(180px / 1.5)
   @media (max-width: 400px) 
-    background-size: contain, auto 170px
+    background-size: contain, auto calc(170px / 1.5)
 
 
 
 .confirmation-popup__content
-  padding: 30px;
+  padding: calc(30px / 1.5);
 
 .image-button 
   margin: 2em;
 
   img
-    height: 150px
+    height: calc(150px / 1.5)
 
     @media (max-width: 400px) 
-      height: 100px
+      height: calc(100px / 1.5)
 
   @media (max-width: 400px) 
-    margin: 20px 0;
+    margin: calc(20px / 1.5) 0;
 
 .additional-text
   color: #818181;
-  margin: 30px 0;
+  margin: calc(30px / 1.5) 0;
 
 
 .grey-btn,
 .registration-type
-  margin-top: 20px
-  padding: 10px 20px
+  margin-top: calc(20px / 1.5)
+  padding: calc(10px / 1.5) calc(20px / 1.5)
 
   border: none
   @media (max-width: 350px) 
-    padding: 10px
+    padding: calc(10px / 1.5)
 
 .registration-type
   color: #E4EEFA
-  border: 1px solid #282F39
+  border: calc(1px / 1.5) solid #282F39
   background-color: #282F39
 
 
@@ -164,33 +164,33 @@
     left: 1.5%
     width: 90%
 
-    border-top: 1px solid #cbcbcb
+    border-top: calc(1px / 1.5) solid #cbcbcb
 
 .title-with-line p:first-letter
-  font-size: 36px
+  font-size: calc(36px / 1.5)
   font-weight: 600
   @media (max-width: 1260px)
-    font-size: 22px
+    font-size: calc(22px / 1.5)
 
 .confirmation-popup__brands-item
-  margin-bottom: 20px
+  margin-bottom: calc(20px / 1.5)
 
   background: #E4EEFA;
-  border: 1px solid #DFDDDD;
-  box-shadow: 0 1px 1px #E4EEFA; 
+  border: calc(1px / 1.5) solid #DFDDDD;
+  box-shadow: 0 calc(1px / 1.5) calc(1px / 1.5) #E4EEFA; 
 
 .login-info-popup .brands-col__content 
-  padding: 5px
+  padding: calc(5px / 1.5)
 
 .login-info-popup .brands-col__content .name
-  margin: 0px
+  margin: calc(0px / 1.5)
 
   white-space: normal
   font-size: 0.75em
 
 .confirmation-popup .red-btn
   box-shadow: none
-  padding: 10px 20px
+  padding: calc(10px / 1.5) calc(20px / 1.5)
   border: none
 
 .right-align
@@ -202,34 +202,34 @@
   position: relative
   z-index: -1
 
-  width: 50px
-  margin-left: 20px
+  width: calc(50px / 1.5)
+  margin-left: calc(20px / 1.5)
 
   vertical-align: text-top
 
 .popup-input-form
-  margin: 0 40px
+  margin: 0 calc(40px / 1.5)
   @media (max-width: 400px)
-    margin: 0 20px
+    margin: 0 calc(20px / 1.5)
 
 .popup-input-block
   position: relative
 
-  margin: 20px 0
+  margin: calc(20px / 1.5) 0
 
 .popup-input 
   width: 100%;
-  padding: 5px
-  padding-right: 200px
+  padding: calc(5px / 1.5)
+  padding-right: calc(200px / 1.5)
 
   font-size: 1em
   line-height: 1.75em
   outline: none
 
   color: #666666
-  border: 1px solid #DADADA
+  border: calc(1px / 1.5) solid #DADADA
   @media (max-width: 500px)
-    padding: 5px
+    padding: calc(5px / 1.5)
 
 .popup-input-block .red-btn
   position: absolute
@@ -240,6 +240,6 @@
   height: 100%
   @media (max-width: 500px)
     position: relative
-    margin: 10px 0
+    margin: calc(10px / 1.5) 0
 
 

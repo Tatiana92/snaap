@@ -1,8 +1,8 @@
 .home-hero
   // height: 100vh
-  padding-top: 120px
-  padding-left: 20px
-  padding-right: 20px
+  padding-top: calc(120px / 1.5)
+  padding-left: calc(20px / 1.5)
+  padding-right: calc(20px / 1.5)
   box-sizing: border-box
 
   text-align: center
@@ -10,9 +10,9 @@
   background-color: #e4edfa
 
   @media screen and (max-width: 800px)
-    padding-top: 50px
+    padding-top: calc(50px / 1.5)
   @media screen and (max-width: 450px)
-    padding-top: 30px
+    padding-top: calc(30px / 1.5)
   // background-image: url('../img/images/home-hero.png')
   // background-position: left bottom
   // background-size: contain
@@ -25,28 +25,28 @@
   //   height: 100vh
 
   // @media screen and(min-width: 690px)
-  //   background-position: left calc(100% + 60px)
+  //   background-position: left calc(100% + calc(60px / 1.5))
 
   // @media screen and(min-width: 800px)
-  //   background-position: left calc(100% + 100px)
+  //   background-position: left calc(100% + calc(100px / 1.5))
 
   // @media screen and(min-width: 1190px)
-  //   background-position: left calc(100% + 130px)
+  //   background-position: left calc(100% + calc(130px / 1.5))
 
   // @media screen and(min-width: 1400px)
-  //   background-position: left calc(100% + 150px)
+  //   background-position: left calc(100% + calc(150px / 1.5))
 
 .hero-title
   position: relative
 
   display: inline-block
-  margin-bottom: 15px
+  margin-bottom: calc(15px / 1.5)
 
-  font-size: 34px
+  font-size: calc(34px / 1.5)
   font-weight: lighter
 
   @media screen and(min-width: 580px)
-    font-size: 65px
+    font-size: calc(65px / 1.5)
 
   &:before
     content: ''
@@ -54,21 +54,21 @@
     left: 0
     bottom: 0
 
-    width: 43px
-    height: 4px
+    width: calc(43px / 1.5)
+    height: calc(4px / 1.5)
 
     background-color: #f6395d
 
     @media screen and(min-width: 580px)
-      width: 86px
-      height: 8px
+      width: calc(86px / 1.5)
+      height: calc(8px / 1.5)
 
 
   span
     font-weight: bold
 
 .subtitle
-  font-size: 16px
+  font-size: calc(16px / 1.5)
 
   br
     display: none
@@ -77,7 +77,7 @@
       display: block
 
   @media screen and(min-width: 580px)
-    font-size: 32px
+    font-size: calc(32px / 1.5)
 
 .hero-search
   position: relative
@@ -85,53 +85,53 @@
   box-sizing: border-box
   display: inline-block
   width: 100%
-  max-width: 1005px
-  padding: 14px
-  margin-top: 33px
+  max-width: calc(1005px / 1.5)
+  padding: calc(14px / 1.5)
+  margin-top: calc(33px / 1.5)
 
   background-color: #e4edfa
-  border: 1px solid rgba(159, 159, 159, 0.54)
+  border: calc(1px / 1.5) solid rgba(159, 159, 159, 0.54)
 
   z-index: 1
 
   @media screen and(max-width: 450px)
-    padding: 5px;
+    padding: calc(5px / 1.5);
 
 
   .search-input
     width: 100%
-    height: 42px
+    height: calc(42px / 1.5)
     margin: 0
-    padding-left: 60px
+    padding-left: calc(60px / 1.5)
 
     text-align: left
     font-size: 1em;
 
-    border: 1px solid #9f9f9f
+    border: calc(1px / 1.5) solid #9f9f9f
     background: url(../img/icons/search-icon.png) no-repeat left white;
-    background-size: 20px auto
-    background-position: 20px center
+    background-size: calc(20px / 1.5) auto
+    background-position: calc(20px / 1.5) center
 
     position: relative
     z-index: 3
 
     @media screen and(min-width: 580px)
-      height: 82px
-      padding-left: 74px
+      height: calc(82px / 1.5)
+      padding-left: calc(74px / 1.5)
 
       background-size: auto
 
   .search-button
     position: absolute
-    top: 15px
-    right: 15px
+    top: calc(15px / 1.5)
+    right: calc(15px / 1.5)
 
-    width: 70px
-    height: 40px
+    width: calc(70px / 1.5)
+    height: calc(40px / 1.5)
     padding: 0
-    padding-right: 5px
+    padding-right: calc(5px / 1.5)
 
-    font-size: 18px
+    font-size: calc(18px / 1.5)
     line-height: 0
     text-align: center
     color: #feccd6
@@ -142,71 +142,71 @@
     background-color: #f6395d
     cursor: pointer
     color: #ffffff
-    border-top-right-radius: 20px
-    border-bottom-right-radius: 20px
+    border-top-right-radius: calc(20px / 1.5)
+    border-bottom-right-radius: calc(20px / 1.5)
 
     z-index: 3
     cursor: pointer
 
     @media screen and(min-width: 600px)
-      width: 100px
+      width: calc(100px / 1.5)
 
-      height: 80px
+      height: calc(80px / 1.5)
 
-      font-size: 25px
+      font-size: calc(25px / 1.5)
 
     @media screen and(min-width: 700px)
-      width: 224px
+      width: calc(224px / 1.5)
 
-      height: 80px
+      height: calc(80px / 1.5)
 
-      font-size: 30px
+      font-size: calc(30px / 1.5)
     @media screen and(max-width: 450px)
-      top: 6px
-      right: 6px
-      font-size: 15px
-      padding-right: 3px
+      top: calc(6px / 1.5)
+      right: calc(6px / 1.5)
+      font-size: calc(15px / 1.5)
+      padding-right: calc(3px / 1.5)
 
     &:before
-      line-height: 80px
+      line-height: calc(80px / 1.5)
 
       content: ""
       position: absolute
-      left: -18px
+      left: calc(-18px / 1.5)
       top: 0
-      border-left: 19px solid transparent
-      border-bottom: 40px solid #f6395d
-      height: 0px
+      border-left: calc(19px / 1.5) solid transparent
+      border-bottom: calc(40px / 1.5) solid #f6395d
+      height: calc(0px / 1.5)
 
       @media screen and(min-width: 600px)
-        left: -36px
-        border-bottom: 80px solid #f6395d
-        border-left: 37px solid transparent
+        left: calc(-36px / 1.5)
+        border-bottom: calc(80px / 1.5) solid #f6395d
+        border-left: calc(37px / 1.5) solid transparent
 
       &__text
         position: absolute
         left: 50%
-        transform: translateX(calc(-50% - 5px))
+        transform: translateX(calc(-50% - calc(5px / 1.5)))
         @media screen and(min-width: 580px)
-          transform: translateX(calc(-50% - 10px))
+          transform: translateX(calc(-50% - calc(10px / 1.5)))
 
 
 .hero-img
-  margin: 0 -20px
-  margin-top: 1em
+  margin: 0 calc(-20px / 1.5)
+  margin-top: calc(-180px / 1.5)
 
 .section-title
   position: relative
 
   display: inline-block
-  margin-bottom: 15px
+  margin-bottom: calc(15px / 1.5)
 
-  font-size: 18px
+  font-size: calc(18px / 1.5)
   font-weight: lighter
   text-transform: uppercase
 
   @media screen and(min-width: 580px)
-    font-size: 37px
+    font-size: calc(37px / 1.5)
 
   &:before
     content: ''
@@ -214,21 +214,21 @@
     left: 0
     bottom: 0
 
-    width: 39px
-    height: 3px
+    width: calc(39px / 1.5)
+    height: calc(3px / 1.5)
 
     background-color: #f6395d
 
     @media screen and(min-width: 580px)
-      width: 78px
-      height: 5px
+      width: calc(78px / 1.5)
+      height: calc(5px / 1.5)
 
 
   span
     font-weight: bold
 
 .section
-  padding: 50px 0 19px
+  padding: calc(50px / 1.5) 0 calc(19px / 1.5)
 
   &--categories
     background-color: #f8f8f8
@@ -237,13 +237,13 @@
     background-color: #dcdcdc
 
   @media screen and(min-width: 580px)
-    padding: 110px 0 38px
+    padding: calc(110px / 1.5) 0 calc(38px / 1.5)
 
 .solutions-categories
-  margin-top: 45px
+  margin-top: calc(45px / 1.5)
 
   @media screen and(min-width: 580px)
-    margin-top: 90px
+    margin-top: calc(90px / 1.5)
 
   @media screen and(min-width: 1020px)
     display: flex
@@ -256,32 +256,32 @@
 
   box-sizing: border-box
   width: 100%
-  max-width: 470px
-  height: 330px
+  max-width: calc(470px / 1.5)
+  height: calc(330px / 1.5)
   overflow: hidden
   margin: 0 auto
 
   text-align: center
 
-  border-radius: 13px
-  border: 1px solid rgba(182, 178, 178, 0.54)
+  border-radius: calc(13px / 1.5)
+  border: calc(1px / 1.5) solid rgba(182, 178, 178, 0.54)
   background-color: #e4edfa
-  box-shadow: 0px 4px 5px 0px rgba(82, 82, 82, 0.06);
+  box-shadow: calc(0px / 1.5) calc(4px / 1.5) calc(5px / 1.5) calc(0px / 1.5) rgba(82, 82, 82, 0.06);
 
   @media screen and(min-width: 580px)
     max-width: none
-    width: 470px
-    height: 429px
+    width: calc(470px / 1.5)
+    height: calc(429px / 1.5)
 
   // @media screen and(min-width: 980px)
   //   margin-left: 0
   //   margin-right: 0
 
   &:not(:last-child)
-    margin-bottom: 32px
+    margin-bottom: calc(32px / 1.5)
 
     @media screen and(min-width: 580px)
-      margin-bottom: 64px
+      margin-bottom: calc(64px / 1.5)
 
   img
     max-width: 100%
@@ -294,83 +294,83 @@
 
     box-sizing: border-box
     width: 100%
-    padding: 20px 14px 20px 19px
+    padding: calc(20px / 1.5) calc(14px / 1.5) calc(20px / 1.5) calc(19px / 1.5)
 
     text-align: left
 
     background-color: #ffffff
-    border-radius: 13px
-    border: 1px solid rgba(204, 204, 204, 0.54);
+    border-radius: calc(13px / 1.5)
+    border: calc(1px / 1.5) solid rgba(204, 204, 204, 0.54);
 
     @media screen and(min-width: 580px)
-      padding: 20px 28px 20px 37px
+      padding: calc(20px / 1.5) calc(28px / 1.5) calc(20px / 1.5) calc(37px / 1.5)
 
   &__tags
     display: none
-    margin-bottom: 20px
+    margin-bottom: calc(20px / 1.5)
 
     span
       display: inline-block
-      padding: 5px 30px
-      margin: 5px
+      padding: calc(5px / 1.5) calc(30px / 1.5)
+      margin: calc(5px / 1.5)
 
-      border: 1px solid black
+      border: calc(1px / 1.5) solid black
       color: black
-      border-radius: 20px
+      border-radius: calc(20px / 1.5)
 
   .card-text__main
     position: relative
 
     span
       display: inline-block
-      padding-right: 68px
+      padding-right: calc(68px / 1.5)
 
-      font-size: 19px
+      font-size: calc(19px / 1.5)
       color: #282f39
 
       &:first-letter
         font-weight: bold
 
       @media screen and(min-width: 580px)
-        font-size: 38px
+        font-size: calc(38px / 1.5)
 
   &__link
     position: absolute
 
     display: inline-block
-    width: 34px
-    height: 34px
+    width: calc(34px / 1.5)
+    height: calc(34px / 1.5)
     right: 0
     top: 50%
-    margin-top: -17px
+    margin-top: calc(-17px / 1.5)
 
     background-color: #f6395d
     background-image: url('../img/images/badge.png')
     background-position: center center
     background-repeat: no-repeat
-    background-size: 20px
+    background-size: calc(20px / 1.5)
     border-radius: 50%
 
     @media screen and(min-width: 580px)
-      width: 68px
-      height: 68px
-      margin-top: -34px
+      width: calc(68px / 1.5)
+      height: calc(68px / 1.5)
+      margin-top: calc(-34px / 1.5)
 
-      background-size: auto
+      background-size: 75%
 
 a.categories-link
   display: inline-block
-  margin-top: 35px
+  margin-top: calc(35px / 1.5)
 
-  font-size: 16px
+  font-size: calc(16px / 1.5)
 
   color: #4b86db
   text-decoration: underline
 
   @media screen and(min-width: 580px)
-    margin-top: 70px
+    margin-top: calc(70px / 1.5)
 
-    font-size: 32px
+    font-size: calc(32px / 1.5)
 
 .category-card--inverse
   background-color: #ffffff
@@ -385,15 +385,15 @@ a.categories-link
   position: relative
 
   width: 100%
-  height: 238px
+  height: calc(238px / 1.5)
   overflow: hidden
 
   &:before
     position: absolute
     left: 0
     top: 0
-    width: 15px
-    height: 238px
+    width: calc(15px / 1.5)
+    height: calc(238px / 1.5)
     z-index: 9
 
     background-image: url('../img/images/logo-slider-left-shadow.png')
@@ -406,8 +406,8 @@ a.categories-link
     position: absolute
     right: 0
     top: 0
-    width: 15px
-    height: 238px
+    width: calc(15px / 1.5)
+    height: calc(238px / 1.5)
     z-index: 9
 
     background-image: url('../img/images/logo-slider-right-shadow.png')
@@ -419,8 +419,8 @@ a.categories-link
 .logo-slider
   position: relative
   top: 50%
-  width: 1824px
-  margin-left: -136px
+  width: calc(1824px / 1.5)
+  margin-left: calc(-136px / 1.5)
 
   font-size: 0
 
@@ -431,8 +431,8 @@ a.categories-link
     box-sizing: border-box
     display: inline-block
 
-    width: 304px
-    padding: 0 34px
+    width: calc(304px / 1.5)
+    padding: 0 calc(34px / 1.5)
 
     vertical-align: middle
 
@@ -440,13 +440,13 @@ a.categories-link
       position: absolute
       right: 0
       top: 50%
-      margin-top: -18px
+      margin-top: calc(-18px / 1.5)
 
-      width: 3px
-      height: 36px
+      width: calc(3px / 1.5)
+      height: calc(36px / 1.5)
       background-color: #575c63
 
       content: ''
 
   img
-    width: 236px
+    width: calc(236px / 1.5)

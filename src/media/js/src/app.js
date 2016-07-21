@@ -278,14 +278,35 @@ function onSearchKeyup(value) {
 }
 
 function onUserTypeChanged(evt) {
+  $('.registration-form').hide();
   $('.registration-type').removeClass('grey-btn');
   $(evt.target).addClass('grey-btn');
   if (evt.target.id.indexOf('vendor') != -1)
-    $('#vendor-website-input').show();
+    $('.vendor-registration-form').show();
   else
-    $('#vendor-website-input').hide();
+    $('.user-registration-form').show();
 }
 
+function openMenu(event) {
+  event.stopPropagation();
+  $('.sidebar').addClass('show');
+  $('.all-page-content').addClass('moved');
+  $('.all-page-content').css('left', $('.sidebar').width());
+  $(document).one('click', closeMenu);
+  $('.main-menu').one('click', closeMenu);
+}
+
+function closeMenu(e) {
+  if (!$(e.target).closest('.sidebar').length && !$(e.target).is('.sidebar') || $(e.target).closest('.main-menu').length) {
+    e.preventDefault();
+    $('.sidebar').removeClass('show');
+    $('.all-page-content').removeClass('moved');
+    $(document).off('click', closeMenu);
+    $('.main-menu').off('click', closeMenu);
+  } else {
+    $(document).one('click', closeMenu);
+  }
+}
 // Note: Use 'search & replace' to rename 'App' to current project name an delete this note
 var App = new(function App() {
 
@@ -325,13 +346,10 @@ var App = new(function App() {
     $('.main-menu').on('click', function(event) {
       event.stopPropagation();
       $('.sidebar').addClass('show');
-      $(document).one('click', function closeMenu(e) {
-        if (!$(e.target).closest('.sidebar').length && !$(e.target).is('.sidebar')) {
-          $('.sidebar').removeClass('show');
-        } else {
-          $(document).one('click', closeMenu);
-        }
-      });
+      $('.all-page-content').addClass('moved');
+      $('.all-page-content').css('left', $('.sidebar').width());
+      $(document).one('click', closeMenu);
+      $('.main-menu').one('click', closeMenu);
     });
     try {
       document.getElementsByClassName('view-icon')[0].click();
@@ -354,8 +372,9 @@ var App = new(function App() {
     $('.actions-btn').on('click', onPopupBtnClick);
     $('.tag-btn').on('click', onTagBtnClick);
     $('.title-with-arrow').on('click', onTitleClick);
+    $('.registration-type').on('click', onUserTypeChanged);
     try {
-      $('.registration-type').on('click', onUserTypeChanged);
+      $('.registration-type')[0].click();
     } catch(e) {
       
     }
