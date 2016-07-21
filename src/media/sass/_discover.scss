@@ -27,7 +27,7 @@
 .ui-slider .ui-slider-handle {
   width: calc(24px / 1.5);
   height: calc(24px / 1.5);
-  top: calc(-14px / 2)
+  top: calc(-14px / 1.5)
    &:after {
     display: none !important;
    }
@@ -130,10 +130,10 @@
         &:before {
           content: "+";
           position: absolute;
-          left: calc(-45px / 2);
+          left: calc(-45px / 1.5);
           font-size: calc(50px / 1.5);
           font-weight: bold;
-          top: calc(-14px / 2);
+          top: calc(-14px / 1.5);
         }
         &:first-child {
           margin-left: 0;
@@ -203,7 +203,7 @@
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: calc(-30px / 2);
+  bottom: calc(-30px / 1.5);
   width: 100%;
 }
 
@@ -240,7 +240,7 @@
 
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: #666;
-  text-indent: calc(-9999px / 2);
+  text-indent: calc(-9999px / 1.5);
   display: block;
   width: calc(10px / 1.5);
   height: calc(10px / 1.5);
@@ -275,7 +275,7 @@
 }
 
 .bx-wrapper .bx-next:hover {
-  background-position: calc(-43px / 2) 0;
+  background-position: calc(-43px / 1.5) 0;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -296,33 +296,33 @@
 
 .bx-wrapper .bx-controls-auto .bx-start {
   display: block;
-  text-indent: calc(-9999px / 2);
+  text-indent: calc(-9999px / 1.5);
   width: calc(10px / 1.5);
   height: calc(11px / 1.5);
   outline: 0;
-  background: url(images/controls.png) calc(-86px / 2) calc(-11px / 2) no-repeat;
+  background: url(images/controls.png) calc(-86px / 1.5) calc(-11px / 1.5) no-repeat;
   margin: 0 calc(3px / 1.5);
 
 }
 
 .bx-wrapper .bx-controls-auto .bx-start:hover,
 .bx-wrapper .bx-controls-auto .bx-start.active {
-  background-position: calc(-86px / 2) 0;
+  background-position: calc(-86px / 1.5) 0;
 }
 
 .bx-wrapper .bx-controls-auto .bx-stop {
   display: block;
-  text-indent: calc(-9999px / 2);
+  text-indent: calc(-9999px / 1.5);
   width: calc(9px / 1.5);
   height: calc(11px / 1.5);
   outline: 0;
-  background: url(images/controls.png) calc(-86px / 2) calc(-44px / 2) no-repeat;
+  background: url(images/controls.png) calc(-86px / 1.5) calc(-44px / 1.5) no-repeat;
   margin: 0 calc(3px / 1.5);
 }
 
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .bx-wrapper .bx-controls-auto .bx-stop.active {
-  background-position: calc(-86px / 2) calc(-33px / 2);
+  background-position: calc(-86px / 1.5) calc(-33px / 1.5);
 }
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
@@ -396,8 +396,8 @@
       margin-left: calc(30px / 1.5);
       &:before {
         font-size: calc(30px / 1.5);
-        top: calc(-7px / 2);
-        left: calc(-26px / 2);
+        top: calc(-7px / 1.5);
+        left: calc(-26px / 1.5);
       }
     }
   }

@@ -82,10 +82,10 @@
   height: calc(200px / 1.5);
   border: solid calc(1px / 1.5) #EEEFF1;
   background-color: #EEEFF1;
-  box-shadow: calc(3px / 1.5) calc(-3px / 2) #EEEFF1;
-  -moz-box-shadow: calc(3px / 1.5) calc(-3px / 2) #EEEFF1;
-  -webkit-box-shadow: calc(3px / 1.5) calc(-3px / 2) #EEEFF1;
-  -o-box-shadow: calc(3px / 1.5) calc(-3px / 2) #EEEFF1;
+  box-shadow: calc(3px / 1.5) calc(-3px / 1.5) #EEEFF1;
+  -moz-box-shadow: calc(3px / 1.5) calc(-3px / 1.5) #EEEFF1;
+  -webkit-box-shadow: calc(3px / 1.5) calc(-3px / 1.5) #EEEFF1;
+  -o-box-shadow: calc(3px / 1.5) calc(-3px / 1.5) #EEEFF1;
   border-radius: calc(100px / 1.5);
   img {
     -webkit-border-radius: 50%;
@@ -407,7 +407,7 @@ a.product-view-reviews.white {
   }
   @media (max-width: 750px) {
     top: calc(50px / 1.5);
-    left: calc(-20px / 2);
+    left: calc(-20px / 1.5);
   }
   @media (max-width: 600px) {
     top: calc(80px / 1.5);

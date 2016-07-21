@@ -111,10 +111,10 @@
   margin-left: calc(20px / 1.5);
   margin-right: calc(20px / 1.5);
   background-color: white;
-  box-shadow: calc(3px / 1.5) calc(-3px / 2) rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: calc(3px / 1.5) calc(-3px / 2) rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: calc(3px / 1.5) calc(-3px / 2) rgba(0, 0, 0, 0.6);
-  -o-box-shadow: calc(3px / 1.5) calc(-3px / 2) rgba(0, 0, 0, 0.6);
+  box-shadow: calc(3px / 1.5) calc(-3px / 1.5) rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: calc(3px / 1.5) calc(-3px / 1.5) rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: calc(3px / 1.5) calc(-3px / 1.5) rgba(0, 0, 0, 0.6);
+  -o-box-shadow: calc(3px / 1.5) calc(-3px / 1.5) rgba(0, 0, 0, 0.6);
   border-radius: calc(100px / 1.5);
   img {
     margin-left: auto;
