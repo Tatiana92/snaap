@@ -35,9 +35,10 @@ header {
   box-sizing: border-box;
   display: inline-block;
   width: auto;
+  margin: calc(18px / 1.5);
   overflow: hidden;
   .search-input {
-    width: calc(600px / 1.5);
+    width: 100%;
     height: calc(54px / 1.5);
     margin: 0;
     font-size: calc(18px / 1.5);
@@ -49,9 +50,13 @@ header {
     background-position: calc(20px / 1.5) center;
     border: calc(8px / 1.5) solid #4C5059;
     border-radius: calc(15px / 1.5);
-    @media screen and(min-width: calc(1260px / 1.5)) {
-      height: calc(48px / 1.5);
-      width: calc(500px / 1.5);
+    @media screen and(min-width: 768px) {
+      height: calc(54px / 1.5);
+      width: calc(600px / 1.5);
+    }
+    @media screen and(min-width: 1260px) {
+      height: calc(54px / 1.5);
+      width: calc(600px / 1.5);
     }
   }
   .search-button {
@@ -71,10 +76,6 @@ header {
     cursor: pointer;
     color: #FECCD6;
     border-radius: 0 calc(8px / 1.5) calc(8px / 1.5) 0;
-    @media screen and(min-width: calc(1260px / 1.5)) {
-      top: 1px;
-      height: calc(50px / 1.5);
-    }
     &:before {
       content: "";
       position: absolute;
@@ -83,14 +84,11 @@ header {
       border-left: calc(19px / 1.5) solid transparent;
       border-bottom: calc(40px / 1.5) solid #f6395d;
       height: calc(0px / 1.5);
-      @media screen and(min-width: calc(1260px / 1.5)) {
-        border-bottom: calc(50px / 1.5) solid #f6395d;
-      }
       &__text {
         position: absolute;
         left: 50%;
         transform: translateX(calc(-50% - calc(5px / 1.5)));
-        @media screen and(min-width: calc(580px / 1.5)) {
+        @media screen and(min-width: 580px){
           transform: translateX(calc(-50% - calc(10px / 1.5)));
         }
       }
