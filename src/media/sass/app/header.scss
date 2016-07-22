@@ -18,10 +18,18 @@ header {
 
 .header-btns {
   white-space: nowrap;
+  margin: calc(4px / 1.5) auto;
+  @media (min-width: 580px) {
+    margin: 0 calc(30px / 1.5) 0 0;
+  }
+  @media (min-width: 1260px) {
+    margin: 0 calc(90px / 1.5) 0 0;
+  }
 }
 
 .header-image-block {
   white-space: nowrap;
+  margin-left: calc(30px / 1.5);
 }
 
 .main-menu {
@@ -37,6 +45,7 @@ header {
   width: auto;
   margin: calc(18px / 1.5);
   overflow: hidden;
+  margin-bottom: 10px;
   .search-input {
     width: 100%;
     height: calc(54px / 1.5);
@@ -50,12 +59,12 @@ header {
     background-position: calc(20px / 1.5) center;
     border: calc(8px / 1.5) solid #4C5059;
     border-radius: calc(15px / 1.5);
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
       height: calc(54px / 1.5);
       width: calc(600px / 1.5);
     }
-    @media screen and(min-width: 1260px) {
-      height: calc(54px / 1.5);
+    @media screen and (min-width: 1260px) {
+      height: calc(64px / 1.5);
       width: calc(600px / 1.5);
     }
   }
@@ -76,6 +85,10 @@ header {
     cursor: pointer;
     color: #FECCD6;
     border-radius: 0 calc(8px / 1.5) calc(8px / 1.5) 0;
+    @media (min-width: 1260px){
+        line-height: calc(50px / 1.5);
+        height: calc(50px / 1.5);
+    }
     &:before {
       content: "";
       position: absolute;
@@ -84,11 +97,14 @@ header {
       border-left: calc(19px / 1.5) solid transparent;
       border-bottom: calc(40px / 1.5) solid #f6395d;
       height: calc(0px / 1.5);
+      @media (min-width: 1260px){
+        border-bottom: calc(50px / 1.5) solid #f6395d;
+      }
       &__text {
         position: absolute;
         left: 50%;
         transform: translateX(calc(-50% - calc(5px / 1.5)));
-        @media screen and(min-width: 580px){
+        @media screen and (min-width: 580px){
           transform: translateX(calc(-50% - calc(10px / 1.5)));
         }
       }

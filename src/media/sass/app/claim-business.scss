@@ -13,6 +13,10 @@
   @media screen and (max-width: 450px){
     padding-top: calc(30px / 1.5);
   }
+  
+  .hero-img{
+    margin-top: calc(50px / 1.5)!important;
+  }
 }
 
 .link-in-picture {
@@ -89,35 +93,35 @@
 
   position: relative;
   z-index: 3;
-
-  @media screen and(min-width: 600px){
+  border-radius: calc(8px / 1.5);
+  
+  @media screen and (max-width: 350px){
+    line-height: 3;
+    font-size: calc(13px / 1.5);
+  }
+  @media screen and (max-width: 450px){
+    line-height: 2.5;
+    font-size: calc(15px / 1.5);
+  }
+  @media screen and (min-width: 600px) {
     height: calc(79px / 1.5);
     padding-left: calc(50px / 1.5);
     font-size: calc(25px / 1.5);
     line-height: 3;
-
     background: url(../img/icons/search-icon.png) no-repeat left white;
     background-size: calc(30px / 1.5);
     background-position: calc(10px / 1.5) center;
+    border-radius: calc(16px / 1.5);
   }
-
-  @media screen and(min-width: 850px){
+  @media screen and (min-width: 850px) {
     height: calc(79px / 1.5);
     padding-left: calc(74px / 1.5);
     font-size: calc(30px / 1.5);
     line-height: 2.5;
-
     background: url(../img/icons/search-icon.png) no-repeat left white;
     background-size: auto;
     background-position: calc(20px / 1.5) center;
-  }
-  @media screen and(max-width: 450px){
-    line-height: 2.5;
-    font-size: calc(15px / 1.5);
-  }
-  @media screen and(max-width: 350px){
-    line-height: 3;
-    font-size: calc(13px / 1.5);
+    border-radius: calc(20px / 1.5);
   }
 }
 
