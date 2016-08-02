@@ -1,0 +1,118 @@
+//= templates/head.html
+<body>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+//= templates/main-menu.html
+
+<div class='all-page-content'>
+  //= templates/header.html
+  <div class='title-pane clearfix'>
+    <div class="title-left-block">
+      <img class='title-image' height='40' src='media/img/icons/header-glass.png'>
+      <H2 class='page-title-text'>OVERVIEW</H2>
+    </div>
+      <img class='title-image background-image' height='80' src='media/img/images/header.jpg'>
+  </div>
+    <div class='page-content'>
+    	<div class=" app-page-bottom-block flex-block">
+        //= common-parts.html
+    		<div class='app-page-bottom-selectors'>
+  	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Product</a>
+  	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Preview</a>
+  	  		<a href='' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Reviews</a>
+  	  		<a href='' class='selected app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Overview</a>
+    		</div>
+  	  </div>
+      <div class="crumbs">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a class="active" href="#">Overview</a></li>
+        </ul>
+      </div>
+      <div class="tab-container">
+        <ul>
+          <li><a class='selected app-page-tablinks' onclick='onLinkClicked(event);' href="#reviews">Reviews</a></li>
+          <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#about">About</a></li>
+          <li><a class="app-page-tablinks" onclick='onLinkClicked(event);' href="#more-prod">More products</a></li>
+        </ul>
+      </div>
+      <div class="app-page-block radius_8">
+        <div class='app-page-content'>
+          <div class='app-page-block-title' id='reviews'>Reviews
+          </div>
+        <div class="app-page-block-text">
+          <div class="radius_8 searchresults-block light-blue-block flex-block person-review review-with-bottom-btns">
+              <div class="searchresults-block-text">
+                <div class="searchresults-block-name">
+                  Test app
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+              <div class="center searchresults-block-btns">
+                <img src="media/img/icons/rounded-flag.png" class='round-btn'/>
+                <img src="media/img/icons/dislike.png" class='round-btn'/>
+                <img src="media/img/icons/like.png" class='round-btn'/>
+              </div>
+          </div>
+          <div class='flex-block review-author-image'>
+              <div class="user-img circle-image little-circle">
+                <img src="media/img/images/alex-little.jpg"/>
+              </div>
+          </div>
+
+          <div class="radius_8 searchresults-block light-blue-block flex-block person-review review-with-bottom-btns">
+              <div class="searchresults-block-text">
+                <div class="searchresults-block-name">
+                  Test app
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+              <div class="center searchresults-block-btns">
+                <img src="media/img/icons/rounded-flag.png" class='round-btn'/>
+                <img src="media/img/icons/dislike.png" class='round-btn'/>
+                <img src="media/img/icons/like.png" class='round-btn'/>
+              </div>
+          </div>
+          <div class='flex-block review-author-image'>
+              <div class="user-img circle-image little-circle">
+                <img src="media/img/images/alex-little.jpg"/>
+              </div>
+          </div>
+          
+          <div class="radius_8 searchresults-block light-blue-block flex-block person-review review-with-bottom-btns">
+              <div class="searchresults-block-text">
+                <div class="searchresults-block-name">
+                  Test app
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+              <div class="center searchresults-block-btns">
+                <img src="media/img/icons/rounded-flag.png" class='round-btn'/>
+                <img src="media/img/icons/dislike.png" class='round-btn'/>
+                <img src="media/img/icons/like.png" class='round-btn'/>
+              </div>
+          </div>
+          <div class='flex-block review-author-image'>
+              <div class="user-img circle-image little-circle">
+                <img src="media/img/images/alex-little.jpg"/>
+              </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="app-page-block-footer">
+          <div class="flex-block">
+            <img src="media/img/icons/red-dots.png" class='actions-btn round-btn'/>
+            <img src="media/img/icons/repost.png" class='repost-btn round-btn' />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    //= templates/compare-popup
+</div>
+
+  <script src="media/js/main.js"></script>
+</body>
+
+</html>

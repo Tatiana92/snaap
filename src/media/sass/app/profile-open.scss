@@ -402,9 +402,11 @@ a.product-view-reviews.white {
   -moz-transform: rotate(-40deg);
   -ms-transform: rotate(-40deg);
   -o-transform: rotate(-40deg);
+  
   @media (max-width: 1260px) {
     top: calc(60px / 1.5);
   }
+  
   @media (max-width: 750px) {
     top: calc(50px / 1.5);
     left: calc(-20px / 1.5);

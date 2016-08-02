@@ -139,6 +139,13 @@ function onTitleClick(event) {
   }
 }
 
+function onLabelItemClick(event) {
+  var el = event.target;
+  var parent = $(el).parents('.app-page__label-group')[0];
+  $(parent).find('.app-page__label-item').removeClass('selected');
+  $(el).parents('.app-page__label-item').addClass('selected');
+}
+
 function changeView(evt) {
   var btns = document.getElementsByClassName('view-icon');
   for (var i = 0; i < btns.length; i++) {
@@ -211,6 +218,34 @@ function initCarousel(carousel) {
       $('.carousel .prev').css('opacity', '1');
     };
 }
+
+
+
+
+
+function onExpandAnswerClick(event) {
+  var elem = event.target;
+  if ($(document).find('.faq-answer').length == 0)
+    return;
+  while ($(elem).find('.faq-answer').length == 0) {
+    elem = elem.parentNode;
+  }
+  var answerpane = $(elem).find('.faq-answer');
+answerpane.slideToggle();
+  /*var answerPaneHeight = elem.clientHeight - answerpane.prevAll().height() - 50;
+  if (answerpane.parents().find('.little-block'))
+    answerPaneHeight += 20;
+  answerpane.height(answerPaneHeight);
+  answerpane.slideToggle(function() {
+    if (answerpane.is(':visible')) {
+      $(elem).find('.product-view-reviews').removeClass('white');
+    } else {
+      $(elem).find('.product-view-reviews').addClass('white');
+    }
+  });*/
+}
+
+
 
 function onSearchKeyup(value) {
   if (value.length == 0) {
@@ -371,6 +406,8 @@ var App = new(function App() {
     $('.repost-btn').on('click', onPopupBtnClick);
     $('.actions-btn').on('click', onPopupBtnClick);
     $('.tag-btn').on('click', onTagBtnClick);
+    $('.expand-answer-btn').on('click', onExpandAnswerClick);
+    
     $('.title-with-arrow').on('click', onTitleClick);
     $('.registration-type').on('click', onUserTypeChanged);
     try {
@@ -378,6 +415,8 @@ var App = new(function App() {
     } catch(e) {
       
     }
+
+    $('.app-page__label-item').on('click', onLabelItemClick);
 
   });
 })();
