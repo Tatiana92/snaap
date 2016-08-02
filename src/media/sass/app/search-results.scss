@@ -5,7 +5,7 @@
 
 .searchresults-block {
   margin: calc(10px / 1.5) 0;
-  padding: calc(5px / 1.5);
+  padding: calc(14px / 1.5);
   color: white;
   border: 1px solid #DCDADB;
   @media (max-width: 600px) {
@@ -133,9 +133,21 @@
   }
   img {
     margin: calc(50px / 1.5) 0;
+    width: 65%;
     @media (max-width: 1260px) {
       margin: calc(25px / 1.5) 0;
       width: calc(30px / 1.5);
+    }
+  }
+
+  div {
+    padding: calc(30px / 1.5) 0;
+    font-size: 26px;
+    font-weight: 600;
+    @media (max-width: 1260px) {
+      padding: calc(13px / 1.5) 0;
+      font-size: 17px;
+      font-weight: 600;
     }
   }
 }

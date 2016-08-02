@@ -4,10 +4,10 @@
   left: 50%
 
   display: block
-  width: 60%
-  max-width: calc(700px / 1.5)
+  width: 90%
+  max-width: calc(800px / 1.5)
   max-height: 100vh
-  padding: calc(50px / 1.5) calc(30px / 1.5) calc(10px / 1.5)
+  padding: calc(90px / 1.5) calc(70px / 1.5) calc(50px / 1.5)
   z-index: 10
   overflow-y: auto
   box-sizing: border-box
@@ -23,6 +23,12 @@
 
   @media (max-width: 650px) 
     padding: calc(20px / 1.5)
+    padding-top: 36px;
+    .popup-close
+      right: calc(28px / 1.5)!important
+
+  @media (min-width: 768px) 
+    width: 60%
 
   a
     text-decoration: underline
@@ -32,9 +38,13 @@
   position: relative
   z-index: 10
 
+  .popup-close
+    top: calc(25px / 1.5)!important
+    right: calc(55px / 1.5)!important
+
 .login-popup.login
   font-size: 1em
-
+  
 .login-popup.login
     background-image: url(../img/images/register-background-bottom.png)
     background-position: bottom

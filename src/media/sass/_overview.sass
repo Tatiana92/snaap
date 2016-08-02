@@ -4,8 +4,6 @@
     border-bottom: 1px solid #cbcbcb
     @media (max-width: 680px)
       padding: calc(30px / 1.5) 0
-      -webkit-flex-direction: column
-      flex-direction: column
     .app-page-bottom-selectors a
       @media (max-width: 480px)
         font-size: calc(11px / 1.5)
@@ -18,8 +16,7 @@
 .table
   position: relative
 
-  width: calc(100% - calc(118px / 1.5))
-  max-width: 100%
+  width: 100%
 
   text-align: center
   font-size: calc(20px / 1.5)
@@ -31,7 +28,7 @@
   border-top-right-radius: calc(30px / 1.5)
   border-top-left-radius: calc(30px / 1.5)
 
-  @media screen and(max-width: calc(900px / 1.5))
+  @media screen and (max-width: calc(900px / 1.5))
     width: 100%
 
     border: none
@@ -51,13 +48,13 @@
     border-top-left-radius: calc(30px / 1.5)
     content: ''
 
-    @media screen and(max-width: calc(900px / 1.5))
+    @media screen and (max-width: calc(900px / 1.5))
       display: none
 
 
   thead
 
-    @media screen and(max-width: calc(900px / 1.5))
+    @media screen and (max-width: calc(900px / 1.5))
       display: none
 
   th
@@ -83,12 +80,12 @@
       border-collapse: separate
 
   tr
-    @media screen and(max-width: calc(900px / 1.5))
+    @media screen and (max-width: calc(900px / 1.5))
       display: block
       width: 100%
 
   tr + tr
-    @media screen and(max-width: calc(900px / 1.5))
+    @media screen and (max-width: calc(900px / 1.5))
       margin-top: calc(20px / 1.5)
       white-space: nowrap
 
@@ -100,7 +97,7 @@
     border-bottom: 1px solid rgba(79, 88, 101, 0.54)
     border-right: 1px solid rgba(79, 88, 101, 0.54)
 
-    @media screen and(max-width: calc(900px / 1.5))
+    @media screen and (max-width: calc(900px / 1.5))
       position: relative
 
       display: block
@@ -115,7 +112,7 @@
       text-overflow: ellipsis
 
     &:before
-      @media screen and(max-width: calc(900px / 1.5))
+      @media screen and (max-width: calc(900px / 1.5))
         position: absolute
         left: 0
         top: 0
@@ -135,19 +132,19 @@
     &:last-child
       border-right: none
 
-      @media screen and(max-width: calc(900px / 1.5))
+      @media screen and (max-width: calc(900px / 1.5))
         border-right: 1px solid rgba(79, 88, 101, 0.54)
         padding-bottom: 0
 
     &:first-child
       padding: calc(30px / 1.5)
 
-      @media screen and(max-width: calc(900px / 1.5))
+      @media screen and (max-width: calc(900px / 1.5))
         border-top: 1px solid rgba(79, 88, 101, 0.54)
         padding: calc(30px / 1.5) calc(10px / 1.5) calc(30px / 1.5) calc(50% + calc(30px / 1.5))
 
       &:before
-        @media screen and(max-width: calc(900px / 1.5))
+        @media screen and (max-width: calc(900px / 1.5))
           padding-top: 0
 
           background-color: #282f39
@@ -164,48 +161,49 @@
     td
       border-bottom: none
 
-  input[type="checkbox"]
-    display: none
+input[type="checkbox"]
+  display: none
 
-    & + label
-      position: relative
+  & + label
+    position: relative
 
-      display: inline-block
-      width: calc(51px / 1.5)
-      height: calc(51px / 1.5)
+    display: inline-block
+    width: calc(51px / 1.5)
+    height: calc(51px / 1.5)
 
-      border-radius: calc(15px / 1.5)
-      background-color: #ffffff
-      box-shadow: inset 1.805px -2.396px 4.14px 1.86px rgba(104, 102, 102, 0.32)
+    border-radius: calc(15px / 1.5)
+    background-color: #ffffff
+    box-shadow: inset 1.805px -2.396px 4.14px 1.86px rgba(104, 102, 102, 0.32)
 
-      cursor: pointer
+    cursor: pointer
 
-      @media screen and(max-width: calc(900px / 1.5))
-        height: calc(25px / 1.5)
-        width: calc(25px / 1.5)
+    @media screen and (max-width: calc(900px / 1.5))
+      height: calc(25px / 1.5)
+      width: calc(25px / 1.5)
 
-        border-radius: calc(7px / 1.5)
-        box-shadow: inset 1.805px -2.396px 2.12px 1.86px rgba(104, 102, 102, 0.32)
+      border-radius: calc(7px / 1.5)
+      box-shadow: inset 1.805px -2.396px 2.12px 1.86px rgba(104, 102, 102, 0.32)
 
-    &:checked + label:before
-      position: absolute
-      left: calc(10px / 1.5)
-      top: calc(3px / 1.5)
+  &:checked + label:before
+    position: absolute
+    left: calc(10px / 1.5)
+    top: calc(3px / 1.5)
 
-      width: calc(49px / 1.5)
-      height: calc(36px / 1.5)
-      background: url('../img/images/checkbox-mark.png')
-      background-repeat: no-repeat
+    width: calc(49px / 1.5)
+    height: calc(36px / 1.5)
+    background: url('../img/images/checkbox-mark.png')
+    background-repeat: no-repeat
+    background-size: contain
 
-      content: ''
+    content: ''
 
-      @media screen and(max-width: calc(900px / 1.5))
-        left: calc(5px / 1.5)
+    @media screen and (max-width: calc(900px / 1.5))
+      left: calc(5px / 1.5)
 
-        width: calc(24px / 1.5)
-        height: calc(18px / 1.5)
+      width: calc(24px / 1.5)
+      height: calc(18px / 1.5)
 
-        background-size: contain
+      background-size: contain
 
 
 .table--stripped
@@ -214,7 +212,7 @@
     td
       background-color: #e4edfa
 
-      @media screen and(max-width: calc(900px / 1.5))
+      @media screen and (max-width: calc(900px / 1.5))
         background-color: #ffffff
 
 .table--overview
@@ -250,7 +248,7 @@
 
   cursor: pointer
 
-  @media screen and(max-width: calc(900px / 1.5))
+  @media screen and (max-width: calc(900px / 1.5))
     position: relative
     width: 211%
     right: auto
