@@ -1,7 +1,7 @@
 function onLinkClicked(evt) {
   evt.preventDefault();
   evt.stopPropagation();
-  var className = evt.target.className.replace(' selected', '');
+  var className = evt.target.className.replace(' selected', '').split(' ')[0];
   $('.' + className).removeClass('selected');
   evt.target.className += ' selected';
   if ($('#' + evt.target.href.split('#')[1]).length > 0)
@@ -348,6 +348,14 @@ function closeMenu(e) {
     $(document).one('click', closeMenu);
   }
 }
+
+
+function onProfilePageSelectorClick(event) {
+  var link = event.target;
+  var blockId = link.id + '-block';
+  $('.page-info-block').hide();
+  $('#' + blockId).show();
+}
 // Note: Use 'search & replace' to rename 'App' to current project name an delete this note
 var App = new(function App() {
 
@@ -408,7 +416,6 @@ var App = new(function App() {
     if (carousel != undefined)
       initCarousel(carousel);
 
-
     $('.repost-btn').on('click', onPopupBtnClick);
     $('.actions-btn').on('click', onPopupBtnClick);
     $('.tag-btn').on('click', onTagBtnClick);
@@ -423,6 +430,7 @@ var App = new(function App() {
     }
 
     $('.app-page__label-item').on('click', onLabelItemClick);
+    $('.profile-page-selector-js').on('click', onProfilePageSelectorClick);
 
   });
 })();
