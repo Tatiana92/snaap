@@ -1,0 +1,258 @@
+//= templates/head.html
+
+<body>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+//= templates/main-menu.html
+
+<div class='all-page-content'>
+//= templates/header.html
+<div class='title-pane clearfix'>
+  <div class="title-left-block">
+    <img class='title-image' height='40' src='media/img/icons/header-glass.png'>
+    <H2 class='page-title-text'>Sign up</H2>
+  </div>
+    <img class='title-image background-image' height='80' src='media/img/images/header.jpg'>
+</div>
+  <div class='page-content'>
+    <div class=" app-page-bottom-block flex-block">
+      //= common-parts.html
+      <div class='app-page-bottom-selectors'>
+        <a href='' id='profile' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Profile</a>
+        <a href='' id='brands' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Brand</a>
+        <a href='' id='apps' class='selected app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Apps</a>
+        <a href='' id='stats' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Stats</a>
+        <a href='' id='account' class='app-page-selectors' onclick='event.preventDefault(); onLinkClicked(event);'>Account</a>
+      </div>
+    </div>
+    <div class="crumbs">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a class="active" href="#">Account</a></li>
+      </ul>
+    </div>
+
+    <div class="page-info-block radius_8" id='brands-block'>
+      <div class='app-page-content'>
+
+        <div class='profile-page-block flex-block'>
+          <div class='profile-page__big-block'>
+            <div class='title-with-line'><p>About</p></div>
+
+            <div class='profile-main-info flex-block'>
+              <div class="big-circle-image center">
+                <img src="media/img/icons/anonim.png"/>
+                <a href='' class='blue-link'>upload</a>
+              </div>
+              <div class='profile-about-person'>
+                <input type='text' class='popup-input radius_15' placeholder="First Name" />
+                <input type='text' class='popup-input radius_15' placeholder="Last Name" />
+                <input type='text' class='popup-input radius_15' placeholder="Company" />
+                <input type='text' class='popup-input radius_15' placeholder="Position" />
+                <textarea  class='popup-input radius_15' placeholder="Share something about yourself">
+                </textarea>
+              </div>
+            </div>
+            <div class='title-with-line'><p>Contact information</p></div>
+
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/atmark.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="email@company.com" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/phone.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Company Phone" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/location.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Address" />
+              </div>
+          </div>
+          <div class='profile-page__little-block'>
+            <div class='title-with-line'><p>Social Links</p></div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/facebook-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Facebook" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/linkedin-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Linkedin" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/twitter-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Twitter" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/google-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Google+" />
+              </div>
+            <button class="btn blue-btn radius_15">Save & Preview</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-info-block radius_8" id='profile-block'>
+      <div class='app-page-content'>
+        <button class="btn blue-btn radius_15 right-alignment">+ Add App</button>
+        <div class='bold-title-with-line'><p>MailChimp</p></div>
+
+        <div class='profile-page-block flex-block'>
+          <div class='profile-page__big-block'>
+            <div class='title-with-line'><p>Personal</p></div>
+
+
+            <div class='profile-main-info flex-block'>
+              <div class="big-circle-image center">
+                <img src="media/img/icons/anonim.png"/>
+                <a href='' class='blue-link'>upload</a>
+              </div>
+              <div class='profile-about-person'>
+                <input type='text' class='popup-input radius_15' placeholder="First Name" />
+                <input type='text' class='popup-input radius_15' placeholder="Last Name" />
+                <input type='text' class='popup-input radius_15' placeholder="Company" />
+                <input type='text' class='popup-input radius_15' placeholder="Position" />
+                <textarea  class='popup-input radius_15' placeholder="Share something about yourself">
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <div class='profile-page__little-block'>
+            <div class='title-with-line'><p>Personal</p></div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/facebook-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Facebook" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/linkedin-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Linkedin" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/twitter-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Twitter" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/google-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Google+" />
+              </div>
+            <button class="btn blue-btn radius_15">Save & Preview</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-info-block radius_8" id='apps-block'>
+      <div class='app-page-content'>
+        <button class="btn blue-btn radius_15 right-alignment">+ Add App</button>
+        <div class='bold-title-with-line'><p>MailChimp</p></div>
+
+        <div class='profile-page-block flex-block'>
+          <div class='profile-page__big-block'>
+            <div class='title-with-line'><p>App info</p></div>
+
+
+            <div class='profile-main-info flex-block'>
+              <div class="big-circle center">
+                <img src="media/img/icons/app-logo.png"/>
+                <a href='' class='blue-link'>upload</a>
+              </div>
+              <div class='profile-about-person'>
+                <input type='text' class='popup-input radius_15' placeholder="Brand Name" />
+                <input type='text' class='popup-input radius_15' placeholder="Brand Title" />
+                <input type='text' class='popup-input radius_15' placeholder="http://www.site.com" />
+                <input type='text' class='popup-input radius_15' placeholder="Position" />
+                <textarea  class='popup-input radius_15' placeholder="Share something about your company">
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <div class='profile-page__little-block'>
+            <div class='title-with-line'><p>App Social Links</p></div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/facebook-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Facebook" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/linkedin-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Linkedin" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/twitter-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Twitter" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/google-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Google+" />
+              </div>
+            <button class="btn blue-btn radius_15">Save & Preview</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-info-block radius_8" id='stats-block'>
+      <div class='app-page-content'>
+        <div class='center'>
+          <button class='btn radius_15 white-btn-with-border'>Account Plan</button>
+          <button class='btn radius_15 black-btn-with-border'>Password</button>
+        </div>
+
+        <div class='profile-page-block flex-block'>
+          <div class='middle-block'>
+            <div class='title-with-line'><p>Reset Password</p></div>
+            <div class='profile-page__inner-block'>
+              <input type='text' class='popup-input radius_15' placeholder="Username" />
+              <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
+            </div>
+          </div>
+          <div class='middle-block'>
+            <div class='title-with-line'><p>Register</p></div>
+            <div class='profile-page__inner-block clearfix'>
+              <input type='text' class='popup-input radius_15' placeholder="Username" />
+              <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
+              <button class="btn blue-btn radius_15">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-info-block radius_8" id='account-block'>
+      <div class='app-page-content'>
+        <div class='center'>
+          <button class='btn radius_15 white-btn-with-border'>Account Plan</button>
+          <button class='btn radius_15 black-btn-with-border'>Password</button>
+        </div>
+
+        <div class='profile-page-block flex-block'>
+          <div class='middle-block'>
+            <div class='title-with-line'><p>Reset Password</p></div>
+            <div class='profile-page__inner-block'>
+              <input type='text' class='popup-input radius_15' placeholder="Username" />
+              <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
+            </div>
+          </div>
+          <div class='middle-block'>
+            <div class='title-with-line'><p>Register</p></div>
+            <div class='profile-page__inner-block clearfix'>
+              <input type='text' class='popup-input radius_15' placeholder="Username" />
+              <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
+              <button class="btn blue-btn radius_15">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="page-info-block radius_8">
+      <div class='app-page-content'>
+        <div class='profile-main-info flex-block'>
+          <div class="big-circle-image">
+            <img src="media/img/images/alex.jpg"/>
+          </div>
+          <div class='profile-about-person'>
+            <h1 class='person-info-title'>Alex Friedman
+            </h1>
+             <div class='person-info-text'>Already thousands of Chinese citizens have spoken out against the festival, but authorities won’t act until they see how badly it’s hurting China’s global image, which they’ve been working hard to improve. That’s where we come in. Let’s show the Chinese government that the world cares about this puppy slaughter and wants them to stop it immediately!</div>
+             <ul class='person-links'>
+              <li> <a href='#'>http://www.alexfriedman.com</a></li>
+             </ul>
+             <div><p class='person-position'> Director of something </p>&nbsp at &nbsp<p class='person-position'> SomeCompany</p></div>
+             <div class='person-buttons flex-block'><a href='#'><img src="media/img/icons/soc-in.png"/></a><button class="btn blue-btn radius_15">Follow</button></div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  </div>
+</div>
+  //= templates/compare-popup
+
+  <script src="media/js/main.js"></script>
+</body>
+
+</html>

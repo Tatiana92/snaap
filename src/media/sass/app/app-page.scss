@@ -271,16 +271,17 @@
 
 
 
-.full-width-block.column-block {
-  width: 100%;
-  clear: both;
-
+.block-with-bottom-btns {
   div {
     flex-grow: 0;
   }
 
-  .column-block-text {
+  .searchresults-block-text {
     flex-grow: 1;
+  }
+
+  .searchresults-block-btns {
+    flex-grow: 0;
   }
 }
 
@@ -446,20 +447,27 @@ a.blue-link {
 }
 
 .searchresults-block .expand-answer-btn {
-  margin: 0;
   background: url(../img/icons/red-plus.png) center no-repeat;
-  background-size: cover;
+  background-size: contain;
+  width: calc(40px / 1.5);
+  @media (max-width: 1260px) {
+    width: calc(30px / 1.5);
+  }
 }
 
 .searchresults-block .expand-answer-btn.hide-answer {
   background: url(../img/icons/red-minus.png) center no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .review-with-bottom-btns.person-review {
   @media (max-width: 1050px) {
     margin-bottom: calc(25px / 1.5)
   }
+  @media (max-width: 600px) {
+    display: flex;
+  }
+
 }
 .review-with-bottom-btns.person-review:after {
     top: 60px;
@@ -470,11 +478,16 @@ a.blue-link {
       left: -40px;
     }
 
-    @media (max-width: 600px) {
-      top: 50px;
-      left: 70%;
-      transform: rotate(-40deg);
-      -webkit-transform: rotate(-40deg);
+    @media (max-width: 650px) {
+      top: 70px;
+    }
+
+    @media (max-width: 450px) {
+      top: 80px;
+    }
+
+    @media (max-width: 400px) {
+      top: 100px;
     }
   }
 
@@ -509,4 +522,16 @@ a.blue-link {
 
 .app-page__label-item.selected {
   opacity: 1;
+}
+.app-page-logo-images .rounded-image {
+    overflow: hidden;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin: 15px;
+    img {
+      margin: 0;
+      position: relative;
+      left: -5px;
+    }
 }

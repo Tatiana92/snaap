@@ -19,9 +19,7 @@ header {
 .header-btns {
   white-space: nowrap;
   margin: calc(4px / 1.5) auto;
-  @media (min-width: 580px) {
-    margin: 0 calc(30px / 1.5) 0 0;
-  }
+  
   @media (min-width: 1260px) {
     margin: 0 calc(90px / 1.5) 0 0;
   }

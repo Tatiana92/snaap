@@ -141,8 +141,8 @@ function onTitleClick(event) {
 
 function onLabelItemClick(event) {
   var el = event.target;
-  var parent = $(el).parents('.app-page__label-group')[0];
-  $(parent).find('.app-page__label-item').removeClass('selected');
+  //var parent = $(el).parents('.app-page__label-group')[0];
+  //$(parent).find('.app-page__label-item').removeClass('selected');
   $(el).parents('.app-page__label-item').addClass('selected');
 }
 
