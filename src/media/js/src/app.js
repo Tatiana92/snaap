@@ -224,14 +224,20 @@ function initCarousel(carousel) {
 
 
 function onExpandAnswerClick(event) {
-  var elem = event.target;
+  var btn = event.target;
+  var parent = btn;
   if ($(document).find('.faq-answer').length == 0)
     return;
-  while ($(elem).find('.faq-answer').length == 0) {
-    elem = elem.parentNode;
+  while ($(parent).find('.faq-answer').length == 0) {
+    parent = parent.parentNode;
   }
-  var answerpane = $(elem).find('.faq-answer');
-answerpane.slideToggle();
+  var answerpane = $(parent).find('.faq-answer');
+  answerpane.slideToggle();
+  if ($(btn).hasClass('hide-answer')) {
+    $(btn).removeClass('hide-answer');
+  } else {
+    $(btn).addClass('hide-answer');
+  }
   /*var answerPaneHeight = elem.clientHeight - answerpane.prevAll().height() - 50;
   if (answerpane.parents().find('.little-block'))
     answerPaneHeight += 20;
