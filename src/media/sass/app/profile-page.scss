@@ -233,6 +233,8 @@
 }
 
 .account-plan-item {
+  position: relative;
+  z-index: 1;
   margin: calc(50px / 1.5) 0;
 
   color: #282F39;
@@ -322,3 +324,65 @@
   
 }
 
+.pro-offer:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  left: -10px;
+  border-left: 100px solid transparent;
+  border-bottom: 100px solid #D51E41;
+}
+
+.pro-offer-hat {
+    position: absolute;
+    top: -20px;
+    left: -54px;
+
+    height: 0;
+    width: 0;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 90px;
+
+    color: #E5ECFC;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+    border-bottom: 70px solid #F7395D;
+
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+.pro-offer-hat span {    
+    position: absolute;
+    left: -10px;
+}
+
+
+
+
+.relief__red-btn {
+  padding: 10px;
+  width: auto;
+
+  font-size: 12px;
+  color: #E5ECFC;
+
+  background-color: #F7395D;
+  background: -moz-linear-gradient(top, #fe477b, #b03852); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fe477b, #b03852); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fe477b, #b03852); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe477b', endColorstr='#b03852',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 20px;
+    border: none;
+
+    .fa{
+      color: #282F39;
+      margin-right: 5px;
+    }
+}
