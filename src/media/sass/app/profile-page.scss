@@ -1,22 +1,33 @@
-.white-btn-with-border {
+.profile-page-account-btn {
+    padding: 5px 30px;
+
+    font-size: 1.25em;
     color: #282F39;
     border: 1px solid #282F39;
     background-color: transparent;
-}
-.black-btn-with-border {
-    color: white;
-    border: 1px solid #282F39;
-    background-color: #282F39;
+
+    &.selected {
+      color: white;
+      border: 1px solid #282F39;
+      background-color: #282F39;
+    }
 }
 
 .profile-page-content {
     overflow: hidden;
-    margin: calc(20px / 1.5);
-    margin-top: 50px;
+    margin: 50px 30px;
 
     input, textarea {
       margin: 10px 0px 0 0;
       padding: calc(5px / 1.5) calc(10px / 1.5);
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+    input[type='file'] {
+      visibility: hidden;
     }
 
     .title-with-line {
@@ -46,6 +57,14 @@
 .profile-page__searching-pane {
   align-items: flex-start;
   margin-left: 120px;
+
+  @media (max-width: 650px) {
+    margin-left: 20px;
+  }
+
+  @media (max-width: 350px) {
+    margin-left: 0px;
+  }
 }
 .profile-page__search-block {
     margin: 20px 10px;
@@ -67,7 +86,7 @@
 .profile-page__search-result-item {
   padding: calc(10px / 1.5) calc(15px / 1.5);
 
-  color: #9F9F9F;
+  color: #818181;
 
   &:not(:last-child) {
     border-bottom: 1px solid #DEDEDE;
@@ -78,18 +97,46 @@
   align-items: flex-start;
   margin-top: 30px;
 
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  .profile-main-info .profile-about-person {
+    @media (max-width: 600px) {
+      margin-left: 0;
+    }
+  }
+
   .profile-page__inner-block {
     max-width: 300px;
     clear: both;
+
+    @media (max-width: 600px) {
+      max-width: 100%;
+    }
+  }
+
+  .middle-block {
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 }
 
 .profile-page__big-block {
   width: 60%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .profile-page__little-block {
   width: 35%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .profile-page__black-round-icon {
@@ -134,15 +181,31 @@
 }
 .profile-page__big-screenshot {
   height: 300px;
-  background: url(../img/icons/plus.png) center no-repeat;
+  background: url(../img/icons/blue-plus.png) center no-repeat;
   background-size: 50px 50px;
+
+  @media (min-width: 900px) {
+    height: 400px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 600px;
+  }
 }
 
 .profile-page__little-screenshot {
   height: 100px;
   width: 30%;
-  background: url(../img/icons/plus.png) center no-repeat;
+  background: url(../img/icons/blue-plus.png) center no-repeat;
   background-size: 20px 20px;
+
+  @media (min-width: 900px) {
+    height: 150px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 200px;
+  }
 }
 
 .red-delete-btn {
@@ -159,3 +222,103 @@
   border: none;
   
 }
+
+
+.profile-page-account-block{
+  margin: 0 10px;
+
+  .bold-title-with-line {
+    margin: 30px 0 50px 0;
+  }
+}
+
+.account-plan-item {
+  margin: calc(50px / 1.5) 0;
+
+  color: #282F39;
+  font-weight: bolder;
+  font-size: 1.5em;
+
+  background: #E5EEFA;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+
+  &__header{
+    background: #A6B6CD;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 5px solid #8799B1;
+
+    &__logo {
+      padding-top: 30px;
+      img {
+        width: 120px;
+        height: auto;
+      }
+    }
+
+    &__info {
+      align-items: flex-end;
+      padding: 0 20px;
+      padding-bottom: 10px;
+    }
+
+    &__price {
+      font-size: 4em;
+      font-weight: 300;
+      color: #E5EDFA;
+    }
+
+    &__price:before {
+      content: '$';
+
+      vertical-align: super;
+      font-size: 0.4em;
+      font-weight: 300;
+      color: #E5EDFA;
+    }
+
+    &__clicks {
+      margin-bottom: 10px;
+      color: #282F39;
+    }
+  }
+
+  &__body {
+    padding: 20px;
+    
+
+    p {
+      margin-bottom: 20px;
+    }
+    ul {
+
+      li {
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-left: 20px;
+      } 
+    } 
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+
+  &__red-btn {
+    padding: 10px 30px;
+    width: 100%;
+    max-width: 300px;
+
+    font-size: 1em;
+    color: white;
+
+    background-color: #F7395D;
+    border-radius: 15px;
+    border: none;
+  }
+  
+}
+

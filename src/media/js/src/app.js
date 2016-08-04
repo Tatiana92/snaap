@@ -10,6 +10,7 @@ function onLinkClicked(evt) {
     }, 200);
 }
 
+
 function isScrolledTo(elem) {
   var docViewTop = $(window).scrollTop(); //num of pixels hidden above current screen
   var docViewBottom = docViewTop + $(window).height();
@@ -356,6 +357,18 @@ function onProfilePageSelectorClick(event) {
   $('.page-info-block').hide();
   $('#' + blockId).show();
 }
+
+
+function onProfilePageAccountBtnClick(event) {
+  var link = event.target;
+  var blockId = link.id + '-block';
+  $('.profile-page-account-block').hide();
+  $('#' + blockId).show();
+  $('.profile-page-account-btn').removeClass('selected');
+  event.target.className += ' selected';
+}
+
+
 // Note: Use 'search & replace' to rename 'App' to current project name an delete this note
 var App = new(function App() {
 
@@ -430,7 +443,12 @@ var App = new(function App() {
     }
 
     $('.app-page__label-item').on('click', onLabelItemClick);
+
     $('.profile-page-selector-js').on('click', onProfilePageSelectorClick);
+    $('.profile-page-selector-js')[0].click();
+
+    $('.profile-page-account-btn').on('click', onProfilePageAccountBtnClick);
+    $('.profile-page-account-btn')[0].click();
 
   });
 })();

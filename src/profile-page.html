@@ -32,6 +32,59 @@
       </ul>
     </div>
 
+
+    <div class="page-info-block radius_8" id='profile-block'>
+
+    <!-- we need in block!  -->
+    </div>
+
+    <div class="page-info-block radius_8" id='stats-block'>
+      <div class='profile-page-content'>
+        <button class="btn blue-btn radius_15 right-alignment">+ Add App</button>
+        <div class='bold-title-with-line'><p>MailChimp</p></div>
+
+        <div class='profile-page-block flex-block'>
+          <div class='profile-page__big-block'>
+            <div class='title-with-line'><p>Personal</p></div>
+
+
+            <div class='profile-main-info flex-block'>
+              <div class="big-circle-image center">
+                <img src="media/img/icons/anonim.png"/>
+                <div class="btn-upload-image blue-link" id="btnUploadImageForUser">
+                  <label for="imageForUser"><a class='blue-link'>upload</a></label>
+                  <input type="file" size='1' id="imageForUser" name="imageForUser" class="valid">
+                </div>
+              </div>
+              <div class='profile-about-person'>
+                <input type='text' class='popup-input radius_15' placeholder="First Name" />
+                <input type='text' class='popup-input radius_15' placeholder="Last Name" />
+                <input type='text' class='popup-input radius_15' placeholder="Company" />
+                <input type='text' class='popup-input radius_15' placeholder="Position" />
+                <textarea  class='popup-input radius_15' placeholder="Share something about yourself"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class='profile-page__little-block'>
+            <div class='title-with-line'><p>Personal</p></div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/facebook-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Facebook" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/linkedin-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Linkedin" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/twitter-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Twitter" />
+              </div>
+              <div class='flex-block'>
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/google-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Google+" />
+              </div>
+            <button class="btn blue-btn radius_15">Save & Preview</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="page-info-block radius_8" id='apps-block'>
       <div class='profile-page-content'>
         <button class="btn blue-btn radius_15 right-alignment">+ Add App</button>
@@ -41,9 +94,12 @@
           <div class='profile-page__big-block'>
             <div class='title-with-line'><p>App info</p></div>
             <div class='profile-main-info flex-block'>
-              <div class="big-circle center">
+              <div class="big-circle-image center">
                 <img src="media/img/icons/app-logo.png"/>
-                <a href='' class='blue-link'>upload</a>
+                <div class="btn-upload-image blue-link" id="btnUploadImageForUser">
+                  <label for="imageForUser"><a class='blue-link'>upload</a></label>
+                  <input type="file" size='1' id="imageForUser" name="imageForUser" class="valid">
+                </div>
               </div>
               <div class='profile-about-person'>
                 <input type='text' class='popup-input radius_15' placeholder="Brand Name" />
@@ -57,16 +113,16 @@
           <div class='profile-page__little-block'>
             <div class='title-with-line'><p>App Social Links</p></div>
               <div class='flex-block'>
-                <div class='profile-page__black-round-icon'> <img src="media/img/icons/facebook-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Facebook" />
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/facebook-black.png" /></div><input type='text' class='popup-input radius_15' placeholder="Facebook" />
               </div>
               <div class='flex-block'>
-                <div class='profile-page__black-round-icon'> <img src="media/img/icons/linkedin-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Linkedin" />
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/linkedin-black.png" /></div><input type='text' class='popup-input radius_15' placeholder="Linkedin" />
               </div>
               <div class='flex-block'>
-                <div class='profile-page__black-round-icon'> <img src="media/img/icons/twitter-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Twitter" />
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/twitter-black.png" /></div><input type='text' class='popup-input radius_15' placeholder="Twitter" />
               </div>
               <div class='flex-block'>
-                <div class='profile-page__black-round-icon'> <img src="media/img/icons/google-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Google+" />
+                <div class='profile-page__black-round-icon'> <img src="media/img/icons/google-black.png" /></div><input type='text' class='popup-input radius_15' placeholder="Google+" />
               </div>
             <button class="btn blue-btn radius_15">Save & Preview</button>
           </div>
@@ -186,7 +242,10 @@
             <div class='profile-main-info flex-block'>
               <div class="big-circle-image center">
                 <img src="media/img/icons/anonim.png"/>
-                <a href='' class='blue-link'>upload</a>
+                <div class="btn-upload-image blue-link" id="btnUploadImageForUser">
+                  <label for="imageForUser"><a class='blue-link'>upload</a></label>
+                  <input type="file" size='1' id="imageForUser" name="imageForUser" class="valid">
+                </div>
               </div>
               <div class='profile-about-person'>
                 <input type='text' class='popup-input radius_15' placeholder="First Name" />
@@ -222,104 +281,201 @@
               <div class='flex-block'>
                 <div class='profile-page__black-round-icon'> <img src="media/img/icons/google-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Google+" />
               </div>
-            <button class="btn blue-btn radius_15">Save & Preview</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="page-info-block radius_8" id='profile-block'>
-      <div class='profile-page-content'>
-        <button class="btn blue-btn radius_15 right-alignment">+ Add App</button>
-        <div class='bold-title-with-line'><p>MailChimp</p></div>
-
-        <div class='profile-page-block flex-block'>
-          <div class='profile-page__big-block'>
-            <div class='title-with-line'><p>Personal</p></div>
-
-
-            <div class='profile-main-info flex-block'>
-              <div class="big-circle-image center">
-                <img src="media/img/icons/anonim.png"/>
-                <a href='' class='blue-link'>upload</a>
-              </div>
-              <div class='profile-about-person'>
-                <input type='text' class='popup-input radius_15' placeholder="First Name" />
-                <input type='text' class='popup-input radius_15' placeholder="Last Name" />
-                <input type='text' class='popup-input radius_15' placeholder="Company" />
-                <input type='text' class='popup-input radius_15' placeholder="Position" />
-                <textarea  class='popup-input radius_15' placeholder="Share something about yourself"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class='profile-page__little-block'>
-            <div class='title-with-line'><p>Personal</p></div>
-              <div class='flex-block'>
-                <div class='profile-page__black-round-icon'> <img src="media/img/icons/facebook-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Facebook" />
-              </div>
-              <div class='flex-block'>
-                <div class='profile-page__black-round-icon'> <img src="media/img/icons/linkedin-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Linkedin" />
-              </div>
-              <div class='flex-block'>
-                <div class='profile-page__black-round-icon'> <img src="media/img/icons/twitter-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Twitter" />
-              </div>
-              <div class='flex-block'>
-                <div class='profile-page__black-round-icon'> <img src="media/img/icons/google-black.png" class=/></div><input type='text' class='popup-input radius_15' placeholder="Google+" />
-              </div>
-            <button class="btn blue-btn radius_15">Save & Preview</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-info-block radius_8" id='stats-block'>
-      <div class='profile-page-content'>
-        <div class='center'>
-          <button class='btn radius_15 white-btn-with-border'>Account Plan</button>
-          <button class='btn radius_15 black-btn-with-border'>Password</button>
-        </div>
-
-        <div class='profile-page-block flex-block'>
-          <div class='middle-block'>
-            <div class='title-with-line'><p>Reset Password</p></div>
-            <div class='profile-page__inner-block'>
-              <input type='text' class='popup-input radius_15' placeholder="Username" />
-              <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
-            </div>
-          </div>
-          <div class='middle-block'>
-            <div class='title-with-line'><p>Register</p></div>
-            <div class='profile-page__inner-block clearfix'>
-              <input type='text' class='popup-input radius_15' placeholder="Username" />
-              <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
-              <button class="btn blue-btn radius_15">Reset</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="page-info-block radius_8" id='account-block'>
       <div class='profile-page-content'>
         <div class='center'>
-          <button class='btn radius_15 white-btn-with-border'>Account Plan</button>
-          <button class='btn radius_15 black-btn-with-border'>Password</button>
+          <button class='btn radius_15 profile-page-account-btn' id='acc-plan'>Account Plan</button>
+          <button class='btn radius_15 profile-page-account-btn' id='passwd'>Password</button>
         </div>
 
-        <div class='profile-page-block flex-block'>
-          <div class='middle-block'>
-            <div class='title-with-line'><p>Reset Password</p></div>
-            <div class='profile-page__inner-block'>
-              <input type='text' class='popup-input radius_15' placeholder="Username" />
-              <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
+        <div class='profile-page-account-block' id='acc-plan-block'>
+            <div class='bold-title-with-line'><p>Account Plan</p></div>
+
+            <div class="colu colu_4">
+                <div class="account-plan-item">
+                    <div class= "account-plan-item__header">
+                      <div class='center account-plan-item__header__logo'>
+                        <img src="media/img/icons/rounded-boot.png" />
+                      </div>
+                      <div class='flex-block account-plan-item__header__info'>
+                        <div class='account-plan-item__header__price'>0</div>
+                        <div class='account-plan-item__header__clicks'>0 Free clicks</div>
+                      </div>
+                    </div>
+                    <div class="account-plan-item__body">
+
+                        <p class="account-plan-item__title">
+                            RUN
+                        </p>
+
+                        <p>
+                          Placement:
+                          <ul>
+                            <li>Bottom results
+                            </li>
+                          </ul>
+                        </p>
+                        <p>
+                          Jump in search results:
+                          <ul>
+                            <li>Unlimited free manual pops you can login and pop your result anytime
+                            </li>
+                          </ul>
+                        </p>
+                        <p>
+                          Content Marketing
+                        </p>
+                        <p>
+                          Lead form
+                        </p>
+
+                      <div class='center'><button class="btn account-plan-item__red-btn">Purchase</button></div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class='middle-block'>
-            <div class='title-with-line'><p>Register</p></div>
-            <div class='profile-page__inner-block clearfix'>
-              <input type='text' class='popup-input radius_15' placeholder="Username" />
-              <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
-              <button class="btn blue-btn radius_15">Reset</button>
+
+            <div class="colu colu_4">
+                <div class="account-plan-item">
+                    <div class= "account-plan-item__header">
+                      <div class='center account-plan-item__header__logo'>
+                        <img src="media/img/icons/rounded-car.png" />
+                      </div>
+                      <div class='flex-block account-plan-item__header__info'>
+                        <div class='account-plan-item__header__price'>1</div>
+                        <div class='account-plan-item__header__clicks'>100 Free clicks</div>
+                      </div>
+                    </div>
+                    <div class="account-plan-item__body">
+
+                        <p class="account-plan-item__title">
+                            Drive
+                        </p>
+
+                        <p>
+                          Placement:
+                          <ul>
+                            <li>Middle of the page
+                            </li>
+                            <li>Half width of search results
+                            </li>
+                            <li>Light highlight
+                            </li>
+                          </ul>
+                        </p>
+                        <p>
+                          External links:
+                          <ul>
+                            <li>In search results
+                            </li>
+                            <li>In App page
+                            </li>
+                            <li>In Brand page
+                            </li>
+                          </ul>
+                        </p>
+                        <p>
+                          Jump in search results:
+                          <ul>
+                            <li>Unlimited free manual pops
+                            </li>
+                            <li>Automates jump will pop your listing to the top result once in 2 days
+                            </li>
+                          </ul>
+                        </p>
+                        <p>
+                          Content Marketing
+                        </p>
+                        <p>
+                          Lead form
+                        </p>
+
+                      <div class='center'><button class="btn account-plan-item__red-btn">Purchase</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colu colu_4">
+                <div class="account-plan-item">
+                    <div class= "account-plan-item__header">
+                      <div class='center account-plan-item__header__logo'>
+                        <img src="media/img/icons/rounded-fly.png" />
+                      </div>
+                      <div class='flex-block account-plan-item__header__info'>
+                        <div class='account-plan-item__header__price'>1.5</div>
+                        <div class='account-plan-item__header__clicks'>200 Free clicks</div>
+                      </div>
+                    </div>
+                    <div class="account-plan-item__body">
+
+                        <p class="account-plan-item__title">
+                            FLY
+                        </p>
+
+                        <p>
+                          Placement:
+                          <ul>
+                            <li>Top of the page
+                            </li>
+                            <li>Full width of search results
+                            </li>
+                            <li>Glowing highlight
+                            </li>
+                          </ul>
+                        </p>
+                        <p>
+                          External links:
+                          <ul>
+                            <li>In search results
+                            </li>
+                            <li>In App page
+                            </li>
+                            <li>In Brand page
+                            </li>
+                          </ul>
+                        </p>
+                        <p>
+                          Jump in search results:
+                          <ul>
+                            <li>Unlimited free manual pops
+                            </li>
+                            <li>Automates jump will pop your listing to the top result every day
+                            </li>
+                          </ul>
+                        </p>
+                        <p>
+                          Content Marketing
+                        </p>
+                        <p>
+                          Lead form
+                        </p>
+
+                      <div class='center'><button class="btn account-plan-item__red-btn">Purchase</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='profile-page-account-block' id='passwd-block'>
+          <div class='profile-page-block flex-block'>
+            <div class='middle-block'>
+              <div class='title-with-line'><p>Reset Password</p></div>
+              <div class='profile-page__inner-block'>
+                <input type='text' class='popup-input radius_15' placeholder="Username" />
+                <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
+              </div>
+            </div>
+            <div class='middle-block'>
+              <div class='title-with-line'><p>Register</p></div>
+              <div class='profile-page__inner-block clearfix'>
+                <input type='text' class='popup-input radius_15' placeholder="Username" />
+                <input type='text' class='popup-input radius_15' placeholder="your@email.com" />
+                <button class="btn blue-btn radius_15">Reset</button>
+              </div>
             </div>
           </div>
         </div>
