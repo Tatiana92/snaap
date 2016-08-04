@@ -1,7 +1,7 @@
 function onLinkClicked(evt) {
   evt.preventDefault();
   evt.stopPropagation();
-  var className = evt.target.className.replace(' selected', '');
+  var className = evt.target.className.replace(' selected', '').split(' ')[0];
   $('.' + className).removeClass('selected');
   evt.target.className += ' selected';
   if ($('#' + evt.target.href.split('#')[1]).length > 0)
@@ -9,6 +9,7 @@ function onLinkClicked(evt) {
         scrollTop: $('#' + evt.target.href.split('#')[1]).offset().top - $('.header-pane').outerHeight(true)
     }, 200);
 }
+
 
 function isScrolledTo(elem) {
   var docViewTop = $(window).scrollTop(); //num of pixels hidden above current screen
@@ -141,8 +142,8 @@ function onTitleClick(event) {
 
 function onLabelItemClick(event) {
   var el = event.target;
-  var parent = $(el).parents('.app-page__label-group')[0];
-  $(parent).find('.app-page__label-item').removeClass('selected');
+  //var parent = $(el).parents('.app-page__label-group')[0];
+  //$(parent).find('.app-page__label-item').removeClass('selected');
   $(el).parents('.app-page__label-item').addClass('selected');
 }
 
@@ -348,6 +349,26 @@ function closeMenu(e) {
     $(document).one('click', closeMenu);
   }
 }
+
+
+function onProfilePageSelectorClick(event) {
+  var link = event.target;
+  var blockId = link.id + '-block';
+  $('.page-info-block').hide();
+  $('#' + blockId).show();
+}
+
+
+function onProfilePageAccountBtnClick(event) {
+  var link = event.target;
+  var blockId = link.id + '-block';
+  $('.profile-page-account-block').hide();
+  $('#' + blockId).show();
+  $('.profile-page-account-btn').removeClass('selected');
+  event.target.className += ' selected';
+}
+
+
 // Note: Use 'search & replace' to rename 'App' to current project name an delete this note
 var App = new(function App() {
 
@@ -408,7 +429,6 @@ var App = new(function App() {
     if (carousel != undefined)
       initCarousel(carousel);
 
-
     $('.repost-btn').on('click', onPopupBtnClick);
     $('.actions-btn').on('click', onPopupBtnClick);
     $('.tag-btn').on('click', onTagBtnClick);
@@ -423,6 +443,12 @@ var App = new(function App() {
     }
 
     $('.app-page__label-item').on('click', onLabelItemClick);
+
+    $('.profile-page-selector-js').on('click', onProfilePageSelectorClick);
+    $('.profile-page-selector-js')[0].click();
+
+    $('.profile-page-account-btn').on('click', onProfilePageAccountBtnClick);
+    $('.profile-page-account-btn')[0].click();
 
   });
 })();

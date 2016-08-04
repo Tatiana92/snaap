@@ -167,11 +167,9 @@ a {
 .view-icon img,
 .round-btn {
   height: calc(40px / 1.5);
-  width: calc(40px / 1.5);
   cursor: pointer;
   @media (max-width: 1260px) {
     height: calc(30px / 1.5);
-    width: calc(30px / 1.5);
   }
 }
 
