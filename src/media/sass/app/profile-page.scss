@@ -28,6 +28,7 @@
     }
     input[type='file'] {
       visibility: hidden;
+      display: none;
     }
 
     .title-with-line {
@@ -40,7 +41,10 @@
       margin-top: 10px;
       float: right;
     }
-
+    
+    a.blue-btn:link, a.blue-btn:visited, a.blue-btn:hover {
+      color: #4C84DA;
+    }
     .profile-page__little-screenshot {
       margin: 20px 0;
     }
@@ -175,7 +179,10 @@
 .profile-page__screenshots-btns * {
     display: inline-block;
 }
-
+.profile-page__screenshots-btns .blue-btn {
+    position: relative;
+    top: 15px;
+}
 .profile-page__big-screenshot, .profile-page__little-screenshot {
   border: 1px solid #4C85DC;
 }
@@ -385,4 +392,85 @@
       color: #282F39;
       margin-right: 5px;
     }
+}
+
+
+.checkbox-label {
+  font-size: 15px;
+  margin-left: 10px;
+  vertical-align: top;
+  line-height: 2;
+}
+
+.profile-page__big-block input[type="checkbox"] {
+  display: none;
+
+  & + label {
+    position: relative;
+
+    display: inline-block;
+    width: calc(51px / 1.5);
+    height: calc(51px / 1.5);
+
+    border-radius: calc(15px / 1.5);
+    background-color: #ffffff;
+    box-shadow: inset 1.805px -2.396px 4.14px 1.86px rgba(104, 102, 102, 0.32);
+
+    cursor: pointer;
+
+    @media screen and (max-width: calc(900px / 1.5)){
+      height: calc(25px / 1.5);
+      width: calc(25px / 1.5);
+
+      border-radius: calc(7px / 1.5);
+      box-shadow: inset 1.805px -2.396px 2.12px 1.86px rgba(104, 102, 102, 0.32);
+    }
+  }
+
+  &:checked + label:before {
+    position: absolute;
+    left: calc(10px / 1.5);
+    top: calc(3px / 1.5);
+
+    width: calc(49px / 1.5);
+    height: calc(36px / 1.5);
+    background: url('../img/images/checkbox-mark.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    content: '';
+
+    @media screen and (max-width: calc(900px / 1.5)) {
+      left: calc(5px / 1.5);
+
+      width: calc(24px / 1.5);
+      height: calc(18px / 1.5);
+
+      background-size: contain;
+    }
+  }
+}
+
+
+ul.multiselect label.checkbox {
+  line-height: 2.3;
+}
+
+
+.tt-dataset {
+    padding: 15px 18px 5px;
+    margin: 10px 0;
+    border: 1px solid #DEDEDE;
+    border-radius: calc(15px / 1.5);
+    -webkit-border-radius: calc(15px / 1.5);
+    -moz-border-radius: calc(15px / 1.5);
+}
+.tt-suggestion {
+    padding: calc(10px / 1.5) calc(15px / 1.5);
+    color: #818181;
+    cursor: pointer;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #DEDEDE;
+  }
 }

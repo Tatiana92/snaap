@@ -39,6 +39,18 @@
           <button class="btn relief__red-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Top Up</button>
           <button class="btn relief__red-btn"><i class="fa fa-home" aria-hidden="true"></i>Go To Application Site</button>
         </div>
+
+        <div class="profile-page__big-block">
+          <div>
+            <input type="checkbox" name="app" id="app"><label for="app"></label><label class='checkbox-label'>App notifications</label>
+          </div>
+          <div>
+            <input type="checkbox" name="brand" id="brand"><label for="brand"></label><label class='checkbox-label'>Brand notifications</label>
+          </div>
+          <div>
+            <input type="checkbox" name="profile-cb" id="profile-cb"><label for="profile-cb"></label><label class='checkbox-label'>Profile notifications</label>
+          </div>
+         </div>
       </div>
     </div>
 
@@ -214,10 +226,14 @@
 
         <div class='title-with-line'><p>Screenshots</p></div>
 
-        <div class='clearfix'>
+        <!--<div class='clearfix'>
           <button class="btn blue-btn radius_15 right-alignment">+ Add Screenshot</button>
-        </div>
+        </div>-->
 
+        <div class="clearfix" id="btnAddScreenshotForApp">
+          <label for="screenshotForApp"><a class="btn blue-btn radius_15 right-alignment">+ Add Screenshot</a></label>
+          <input type="file" size='1' id="screenshotForApp" name="screenshotForApp" class="valid">
+        </div>
         <div class='profile-page__big-screenshot'>
         </div>
         <textarea class='popup-input profile-page__screenshot-area  radius_15' placeholder='Thumb dexcription'></textarea>

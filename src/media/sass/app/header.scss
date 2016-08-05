@@ -67,22 +67,25 @@ header {
     }
   }
   .search-button {
-    position: absolute;
-    top: calc(7px / 1.5);
-    right: calc(6px / 1.5);
-    width: calc(70px / 1.5);
-    height: calc(40px / 1.5);
-    padding: 0 calc(10px / 1.5);
-    font-size: calc(18px / 1.5);
-    font-weight: 600;
-    text-align: center;
-    line-height: calc(40px / 1.5);
-    color: #feccd6;
-    border: none;
-    background-color: #f6395d;
-    cursor: pointer;
-    color: #FECCD6;
-    border-radius: 0 calc(8px / 1.5) calc(8px / 1.5) 0;
+    position: absolute; 
+    top: calc(9px / 1.5); 
+    right: calc(6px / 1.5); 
+    height: calc(40px / 1.5); 
+    padding: 0 calc(10px / 1.5); 
+    font-size: calc(18px / 1.5); 
+    font-weight: 600; 
+    text-align: center; 
+    line-height: calc(40px / 1.5); 
+    color: #feccd6; 
+    border: none; 
+    background-color: #f6395d; 
+    cursor: pointer; 
+    color: #FECCD6; 
+    border-radius: 0 calc(16px / 1.5) calc(16px / 1.5) 0; 
+    border-radius: 0 calc(12px / 1.5) calc(12px / 1.5) 0; 
+    width: calc(92px / 1.5); 
+    right: calc(12px / 1.5); 
+    width: calc(92px / 1.5);
     @media (min-width: 1260px){
         line-height: calc(50px / 1.5);
         height: calc(50px / 1.5);
