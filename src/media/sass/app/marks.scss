@@ -1,14 +1,14 @@
 .marks-title {
   position: relative;
   display:inline-block;
-  margin: calc(15px / 1.5) auto;
+  margin: 15px;
 
   text-align: center;
-  font-size: calc(18px / 1.5);
+  font-size: 18px;
   font-weight: lighter;
 
   @media screen and (min-width: 580px) {
-    font-size: calc(37px / 1.5);
+    font-size: 37px;
   }
 
   &:before {
@@ -78,6 +78,10 @@
   width: 60%;
   max-width: 800px;
   margin: 20px auto;
+
+  @media screen and (max-width: 650px){
+    width: 100%;
+  }
 }
 
 .marks__btn-border {
@@ -98,6 +102,7 @@
 
 .stamp-block {
   border: 1px solid #E7E8EA;
+  overflow: hidden;
 
   &__top-line {
     padding: 20px 0;
@@ -113,10 +118,35 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+  
+    @media screen and (max-width: 550px){
+      height: 150px;
+    }
+  
+    @media screen and (max-width: 400px){
+      height: 120px;
+    }
 
     .stamp-header-text {
       padding: 30px 0;
       padding-left: 130px;
+  
+      @media screen and (max-width: 900px){
+        padding-left: 70px;
+      }
+  
+      @media screen and (max-width: 650px){
+        padding-left: 130px;
+      }
+  
+      @media screen and (max-width: 550px){
+        padding-left: 80px;
+        padding-top: 10px;
+      }
+  
+      @media screen and (max-width: 400px){
+        padding-left: 40px;
+      }
 
     }
 
@@ -158,14 +188,108 @@
   width: 60%;
   max-width: 500px;
   margin: 20px;
+  padding: 20px;
 }
 .marks__stamps-help-pane__block {
   width: 60%;
   max-width: 800px;
-  min-height: 200px;
   margin: 20px auto;
+
   background-image: url(../img/images/man-with-phone-background.png);
-  background-position: 100% center;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: contain;
+  
+  @media screen and (max-width: 900px){
+    width: 70%;
+  }
+  
+  @media screen and (max-width: 800px){
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 500px){
+    width: 100%;
+    background-size: 170px;
+  }
+  
+  @media screen and (max-width: 380px){
+    background-size: 140px;
+  }
+}
+
+.marks__use-stamps {
+  min-height: 200px;
+  background-image: url(../img/images/arrow-background.png);
+  background-position: 0% center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+}
+.marks__use-stamps__text:before {
+    content: '';
+    position: absolute;
+    left: 40%;
+    top: 50px;
+
+    width: calc(39px / 1.5);
+    height: calc(3px / 1.5);
+
+    background-color: #f6395d;
+
+    @media screen and (min-width: 580px){
+      width: calc(78px / 1.5);
+      height: calc(5px / 1.5);
+    }
+}
+.marks__use-stamps__text:after {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: -25px;
+
+    width: calc(39px / 1.5);
+    height: calc(3px / 1.5);
+
+    background-color: #f6395d;
+
+    @media screen and (min-width: 580px){
+      width: calc(78px / 1.5);
+      height: calc(5px / 1.5);
+    }
+}
+.marks__use-stamps__text {
+  position: relative;
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.marks__contact-us__text {
+  width: 60%;
+  padding: 30px;
+  padding-bottom: 0px;
+
+  color: white;
+  background-image: url(../img/images/arrows-around-btn-background.png);
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  background-size: 240px;
+
+  @media screen and (min-width: 1260px){
+    background-size: 350px;
+  }
+}
+
+.marks__contact-us {
+  background-color: #2F333C;
+
+  .marks__btn-border {
+    margin: 20px auto;
+  }
+
+  .marks__red-btn {
+    padding: 5px 15px;
+  }
 }
