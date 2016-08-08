@@ -44,6 +44,7 @@
     
     a.blue-btn:link, a.blue-btn:visited, a.blue-btn:hover {
       color: #4C84DA;
+      text-decoration: none;
     }
     .profile-page__little-screenshot {
       margin: 20px 0;
@@ -100,6 +101,7 @@
 .profile-page-block {
   align-items: flex-start;
   margin-top: 30px;
+  width: 100%;
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -132,6 +134,10 @@
 
   @media (max-width: 600px) {
     width: 100%;
+  }
+
+  .big-circle-image {
+    margin-bottom: 30px;
   }
 }
 

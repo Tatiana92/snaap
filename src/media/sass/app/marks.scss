@@ -40,7 +40,18 @@
   background-color: #E4EEFA;
 
 }
+.marks__find-out-block {
+  margin-bottom: 20px;
+  font-size: 17px;
+  background-image: url(../img/images/red-arrow-for-btn-background.png);
+  background-position: 80% 30%;
+  background-repeat: no-repeat;
+  background-size: 100px;
 
+  @media screen and (max-width: 450px){
+    background-image: none
+  }
+}
 .marks__annotation-pane__image{
   img {
     width: 400px;
@@ -110,7 +121,7 @@
   }
 
   &__header {
-    height: 200px;
+    height: 250px;
 
     font-size: 2em;
     border-bottom: 1px solid #E7E8EA;
@@ -118,6 +129,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+  
+    @media screen and (max-width: 1000px){
+      height: 200px;
+    }
   
     @media screen and (max-width: 550px){
       height: 150px;
@@ -187,13 +202,12 @@
 .marks__stamps-help-pane__text {
   width: 60%;
   max-width: 500px;
-  margin: 20px;
   padding: 20px;
 }
 .marks__stamps-help-pane__block {
   width: 60%;
   max-width: 800px;
-  margin: 20px auto;
+  margin: 0 auto;
 
   background-image: url(../img/images/man-with-phone-background.png);
   background-position: 100% 100%;
@@ -214,7 +228,7 @@
   }
   
   @media screen and (max-width: 380px){
-    background-size: 140px;
+    background-size: 130px;
   }
 }
 
@@ -225,12 +239,16 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-color: white;
+
+  @media screen and (max-width: 580px){
+    min-height: 150px;
+  }
 }
 .marks__use-stamps__text:before {
     content: '';
     position: absolute;
     left: 40%;
-    top: 50px;
+    top: 25px;
 
     width: calc(39px / 1.5);
     height: calc(3px / 1.5);
@@ -240,6 +258,7 @@
     @media screen and (min-width: 580px){
       width: calc(78px / 1.5);
       height: calc(5px / 1.5);
+      top: 50px;
     }
 }
 .marks__use-stamps__text:after {
@@ -261,9 +280,14 @@
 .marks__use-stamps__text {
   position: relative;
   width: 60%;
-  max-width: 500px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 70px;
+
+  @media screen and (max-width: 580px){
+    padding-top: 50px;
+    width: 80%;
+  }
 }
 
 .marks__contact-us__text {
@@ -276,6 +300,10 @@
   background-position: center 100%;
   background-repeat: no-repeat;
   background-size: 240px;
+
+  @media screen and (min-width: 1260px){
+    background-size: 350px;
+  }
 
   @media screen and (min-width: 1260px){
     background-size: 350px;
