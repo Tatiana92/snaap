@@ -444,11 +444,18 @@ var App = new(function App() {
 
     $('.app-page__label-item').on('click', onLabelItemClick);
 
-    $('.profile-page-selector-js').on('click', onProfilePageSelectorClick);
-    $('.profile-page-selector-js')[0].click();
-
-    $('.profile-page-account-btn').on('click', onProfilePageAccountBtnClick);
-    $('.profile-page-account-btn')[0].click();
+    try {
+      $('.profile-page-selector-js').on('click', onProfilePageSelectorClick);
+      $('.profile-page-selector-js')[0].click();
+    } catch(e) {
+      
+    }
+    try {
+      $('.profile-page-account-btn').on('click', onProfilePageAccountBtnClick);
+      $('.profile-page-account-btn')[0].click();
+    } catch(e) {
+      
+    }
 
   });
 })();
